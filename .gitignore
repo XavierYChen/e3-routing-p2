@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+env/runtime/
+Ultralytics/
+results/run-*/
+checkpoints/**/args.yaml
+checkpoints/**/weights/last*.pt

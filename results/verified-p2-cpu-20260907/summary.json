@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "families": [
+    "moe",
+    "mot",
+    "latent"
+  ],
+  "token_level_families": [
+    "mot"
+  ],
+  "image_level_families": [
+    "moe",
+    "latent"
+  ],
+  "video_seconds": 120.0,
+  "records": 3
+}

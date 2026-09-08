@@ -1,0 +1,17 @@
+schema_version: e3.spatial_routing.v1
+dataset: coco8
+split: val
+imgsz: 160
+batch: 1
+device: cpu
+dtype: float32
+seed: 0
+mot_demo_checkpoint: checkpoints/mot-coco8-seed0/weights/best.pt
+families: [moe, mot, latent]
+profiles:
+  moe: ultralytics/cfg/models/26/yolo26-master-n.yaml
+  mot: ultralytics/cfg/models/26/yolo26-master-mot-n.yaml
+  latent: ultralytics/cfg/models/26/yolo26-master-latent-n.yaml
+allowed_roots:
+  - D:/AI/datasets/coco8
+downstream_consumers: [B1, D1, A3, WebUI]

@@ -44,4 +44,3 @@ MOT 图使用仓库内 COCO8 训练 10 epochs 的 seed-0 演示 checkpoint，以
 当前交付覆盖 MOE、MOT、LATENT 三族。MOA 与 MoLoRA 的具体缺口和接入条件明确列在 schema 文档中，未用虚构数据凑成五族。
 
 图中 `relative_contrast` 用来显示窄概率区间里的空间结构；原始 absolute probability 图和 min/mean/max/range 同时保留，不能把对比色差当成概率幅度。
-

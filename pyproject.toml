@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "e3-routing-p2"
+version = "0.1.0"
+description = "Token routing to original-image overlays for Tencent Rhino-Bird E3"
+requires-python = ">=3.11"
+dependencies = ["numpy", "opencv-python", "matplotlib", "torch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
