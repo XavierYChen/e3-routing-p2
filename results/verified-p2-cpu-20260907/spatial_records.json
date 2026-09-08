@@ -13,9 +13,9 @@
     "batch": 1,
     "dtype": "float32",
     "forward_ms": {
-      "moe": 56.765,
-      "mot": 50.687,
-      "latent": 56.223
+      "moe": 51.034,
+      "mot": 54.086,
+      "latent": 54.366
     }
   },
   "version": {
@@ -34,10 +34,10 @@
     "mot": {
       "path": "ultralytics/cfg/models/26/yolo26-master-mot-n.yaml",
       "sha256": "f327bb95d9cdf2dc1d81da060ad663a4e9bc38ff1d3ae13db58d36d761452614",
-      "checkpoint": {
-        "path": "checkpoints/mot-coco8-seed0/weights/best.pt",
-        "sha256": "8658764afae0a471e524f7b85f8066c36210c29118c45dac56fe00b8b6591d59",
-        "training": "COCO8, 10 epochs, seed 0; visualization checkpoint only"
+      "router_state": {
+        "path": "checkpoints/mot-coco8-seed0/mot_router_state.pt",
+        "sha256": "097f877b95f5c020f7e2f097d332732d1ced1acc0e6213f5d9a916dc4490ceaa",
+        "training": "router-only state from COCO8, 10 epochs, seed 0; visualization evidence only"
       }
     },
     "latent": {
@@ -127,9 +127,9 @@
       "top_k": 2,
       "probability_sum_max_error": 5.960464477539063e-08,
       "mean_router_probs": [
-        0.5000242,
-        0.4999758,
-        0.0
+        0.46500015,
+        0.40999976,
+        0.12500006
       ],
       "transform": {
         "method": "letterbox",
@@ -163,10 +163,10 @@
         "dominant": "mot_dominant.png"
       },
       "representative_expert_probability": {
-        "min": 0.5000171661376953,
-        "mean": 0.5000245571136475,
-        "max": 0.5000298619270325,
-        "range": 1.2695789337158203e-05
+        "min": 0.0,
+        "mean": 0.10833406448364258,
+        "max": 0.5000008344650269,
+        "range": 0.5000008344650269
       },
       "semantics": "pixel-aligned token probabilities",
       "downstream_consumers": [

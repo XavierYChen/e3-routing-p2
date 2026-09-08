@@ -1,5 +1,5 @@
 {
-  "release_tag": "p2-v0.1.0",
+  "release_tag": "p2-v0.1.1",
   "schema_version": "e3.spatial_routing.v1",
   "yolo_master_commit": "dab47c5e6e3d680c8d62576cf291e66431758873",
   "yolo_master_describe": "dab47c5-dirty",

@@ -66,48 +66,48 @@
       "bytes": 635938
     },
     "artifacts/mot_dominant.png": {
-      "sha256": "4dc991eb6e94042f6d7a6f42cb0f559a07543b323890b3d7e394f30112766d3c",
-      "bytes": 612147
+      "sha256": "d700b604fcd5f0650e09f48753650e8d7869c1c8f2c493a64beb0fc1e8de7b5e",
+      "bytes": 618506
     },
     "artifacts/mot_entropy.png": {
-      "sha256": "f0f29d9c03e0ef8d98675306d2227c399139218470bcc225f014205c3318c84c",
-      "bytes": 611467
+      "sha256": "c9e4e3be4fbcab57bbc0e1e33a9fbd9905a446a2ecd156418d899a3f0451da32",
+      "bytes": 631113
     },
     "artifacts/mot_expert_0.png": {
-      "sha256": "cbd79a51fa3f57fbded7f7cd7d31260a920f4195f114c66a9b51e2ae36b46f1d",
-      "bytes": 609390
+      "sha256": "b933579199d54d8878aefccc866c00e8793fd9aa2b5103a85addffb70247f2ee",
+      "bytes": 626264
     },
     "artifacts/mot_expert_1.png": {
-      "sha256": "fd7e57e9823035b803adf6311f346255a18f76630fc37bb6458328fed6778bb8",
-      "bytes": 608226
+      "sha256": "38e0b8fa267552f2f1d95db1145d873746fc003ce2c6faf70f40448ee290e8fb",
+      "bytes": 641101
     },
     "artifacts/mot_expert_2.png": {
-      "sha256": "79f7976cdcb7e8f9a5a9731a52ce2bb6248b09a96d085dd3efed727229990789",
-      "bytes": 612289
+      "sha256": "61368673a9d209e98c18bb84ec0a36accb7353458e2f5a22cdbe1d2425d4d066",
+      "bytes": 643241
     },
     "artifacts/mot_primary.png": {
-      "sha256": "92ad5b18311f308ddd2f4d77a3ee2c69f9d4d8c900975f46f0106cbc33a43678",
-      "bytes": 621696
+      "sha256": "6d2b976d79f8c5569978240cf6cd05775477661ca6880910b99190ff72e8594f",
+      "bytes": 655241
     },
     "artifacts/mot_relative_contrast.png": {
-      "sha256": "328882082835fd2a85c8b63bd9bc61266d09f4a1e54a7dc08a7cc9a6da6eb799",
-      "bytes": 649476
+      "sha256": "ca8c259b3f962d72c8fd3e3383e3fb32159861bd6a8aded3dcfa77f6b7286462",
+      "bytes": 660792
     },
     "artifacts/source.jpg": {
       "sha256": "b75cef803555dd0702e928b0f6c9ffb2cb2b1d1531e00c6b09643a411a6a642b",
       "bytes": 121808
     },
     "e3_p2_demo_120s.mp4": {
-      "sha256": "da7b59856ceb27b8cc3e6b0697a2f95e19431bf8ad474fd047b6a2ee314348d2",
-      "bytes": 10035910
+      "sha256": "196357b0c095dcb2858ccdf5a998bcaa8196f025ee8cc8ab34667e813bbbbad8",
+      "bytes": 501187
     },
     "routing_spatial_comparison.png": {
-      "sha256": "f2078535cbab1794f420291a6d2118b94d78ccd397ff7cd4f202cb1239cc82f1",
-      "bytes": 1480900
+      "sha256": "755d945ffaa8c66c01b55512e7ceb77c0d483310e903373845f1043fb0d1940e",
+      "bytes": 305792
     },
     "spatial_records.json": {
-      "sha256": "4d5aeaad17feb7fc5c4a987a6e18da5bf421e009de136a4940b35e1c83392970",
-      "bytes": 6975
+      "sha256": "f8132f3be0ba157735e6e00f02ed8f1e2cbc6cff7394c47a6a73915e5731c285",
+      "bytes": 6993
     },
     "summary.json": {
       "sha256": "0720ab33871cb154c62bf327180a8c056999cba519f939b80a7cf50735104e56",

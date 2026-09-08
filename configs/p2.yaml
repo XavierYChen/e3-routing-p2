@@ -6,7 +6,7 @@ batch: 1
 device: cpu
 dtype: float32
 seed: 0
-mot_demo_checkpoint: checkpoints/mot-coco8-seed0/weights/best.pt
+mot_demo_router_state: checkpoints/mot-coco8-seed0/mot_router_state.pt
 families: [moe, mot, latent]
 profiles:
   moe: ultralytics/cfg/models/26/yolo26-master-n.yaml

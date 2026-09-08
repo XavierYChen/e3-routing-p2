@@ -25,7 +25,7 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--imgsz", type=int, default=160)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--device", default="cpu")
-    p.add_argument("--mot-weights", type=Path, default=ROOT / "checkpoints" / "mot-coco8-seed0" / "weights" / "best.pt")
+    p.add_argument("--mot-router-state", type=Path, default=ROOT / "checkpoints" / "mot-coco8-seed0" / "mot_router_state.pt")
     return p
 
 
@@ -34,12 +34,16 @@ def git_value(root: Path, *args: str) -> str:
     return cp.stdout.strip()
 
 
-def load_model(config: Path, device, weights: Path | None = None):
+def load_model(config: Path, device, router_state: Path | None = None):
     from ultralytics.nn.tasks import DetectionModel
-    if weights is not None and weights.is_file():
-        from ultralytics import YOLO
-        return YOLO(str(weights)).model.to(device).eval().float()
-    return DetectionModel(str(config), ch=3, verbose=False).to(device).eval().float()
+    model = DetectionModel(str(config), ch=3, verbose=False).to(device).eval().float()
+    if router_state is not None and router_state.is_file():
+        import torch
+        payload = torch.load(router_state, map_location=device, weights_only=True)
+        missing, unexpected = model.load_state_dict(payload["state_dict"], strict=False)
+        if unexpected or not payload["state_dict"]:
+            raise ValueError("invalid MOT router state")
+    return model
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -67,7 +71,7 @@ def main(argv: list[str] | None = None) -> int:
     for family, filename in profiles.items():
         random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)
         config = args.yolo_root / "ultralytics" / "cfg" / "models" / "26" / filename
-        model = load_model(config, args.device, args.mot_weights if family == "mot" else None)
+        model = load_model(config, args.device, args.mot_router_state if family == "mot" else None)
         start = time.perf_counter()
         with SpatialRoutingCollector(model, family) as collector, torch.no_grad(): model(batch)
         timings[family] = round((time.perf_counter() - start) * 1000, 3)
@@ -96,8 +100,8 @@ def main(argv: list[str] | None = None) -> int:
     for f, name in profiles.items():
         p = args.yolo_root / "ultralytics" / "cfg" / "models" / "26" / name
         configs[f] = {"path": f"ultralytics/cfg/models/26/{name}", "sha256": hashlib.sha256(p.read_bytes()).hexdigest()}
-    if args.mot_weights.is_file():
-        configs["mot"]["checkpoint"] = {"path": args.mot_weights.relative_to(ROOT).as_posix(), "sha256": hashlib.sha256(args.mot_weights.read_bytes()).hexdigest(), "training": "COCO8, 10 epochs, seed 0; visualization checkpoint only"}
+    if args.mot_router_state.is_file():
+        configs["mot"]["router_state"] = {"path": args.mot_router_state.relative_to(ROOT).as_posix(), "sha256": hashlib.sha256(args.mot_router_state.read_bytes()).hexdigest(), "training": "router-only state from COCO8, 10 epochs, seed 0; visualization evidence only"}
     payload = {
         "status": "passed", "schema_version": SCHEMA_VERSION, "run_id": args.output.name,
         "input": identity, "runtime": {"device": args.device, "seed": args.seed, "imgsz": args.imgsz, "batch": 1, "dtype": "float32", "forward_ms": timings},

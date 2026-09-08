@@ -34,3 +34,5 @@ P2 在 P0 结构化日志之上增加空间坐标、原图身份和可视化产�
 降级原则是先交真实三族并显式返回 unsupported。不得用随机热图、特征激活或插值后的常数图冒充缺失族的 token 路由。
 
 `relative_contrast` 仅对单张专家图做 `(p-min)/(max-min)`，用途是观察窄区间内的空间结构。它不改变或替代绝对概率；同一记录同时提供 absolute probability 图和原始 min/mean/max/range，禁止把相对色差解释为专家概率的大幅变化。
+
+验证包中的 MOT 状态采用 `e3.mot_router_state.v1`，只保存路由器张量并在相同 seed 的配置骨干上回放。它适合验证 schema、坐标映射和 WebUI，不代表完整训练 checkpoint 的检测输出。

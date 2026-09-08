@@ -35,7 +35,7 @@ D:\AI\envs\yolo_master\python.exe -m e3_routing_p2.cli --output results\my-run -
 
 本仓库记录腾讯 checkout commit/dirty 状态、环境版本、配置路径与 SHA-256。三族使用同一图片、输入尺寸、seed、设备和单次 forward 口径。该结果验证工具功能，不声称精度提升或下降，因此不把单 seed 可视化解释成统计结论。预定义判读线、许可、安全边界和 PR 四节模板见 [验收说明](docs/ACCEPTANCE.md)。
 
-MOT 图使用仓库内 COCO8 训练 10 epochs 的 seed-0 演示 checkpoint，以便呈现训练后空间分化；训练入口为 `scripts/train_mot_demo.py`。它只服务可视化，不作为精度提升证据。
+MOT 图使用 COCO8 训练 10 epochs 后提取的 seed-0 路由器状态，并回放到同 seed、同配置初始化的检测骨干上。训练入口为 `scripts/train_mot_demo.py`，仓库只保留 25 KB 的路由器张量，不分发完整检测 checkpoint。这个“router-only replay”只服务空间接口和可视化，不作为精度提升证据。
 
 ## 下游接口
 

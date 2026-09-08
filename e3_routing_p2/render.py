@@ -100,15 +100,16 @@ def write_viewer(records: list[dict], out_dir: Path) -> None:
     (out_dir / "viewer.html").write_text(html, encoding="utf-8")
 
 
-def make_demo(comparison: Path, records: list[dict], out: Path, fps: int = 10, seconds: int = 120) -> None:
+def make_demo(comparison: Path, records: list[dict], out: Path, fps: int = 1, seconds: int = 120) -> None:
+    width, height, header, content_height = 640, 360, 55, 270
     by_family = {record["family"]: record for record in records}
     def canvas(path: Path) -> np.ndarray:
         source = cv2.imread(str(path))
         if source is None: raise FileNotFoundError(path)
-        scale = min(1280 / source.shape[1], 545 / source.shape[0])
+        scale = min(width / source.shape[1], content_height / source.shape[0])
         resized = cv2.resize(source, (int(source.shape[1] * scale), int(source.shape[0] * scale)))
-        result = np.full((720, 1280, 3), (18, 13, 7), dtype=np.uint8)
-        x, y = (1280 - resized.shape[1]) // 2, 105 + (545 - resized.shape[0]) // 2
+        result = np.full((height, width, 3), (18, 13, 7), dtype=np.uint8)
+        x, y = (width - resized.shape[1]) // 2, header + (content_height - resized.shape[0]) // 2
         result[y:y+resized.shape[0], x:x+resized.shape[1]] = resized
         return result
     artifact_root = comparison.parent / "artifacts"
@@ -118,7 +119,7 @@ def make_demo(comparison: Path, records: list[dict], out: Path, fps: int = 10, s
         "mot": canvas(artifact_root / by_family["mot"]["artifacts"]["relative_contrast"]),
         "latent": canvas(artifact_root / by_family["latent"]["artifacts"]["primary"]),
     }
-    writer = cv2.VideoWriter(str(out), cv2.VideoWriter_fourcc(*"mp4v"), fps, (1280, 720))
+    writer = cv2.VideoWriter(str(out), cv2.VideoWriter_fourcc(*"mp4v"), fps, (width, height))
     segments = [
         (0, 15, "overview", "E3 P2 ROUTING-TO-IMAGE VIEWER", "One real COCO8 forward · external hooks · no core forward edits"),
         (15, 38, "moe", "MOE", "Image-level Top-K routing · broadcast overlay is labelled, not token localization"),
@@ -131,10 +132,10 @@ def make_demo(comparison: Path, records: list[dict], out: Path, fps: int = 10, s
         t = frame_idx / fps
         slide, title, subtitle = next((key, a, b) for start, end, key, a, b in segments if start <= t < end)
         frame = slides[slide].copy()
-        cv2.rectangle(frame, (0, 0), (1280, 105), (5, 14, 28), -1)
-        cv2.rectangle(frame, (0, 650), (1280, 720), (5, 14, 28), -1)
-        cv2.putText(frame, title, (38, 45), cv2.FONT_HERSHEY_SIMPLEX, .92, (255, 255, 255), 2, cv2.LINE_AA)
-        cv2.putText(frame, subtitle, (38, 81), cv2.FONT_HERSHEY_SIMPLEX, .55, (165, 213, 255), 1, cv2.LINE_AA)
-        cv2.putText(frame, f"{int(t)//60:02d}:{int(t)%60:02d} / 02:00", (1045, 693), cv2.FONT_HERSHEY_SIMPLEX, .58, (255,255,255), 1, cv2.LINE_AA)
+        cv2.rectangle(frame, (0, 0), (width, header), (5, 14, 28), -1)
+        cv2.rectangle(frame, (0, header + content_height), (width, height), (5, 14, 28), -1)
+        cv2.putText(frame, title, (16, 24), cv2.FONT_HERSHEY_SIMPLEX, .48, (255, 255, 255), 1, cv2.LINE_AA)
+        cv2.putText(frame, subtitle, (16, 45), cv2.FONT_HERSHEY_SIMPLEX, .27, (165, 213, 255), 1, cv2.LINE_AA)
+        cv2.putText(frame, f"{int(t)//60:02d}:{int(t)%60:02d} / 02:00", (515, 347), cv2.FONT_HERSHEY_SIMPLEX, .32, (255,255,255), 1, cv2.LINE_AA)
         writer.write(frame)
     writer.release()

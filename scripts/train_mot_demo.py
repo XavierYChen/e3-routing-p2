@@ -25,5 +25,10 @@ model.train(
     save=True, plots=False, verbose=False, val=False, warmup_epochs=0.0,
 )
 run = ROOT / "checkpoints" / "mot-coco8-seed0"
+best = run / "weights" / "best.pt"
+trained = YOLO(str(best)).model
+router_state = {key: value.detach().cpu() for key, value in trained.state_dict().items() if ".router." in key}
+torch.save({"format": "e3.mot_router_state.v1", "state_dict": router_state}, run / "mot_router_state.pt")
 for generated in (run / "args.yaml", run / "weights" / "last.pt", run / "weights" / "last_healthy.pt"):
     generated.unlink(missing_ok=True)
+best.unlink(missing_ok=True)
