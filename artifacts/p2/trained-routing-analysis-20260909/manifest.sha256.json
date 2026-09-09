@@ -1,0 +1,91 @@
+{
+  "algorithm": "sha256",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "appearance-sensitivity.png",
+      "bytes": 155189,
+      "sha256": "6e4d89530c1b1ee9010b278316241a3b1328f9b2cf39c83b9e5dadd6c43c0e8f"
+    },
+    {
+      "path": "captures.json",
+      "bytes": 158456,
+      "sha256": "4e1eb4fa53663981d7749f0db7a6497b06deac939ec6f88b4c1edca4b6eebbdc"
+    },
+    {
+      "path": "comparisons.json",
+      "bytes": 50479,
+      "sha256": "f427d690247a1c242837f0a60bb2894b413af27d1841f22713877bc4dece7215"
+    },
+    {
+      "path": "config.resolved.yaml",
+      "bytes": 660,
+      "sha256": "de943da14d6142c010dbb2cfb0570d5e6d4ccc30b8bba656296f951c6857f56b"
+    },
+    {
+      "path": "expert-usage-bars.png",
+      "bytes": 138975,
+      "sha256": "a2ab0689a085c48546c0ee0211484634097238d37533faf70b71ab2961725715"
+    },
+    {
+      "path": "overlay-moa-model-13-m-0-router.png",
+      "bytes": 186253,
+      "sha256": "82587753fb0aeeed444e333ccf8df12a6295dec7f2f9ccf7e7f2a3938c7040e0"
+    },
+    {
+      "path": "overlay-moa-model-16-m-0-router.png",
+      "bytes": 169779,
+      "sha256": "2beb129d7ea8cf4867128aa234cf75f94dd7a047474548576502b19ac4c3603b"
+    },
+    {
+      "path": "overlay-moa-model-19-m-0-router.png",
+      "bytes": 162089,
+      "sha256": "93e8793ccfbd9d6b1671ce63334a153cf78380aade0171e2a1768fb7511e914c"
+    },
+    {
+      "path": "overlay-moa-model-22-m-0-router.png",
+      "bytes": 167544,
+      "sha256": "f955c9420a53e07343d1d0af69b551b39692aa19cc2ca9160df23c5fd3d48916"
+    },
+    {
+      "path": "overlay-mot-model-13-m-0-router.png",
+      "bytes": 172966,
+      "sha256": "8eb168209ed55cbaebcd3b233af01b17ccaaa70cbfc9a92d4a3e921fb16b9ed0"
+    },
+    {
+      "path": "overlay-mot-model-16-m-0-router.png",
+      "bytes": 189480,
+      "sha256": "3f3d953c8d4281ef8f4d6c88d1e8eb55f9b8be84ece2fb8a5347306d414b28c3"
+    },
+    {
+      "path": "overlay-mot-model-19-m-0-router.png",
+      "bytes": 163558,
+      "sha256": "1a433af16136d24e32dc8341ec1f398dd830cf3f082600d5912c75d2a7c87968"
+    },
+    {
+      "path": "overlay-mot-model-22-m-0-router.png",
+      "bytes": 174666,
+      "sha256": "b701be1261ec92eb376440db24c651691794931448ca33efb31ca1690b32c92d"
+    },
+    {
+      "path": "router-attribution.png",
+      "bytes": 192196,
+      "sha256": "6ba8f224122087ca680c4c8876262e70385f8d68d5d3c0544a0df2c26c9451ea"
+    },
+    {
+      "path": "sensitivity-scatter.png",
+      "bytes": 103950,
+      "sha256": "4949b97c2517323c615e8b235ab1046d566a2d67f3e75dad5ebeb4d8198db8b1"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 7342,
+      "sha256": "9dd9221673cd16818ae1768253170440c3b5fe6b3c57c7eba9fb84b3bc6dc6f0"
+    },
+    {
+      "path": "trained-routing-overlays.png",
+      "bytes": 469491,
+      "sha256": "7e80a5b409379028253f01ab4b2ba8bcb17e0d255ddaa3ac431f089f473f5588"
+    }
+  ]
+}

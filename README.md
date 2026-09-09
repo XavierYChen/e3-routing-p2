@@ -6,6 +6,31 @@
 
 ![MOT 与 MOA token 路由总览](artifacts/p2/p2-v2-five-family-final/routing-overview.png)
 
+## 训练后 P2 分析（2026-09-09）
+
+新版 P2 直接加载 P1 产生的 10-epoch 预训练迁移 checkpoint，在 4 张 COCO8 原图、320px 输入上采集 MOT/MOA 的全部 4 个空间路由层。五种外观扰动共得到 192 次真实 capture 和 160 组与 identity 对齐的比较。
+
+![训练后 MOT/MOA 路由层](artifacts/p2/trained-routing-analysis-20260909/trained-routing-overlays.png)
+
+这次 MOT 不再是 `active experts=1`：前三层的平均概率质量分别约为 `[27.3%,22.7%,50.0%]`、`[49.9%,27.5%,22.6%]`、`[48.4%,20.8%,30.8%]`，图上也能看到三种真实 argmax 颜色；末层仍有一个专家未被 Top-K 选中。MOA 四层的平均概率仍接近三等分，但其空间 argmax 已形成不同区域。颜色只代表每个 token 概率最大的专家编号，并不是聚类类别或物体语义。
+
+![外观敏感性](artifacts/p2/trained-routing-analysis-20260909/appearance-sensitivity.png)
+
+| 族 | 最低主导专家一致率 | 最大概率 MAE | 观察 |
+|---|---:|---:|---|
+| **MOT** | 95.33%（blur 0.75） | 0.02098 | 连续概率变化更明显，但大多数 token 不换专家 |
+| **MOA** | 96.34%（brightness 1.1） | 0.000667 | 概率变化小；近并列 token 仍可能换 argmax |
+
+![路由层归因](artifacts/p2/trained-routing-analysis-20260909/router-attribution.png)
+
+MOT 的 `model.22` 占各扰动层均值 MAE 总和的 41.4%～48.4%；MOA 的 `model.16` 占 31.3%～33.2%。这是“哪一层变化贡献更大”的描述性分解，不是因果归因。
+
+![敏感性散点图](artifacts/p2/trained-routing-analysis-20260909/sensitivity-scatter.png)
+
+![专家使用柱图](artifacts/p2/trained-routing-analysis-20260909/expert-usage-bars.png)
+
+本轮训练 checkpoint 只有 seed 0，因此这些图用于完成工具链和提出下一轮消融假设，不能宣称多 seed 鲁棒性。权重不上传；仓库公开 checkpoint SHA-256、逐项比较、逐 capture 统计、配置和 manifest。
+
 ## 新增稳健性与训练后证据
 
 ![CPU 路由稳定性](artifacts/p2/p2r-20260909-cpu-resolution-flip-v2/robustness-overview.png)
@@ -63,7 +88,7 @@ MOT 的 Top-K=2 会把三个专家中未选中的一个概率精确置零，所�
 1. 保持 `D:\AI\YOLO-Master`、`D:\AI\datasets\coco8` 与 `D:\AI\envs\yolo_master` 可用。
 2. 双击 `run_p2_v2.cmd`。
 3. 运行结束后双击 `run_demo.cmd`。
-4. 双击 `run_robustness.cmd` 复现 3-seed 稳定性图；已有本地训练权重时，双击 `run_supplemental.cmd` 重建 MOT/MOA 补充图。
+4. 双击 `run_robustness.cmd` 复现 3-seed 稳定性图；已有本地训练权重时，双击 `run_trained_analysis.cmd` 重建训练后外观敏感性、归因、散点图、柱图和路由叠加。
 
 等价命令：
 

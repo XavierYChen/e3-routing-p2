@@ -106,3 +106,29 @@ MOT 的前三层在随机初始化下通常为 `[0.5,0.5,0]`，末层可出现 o
 | 逐捕获元数据、逐项稳定性比较 | 摘要与哈希 | ✅ |
 | 原始 routing weights/logits/indices | ❌ | ✅ |
 | 训练 checkpoint | ❌，仅公布 SHA-256 | ✅ |
+
+## 10. 训练后外观敏感性与路由归因
+
+P1 新训练的 MOT/MOA checkpoint 使用相同 `yolo26n.pt` 起点、COCO8、640px、10 epochs、batch=1、seed 0。P2 分析固定 320px，对 identity 加上亮度 0.9/1.1、对比度 0.9/1.1 和 Gaussian blur 0.75，覆盖 4 图、2 族、每族 4 层。
+
+| 证据 | 数量 |
+|---|---:|
+| 空间 capture | 192 |
+| identity 对齐比较 | 160 |
+| checkpoint seed | 1 |
+| MOT checkpoint SHA-256 | `223a9006…7c375` |
+| MOA checkpoint SHA-256 | `4624536b…d081` |
+
+| 扰动 | MOT 一致率 | MOT 概率 MAE | MOA 一致率 | MOA 概率 MAE |
+|---|---:|---:|---:|---:|
+| brightness 0.9 | 96.34% | 0.01551 | 97.41% | 0.000490 |
+| brightness 1.1 | 96.12% | 0.02008 | 96.34% | 0.000667 |
+| contrast 0.9 | 96.84% | 0.01400 | 97.41% | 0.000525 |
+| contrast 1.1 | 97.18% | 0.01310 | 97.24% | 0.000539 |
+| blur 0.75 | 95.33% | 0.02098 | 96.43% | 0.000657 |
+
+专家使用柱图表明 MOT 前三层三个专家都获得非零概率质量，解决了旧 checkpoint 多层 `active experts=1` 的展示问题；末层仍因 Top-K 路由令 E2 为 0。MOA 四层平均概率接近三等分，这说明其彩色空间边界的置信间隔可能仍较小，不能把颜色直接解释成语义聚类。
+
+层归因按同一扰动下四个模块的平均 probability MAE 归一化。MOT 的 `model.22` 始终贡献最大（41.4%～48.4%）；MOA 的 `model.16` 最大（31.3%～33.2%）。该统计描述路由概率变化落在哪一层，不证明该层造成检测结果变化。
+
+散点图同时展示连续概率 MAE 与离散 expert switch。MOT 的概率移动更大；MOA 大量点靠近 MAE=0，但仍存在换色，符合“近并列 argmax 对微小变化敏感”的机制。所有数字来自 [`trained-routing-analysis-20260909`](../artifacts/p2/trained-routing-analysis-20260909/summary.json)，当前只有一个 checkpoint seed，正式稳健性/专门化结论需在后续消融补齐至少 3 seed。

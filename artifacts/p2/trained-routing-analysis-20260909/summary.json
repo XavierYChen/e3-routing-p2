@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "scope": "trained single-checkpoint appearance sensitivity and spatial routing audit",
+  "resolution": 320,
+  "sample_count": 4,
+  "checkpoint_seed_count": 1,
+  "single_seed_limitation": true,
+  "transformations": [
+    "brightness_090",
+    "brightness_110",
+    "contrast_090",
+    "contrast_110",
+    "gaussian_blur_075"
+  ],
+  "capture_count": 192,
+  "comparison_count": 160,
+  "modules": {
+    "mot": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "moa": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ]
+  },
+  "appearance": {
+    "mot": {
+      "brightness_090": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.015508022195038695,
+        "dominant_expert_agreement_mean": 0.9634375,
+        "dominant_switch_fraction_mean": 0.0365625
+      },
+      "brightness_110": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.02007839355423736,
+        "dominant_expert_agreement_mean": 0.9612499999999999,
+        "dominant_switch_fraction_mean": 0.03875000000000001
+      },
+      "contrast_090": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.013997587088185052,
+        "dominant_expert_agreement_mean": 0.9683593749999999,
+        "dominant_switch_fraction_mean": 0.031640625
+      },
+      "contrast_110": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.013099159858732794,
+        "dominant_expert_agreement_mean": 0.9717578124999999,
+        "dominant_switch_fraction_mean": 0.028242187499999998
+      },
+      "gaussian_blur_075": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.020976809622176615,
+        "dominant_expert_agreement_mean": 0.9533203125,
+        "dominant_switch_fraction_mean": 0.0466796875
+      }
+    },
+    "moa": {
+      "brightness_090": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.0004900914989411831,
+        "dominant_expert_agreement_mean": 0.9740625,
+        "dominant_switch_fraction_mean": 0.025937500000000002
+      },
+      "brightness_110": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.0006674430410688122,
+        "dominant_expert_agreement_mean": 0.9633984375,
+        "dominant_switch_fraction_mean": 0.036601562500000004
+      },
+      "contrast_090": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.0005248110066168011,
+        "dominant_expert_agreement_mean": 0.9740625,
+        "dominant_switch_fraction_mean": 0.0259375
+      },
+      "contrast_110": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.0005386813353591908,
+        "dominant_expert_agreement_mean": 0.9723828125,
+        "dominant_switch_fraction_mean": 0.027617187500000005
+      },
+      "gaussian_blur_075": {
+        "comparison_count": 16,
+        "probability_mae_mean": 0.0006574439719164123,
+        "dominant_expert_agreement_mean": 0.964296875,
+        "dominant_switch_fraction_mean": 0.035703125
+      }
+    }
+  },
+  "attribution": {
+    "mot": {
+      "brightness_090": {
+        "model.13.m.0.router": 0.1410633711974895,
+        "model.16.m.0.router": 0.17715969239948332,
+        "model.19.m.0.router": 0.1981562718414695,
+        "model.22.m.0.router": 0.48362066456155767
+      },
+      "brightness_110": {
+        "model.13.m.0.router": 0.1374895005442935,
+        "model.16.m.0.router": 0.20622289452474402,
+        "model.19.m.0.router": 0.220495768479316,
+        "model.22.m.0.router": 0.4357918364516465
+      },
+      "contrast_090": {
+        "model.13.m.0.router": 0.21581848298955725,
+        "model.16.m.0.router": 0.17767203997895817,
+        "model.19.m.0.router": 0.18977098513404347,
+        "model.22.m.0.router": 0.41673849189744117
+      },
+      "contrast_110": {
+        "model.13.m.0.router": 0.15507535340718262,
+        "model.16.m.0.router": 0.20476826608627377,
+        "model.19.m.0.router": 0.22664385565132958,
+        "model.22.m.0.router": 0.41351252485521406
+      },
+      "gaussian_blur_075": {
+        "model.13.m.0.router": 0.1688435981819049,
+        "model.16.m.0.router": 0.16325072962110612,
+        "model.19.m.0.router": 0.21105196060102416,
+        "model.22.m.0.router": 0.4568537115959648
+      }
+    },
+    "moa": {
+      "brightness_090": {
+        "model.13.m.0.router": 0.15444959667389124,
+        "model.16.m.0.router": 0.3316325110555538,
+        "model.19.m.0.router": 0.23577253879314333,
+        "model.22.m.0.router": 0.27814535347741154
+      },
+      "brightness_110": {
+        "model.13.m.0.router": 0.15359406598519587,
+        "model.16.m.0.router": 0.31997241701076895,
+        "model.19.m.0.router": 0.22102093734837464,
+        "model.22.m.0.router": 0.30541257965566054
+      },
+      "contrast_090": {
+        "model.13.m.0.router": 0.15877285373427133,
+        "model.16.m.0.router": 0.31335869610937106,
+        "model.19.m.0.router": 0.22689740509937187,
+        "model.22.m.0.router": 0.30097104505698563
+      },
+      "contrast_110": {
+        "model.13.m.0.router": 0.15500354076996428,
+        "model.16.m.0.router": 0.31541267044166255,
+        "model.19.m.0.router": 0.22506950513225266,
+        "model.22.m.0.router": 0.30451428365612054
+      },
+      "gaussian_blur_075": {
+        "model.13.m.0.router": 0.15643125353689633,
+        "model.16.m.0.router": 0.31300336420552033,
+        "model.19.m.0.router": 0.24092673690592223,
+        "model.22.m.0.router": 0.28963864535166106
+      }
+    }
+  },
+  "identity_usage": {
+    "mot": {
+      "model.13.m.0.router": [
+        0.27250566706061363,
+        0.2274995632469654,
+        0.49999476224184036
+      ],
+      "model.16.m.0.router": [
+        0.4991414025425911,
+        0.27523402869701385,
+        0.22562456130981445
+      ],
+      "model.19.m.0.router": [
+        0.4840575382113457,
+        0.20750504732131958,
+        0.30843739956617355
+      ],
+      "model.22.m.0.router": [
+        0.29249999672174454,
+        0.7075000107288361,
+        0.0
+      ]
+    },
+    "moa": {
+      "model.13.m.0.router": [
+        0.332289420068264,
+        0.3422536179423332,
+        0.32545698434114456
+      ],
+      "model.16.m.0.router": [
+        0.3424001857638359,
+        0.3264199197292328,
+        0.3311798870563507
+      ],
+      "model.19.m.0.router": [
+        0.3353077471256256,
+        0.32888785749673843,
+        0.33580438047647476
+      ],
+      "model.22.m.0.router": [
+        0.33545539528131485,
+        0.337551549077034,
+        0.32699310779571533
+      ]
+    }
+  },
+  "checkpoints": {
+    "mot": {
+      "sha256": "223a90067d2fc830eeb03e73bf359e4a9881029e5a8ffd487b60e39ec4e7c375",
+      "published": false
+    },
+    "moa": {
+      "sha256": "4624536b0d1f217ecfc46091385cedc738efd35a787e3f972562d0dc91c7d081",
+      "published": false
+    }
+  },
+  "interpretation_boundary": "Attribution is descriptive share of probability change. Dominant colors are argmax categories, not learned semantic classes. COCO8 and one seed cannot establish robustness or specialization."
+}

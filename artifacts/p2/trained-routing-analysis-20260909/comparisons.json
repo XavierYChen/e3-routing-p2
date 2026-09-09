@@ -1,0 +1,1602 @@
+[
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.009166961486140887,
+    "total_variation_distance_mean": 0.01375044222921133,
+    "dominant_expert_agreement": 0.965,
+    "dominant_switch_fraction": 0.035
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.006666671577841043,
+    "total_variation_distance_mean": 0.010000007366761566,
+    "dominant_expert_agreement": 0.996875,
+    "dominant_switch_fraction": 0.003125
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.007500351717074712,
+    "total_variation_distance_mean": 0.011250527575612068,
+    "dominant_expert_agreement": 0.9475,
+    "dominant_switch_fraction": 0.0525
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02,
+    "total_variation_distance_mean": 0.03,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.010833613499999046,
+    "total_variation_distance_mean": 0.01625042024999857,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.009583335711310308,
+    "total_variation_distance_mean": 0.014375003566965461,
+    "dominant_expert_agreement": 0.99625,
+    "dominant_switch_fraction": 0.00375
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.010000356013576189,
+    "total_variation_distance_mean": 0.015000534020364284,
+    "dominant_expert_agreement": 0.95,
+    "dominant_switch_fraction": 0.05
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02,
+    "total_variation_distance_mean": 0.03,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.008333561519781749,
+    "total_variation_distance_mean": 0.012500342279672623,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.005208337816099326,
+    "total_variation_distance_mean": 0.00781250672414899,
+    "dominant_expert_agreement": 0.998125,
+    "dominant_switch_fraction": 0.001875
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.009166912163297335,
+    "total_variation_distance_mean": 0.013750368244946003,
+    "dominant_expert_agreement": 0.9575,
+    "dominant_switch_fraction": 0.0425
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.03333333333333333,
+    "total_variation_distance_mean": 0.05,
+    "dominant_expert_agreement": 0.95,
+    "dominant_switch_fraction": 0.05
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0058335484812657035,
+    "total_variation_distance_mean": 0.008750322721898556,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0041666727388898536,
+    "total_variation_distance_mean": 0.0062500091083347795,
+    "dominant_expert_agreement": 0.998125,
+    "dominant_switch_fraction": 0.001875
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0041669112940629326,
+    "total_variation_distance_mean": 0.006250366941094399,
+    "dominant_expert_agreement": 0.9625,
+    "dominant_switch_fraction": 0.0375
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.006666666666666667,
+    "total_variation_distance_mean": 0.01,
+    "dominant_expert_agreement": 0.99,
+    "dominant_switch_fraction": 0.01
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.011666920185089111,
+    "total_variation_distance_mean": 0.017500380277633665,
+    "dominant_expert_agreement": 0.955,
+    "dominant_switch_fraction": 0.045
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.011041665598750115,
+    "total_variation_distance_mean": 0.01656249839812517,
+    "dominant_expert_agreement": 0.996875,
+    "dominant_switch_fraction": 0.003125
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.01166703961789608,
+    "total_variation_distance_mean": 0.01750055942684412,
+    "dominant_expert_agreement": 0.945,
+    "dominant_switch_fraction": 0.055
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02666666666666667,
+    "total_variation_distance_mean": 0.04,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.005000421504179637,
+    "total_variation_distance_mean": 0.007500632256269455,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.007291674173126618,
+    "total_variation_distance_mean": 0.010937511259689926,
+    "dominant_expert_agreement": 0.995,
+    "dominant_switch_fraction": 0.005
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.01083365631600221,
+    "total_variation_distance_mean": 0.016250484474003315,
+    "dominant_expert_agreement": 0.945,
+    "dominant_switch_fraction": 0.055
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02666666666666667,
+    "total_variation_distance_mean": 0.04,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.011667384256919225,
+    "total_variation_distance_mean": 0.017501076385378837,
+    "dominant_expert_agreement": 0.965,
+    "dominant_switch_fraction": 0.035
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.013541671776523193,
+    "total_variation_distance_mean": 0.02031250766478479,
+    "dominant_expert_agreement": 0.990625,
+    "dominant_switch_fraction": 0.009375
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.01833376832306385,
+    "total_variation_distance_mean": 0.027500652484595777,
+    "dominant_expert_agreement": 0.95,
+    "dominant_switch_fraction": 0.05
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.013333333333333334,
+    "total_variation_distance_mean": 0.02,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.010833760847647984,
+    "total_variation_distance_mean": 0.016250641271471977,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.009166671211520832,
+    "total_variation_distance_mean": 0.013750006817281247,
+    "dominant_expert_agreement": 0.993125,
+    "dominant_switch_fraction": 0.006875
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.010833601703246435,
+    "total_variation_distance_mean": 0.01625040255486965,
+    "dominant_expert_agreement": 0.9475,
+    "dominant_switch_fraction": 0.0525
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.006666666666666667,
+    "total_variation_distance_mean": 0.01,
+    "dominant_expert_agreement": 0.99,
+    "dominant_switch_fraction": 0.01
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0066671553750832875,
+    "total_variation_distance_mean": 0.01000073306262493,
+    "dominant_expert_agreement": 0.9825,
+    "dominant_switch_fraction": 0.0175
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.009583338884015878,
+    "total_variation_distance_mean": 0.014375008326023817,
+    "dominant_expert_agreement": 0.99375,
+    "dominant_switch_fraction": 0.00625
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.013333745623628298,
+    "total_variation_distance_mean": 0.020000618435442447,
+    "dominant_expert_agreement": 0.9525,
+    "dominant_switch_fraction": 0.0475
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02666666666666667,
+    "total_variation_distance_mean": 0.04,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.005000483493010203,
+    "total_variation_distance_mean": 0.007500725239515305,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.010000004308919112,
+    "total_variation_distance_mean": 0.015000006463378669,
+    "dominant_expert_agreement": 0.99375,
+    "dominant_switch_fraction": 0.00625
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.011666915789246559,
+    "total_variation_distance_mean": 0.01750037368386984,
+    "dominant_expert_agreement": 0.9475,
+    "dominant_switch_fraction": 0.0525
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.013333333333333334,
+    "total_variation_distance_mean": 0.02,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.008334002097447713,
+    "total_variation_distance_mean": 0.01250100314617157,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.014791662339121103,
+    "total_variation_distance_mean": 0.022187493508681655,
+    "dominant_expert_agreement": 0.999375,
+    "dominant_switch_fraction": 0.000625
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.02083381230632464,
+    "total_variation_distance_mean": 0.03125071845948696,
+    "dominant_expert_agreement": 0.935,
+    "dominant_switch_fraction": 0.065
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.04666666666666667,
+    "total_variation_distance_mean": 0.07,
+    "dominant_expert_agreement": 0.93,
+    "dominant_switch_fraction": 0.07
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.011667719259858132,
+    "total_variation_distance_mean": 0.017501578889787196,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.03104164730757475,
+    "total_variation_distance_mean": 0.046562470961362123,
+    "dominant_expert_agreement": 0.99875,
+    "dominant_switch_fraction": 0.00125
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.03333414942026138,
+    "total_variation_distance_mean": 0.050001224130392076,
+    "dominant_expert_agreement": 0.905,
+    "dominant_switch_fraction": 0.095
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.06666666666666667,
+    "total_variation_distance_mean": 0.1,
+    "dominant_expert_agreement": 0.9,
+    "dominant_switch_fraction": 0.1
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.01000064231455326,
+    "total_variation_distance_mean": 0.015000963471829892,
+    "dominant_expert_agreement": 0.975,
+    "dominant_switch_fraction": 0.025
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.016041660973181326,
+    "total_variation_distance_mean": 0.02406249145977199,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.013333907872438431,
+    "total_variation_distance_mean": 0.020000861808657646,
+    "dominant_expert_agreement": 0.945,
+    "dominant_switch_fraction": 0.055
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.05333333333333334,
+    "total_variation_distance_mean": 0.08,
+    "dominant_expert_agreement": 0.92,
+    "dominant_switch_fraction": 0.08
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.008334081098437309,
+    "total_variation_distance_mean": 0.012501121647655964,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.018124995368222395,
+    "total_variation_distance_mean": 0.027187493052333592,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.021667232116063435,
+    "total_variation_distance_mean": 0.032500848174095154,
+    "dominant_expert_agreement": 0.915,
+    "dominant_switch_fraction": 0.085
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02666666666666667,
+    "total_variation_distance_mean": 0.04,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.018334338938196502,
+    "total_variation_distance_mean": 0.02750150840729475,
+    "dominant_expert_agreement": 0.94,
+    "dominant_switch_fraction": 0.06
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.017708329626669485,
+    "total_variation_distance_mean": 0.02656249444000423,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.035000829721490545,
+    "total_variation_distance_mean": 0.05250124458223581,
+    "dominant_expert_agreement": 0.895,
+    "dominant_switch_fraction": 0.105
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.07333333333333333,
+    "total_variation_distance_mean": 0.11,
+    "dominant_expert_agreement": 0.89,
+    "dominant_switch_fraction": 0.11
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.012500437175234158,
+    "total_variation_distance_mean": 0.01875065576285124,
+    "dominant_expert_agreement": 0.9475,
+    "dominant_switch_fraction": 0.0525
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.015208334978669882,
+    "total_variation_distance_mean": 0.022812502468004824,
+    "dominant_expert_agreement": 0.99875,
+    "dominant_switch_fraction": 0.00125
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.010000369449456533,
+    "total_variation_distance_mean": 0.0150005541741848,
+    "dominant_expert_agreement": 0.92,
+    "dominant_switch_fraction": 0.08
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02666666666666667,
+    "total_variation_distance_mean": 0.04,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.010000375807285309,
+    "total_variation_distance_mean": 0.015000563710927964,
+    "dominant_expert_agreement": 0.955,
+    "dominant_switch_fraction": 0.045
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.012083336183180412,
+    "total_variation_distance_mean": 0.018125004274770616,
+    "dominant_expert_agreement": 0.996875,
+    "dominant_switch_fraction": 0.003125
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.009166939308245976,
+    "total_variation_distance_mean": 0.013750408962368964,
+    "dominant_expert_agreement": 0.9425,
+    "dominant_switch_fraction": 0.0575
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.04,
+    "total_variation_distance_mean": 0.06,
+    "dominant_expert_agreement": 0.94,
+    "dominant_switch_fraction": 0.06
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.01916704349219799,
+    "total_variation_distance_mean": 0.028750565238296985,
+    "dominant_expert_agreement": 0.9525,
+    "dominant_switch_fraction": 0.0475
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.009375007643053929,
+    "total_variation_distance_mean": 0.014062511464580894,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.009166952520608902,
+    "total_variation_distance_mean": 0.013750428780913353,
+    "dominant_expert_agreement": 0.92,
+    "dominant_switch_fraction": 0.08
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0,
+    "total_variation_distance_mean": 0.0,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.011666924556096395,
+    "total_variation_distance_mean": 0.017500386834144593,
+    "dominant_expert_agreement": 0.9725,
+    "dominant_switch_fraction": 0.0275
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.011041669032226005,
+    "total_variation_distance_mean": 0.01656250354833901,
+    "dominant_expert_agreement": 0.99875,
+    "dominant_switch_fraction": 0.00125
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.008333616505066553,
+    "total_variation_distance_mean": 0.012500424757599831,
+    "dominant_expert_agreement": 0.9575,
+    "dominant_switch_fraction": 0.0425
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.02666666666666667,
+    "total_variation_distance_mean": 0.04,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.021667057623465855,
+    "total_variation_distance_mean": 0.032500586435198785,
+    "dominant_expert_agreement": 0.935,
+    "dominant_switch_fraction": 0.065
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.016041672080755232,
+    "total_variation_distance_mean": 0.02406250812113285,
+    "dominant_expert_agreement": 0.995,
+    "dominant_switch_fraction": 0.005
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.012500363638003668,
+    "total_variation_distance_mean": 0.0187505454570055,
+    "dominant_expert_agreement": 0.91,
+    "dominant_switch_fraction": 0.09
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.04,
+    "total_variation_distance_mean": 0.06,
+    "dominant_expert_agreement": 0.94,
+    "dominant_switch_fraction": 0.06
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.00025637070337931314,
+    "total_variation_distance_mean": 0.0003845560550689697,
+    "dominant_expert_agreement": 0.985,
+    "dominant_switch_fraction": 0.015
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0004922534214953582,
+    "total_variation_distance_mean": 0.0007383801322430372,
+    "dominant_expert_agreement": 0.968125,
+    "dominant_switch_fraction": 0.031875
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0003498239070177078,
+    "total_variation_distance_mean": 0.0005247358605265617,
+    "dominant_expert_agreement": 0.9675,
+    "dominant_switch_fraction": 0.0325
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0003937595089276632,
+    "total_variation_distance_mean": 0.0005906392633914947,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.000267006978392601,
+    "total_variation_distance_mean": 0.00040051046758890154,
+    "dominant_expert_agreement": 0.9925,
+    "dominant_switch_fraction": 0.0075
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.000560380866130193,
+    "total_variation_distance_mean": 0.0008405712991952897,
+    "dominant_expert_agreement": 0.96625,
+    "dominant_switch_fraction": 0.03375
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.000386518860856692,
+    "total_variation_distance_mean": 0.000579778291285038,
+    "dominant_expert_agreement": 0.945,
+    "dominant_switch_fraction": 0.055
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0004343534509340922,
+    "total_variation_distance_mean": 0.0006515301764011383,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.00017074835797150929,
+    "total_variation_distance_mean": 0.00025612253695726393,
+    "dominant_expert_agreement": 0.9975,
+    "dominant_switch_fraction": 0.0025
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.00043335641423861187,
+    "total_variation_distance_mean": 0.0006500346213579178,
+    "dominant_expert_agreement": 0.9825,
+    "dominant_switch_fraction": 0.0175
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0002763962745666504,
+    "total_variation_distance_mean": 0.0004145944118499756,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.00036419222752253217,
+    "total_variation_distance_mean": 0.0005462883412837982,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0001809907207886378,
+    "total_variation_distance_mean": 0.0002714860811829567,
+    "dominant_expert_agreement": 0.9875,
+    "dominant_switch_fraction": 0.0125
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0004185654285053412,
+    "total_variation_distance_mean": 0.0006278481427580119,
+    "dominant_expert_agreement": 0.975,
+    "dominant_switch_fraction": 0.025
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.00027245754996935525,
+    "total_variation_distance_mean": 0.0004086863249540329,
+    "dominant_expert_agreement": 0.9675,
+    "dominant_switch_fraction": 0.0325
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0003807800014813741,
+    "total_variation_distance_mean": 0.0005711700022220612,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0002835864077011744,
+    "total_variation_distance_mean": 0.00042537961155176163,
+    "dominant_expert_agreement": 0.9925,
+    "dominant_switch_fraction": 0.0075
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0006594076690574487,
+    "total_variation_distance_mean": 0.000989111503586173,
+    "dominant_expert_agreement": 0.964375,
+    "dominant_switch_fraction": 0.035625
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.00044865320126215617,
+    "total_variation_distance_mean": 0.0006729798018932343,
+    "dominant_expert_agreement": 0.945,
+    "dominant_switch_fraction": 0.055
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.000524526039759318,
+    "total_variation_distance_mean": 0.000786789059638977,
+    "dominant_expert_agreement": 1.0,
+    "dominant_switch_fraction": 0.0
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0002633751432100932,
+    "total_variation_distance_mean": 0.00039506271481513976,
+    "dominant_expert_agreement": 0.995,
+    "dominant_switch_fraction": 0.005
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0006016173896690209,
+    "total_variation_distance_mean": 0.0009024260845035315,
+    "dominant_expert_agreement": 0.986875,
+    "dominant_switch_fraction": 0.013125
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0004196857909361521,
+    "total_variation_distance_mean": 0.0006295286864042282,
+    "dominant_expert_agreement": 0.9575,
+    "dominant_switch_fraction": 0.0425
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0005057081580162048,
+    "total_variation_distance_mean": 0.0007585622370243073,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0004159692674875259,
+    "total_variation_distance_mean": 0.0006239539012312889,
+    "dominant_expert_agreement": 0.985,
+    "dominant_switch_fraction": 0.015
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0008572640642523766,
+    "total_variation_distance_mean": 0.0012858960963785648,
+    "dominant_expert_agreement": 0.971875,
+    "dominant_switch_fraction": 0.028125
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0006281980872154236,
+    "total_variation_distance_mean": 0.0009422971308231353,
+    "dominant_expert_agreement": 0.925,
+    "dominant_switch_fraction": 0.075
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.001004434327284495,
+    "total_variation_distance_mean": 0.0015066514909267425,
+    "dominant_expert_agreement": 0.95,
+    "dominant_switch_fraction": 0.05
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.00024910149474938713,
+    "total_variation_distance_mean": 0.00037365224212408064,
+    "dominant_expert_agreement": 0.995,
+    "dominant_switch_fraction": 0.005
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0005917361689110597,
+    "total_variation_distance_mean": 0.0008876042533665896,
+    "dominant_expert_agreement": 0.981875,
+    "dominant_switch_fraction": 0.018125
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.00043641331295172375,
+    "total_variation_distance_mean": 0.0006546199694275856,
+    "dominant_expert_agreement": 0.9575,
+    "dominant_switch_fraction": 0.0425
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0005964697400728862,
+    "total_variation_distance_mean": 0.0008947046101093292,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.00032809863487879437,
+    "total_variation_distance_mean": 0.0004921479523181915,
+    "dominant_expert_agreement": 0.9925,
+    "dominant_switch_fraction": 0.0075
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.000693647488951683,
+    "total_variation_distance_mean": 0.0010404712334275245,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0004987096786499023,
+    "total_variation_distance_mean": 0.0007480645179748535,
+    "dominant_expert_agreement": 0.9625,
+    "dominant_switch_fraction": 0.0375
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0007238295674324035,
+    "total_variation_distance_mean": 0.0010857443511486055,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.00023883260786533355,
+    "total_variation_distance_mean": 0.00035824891179800036,
+    "dominant_expert_agreement": 0.995,
+    "dominant_switch_fraction": 0.005
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0006262376345694065,
+    "total_variation_distance_mean": 0.0009393564518541098,
+    "dominant_expert_agreement": 0.97625,
+    "dominant_switch_fraction": 0.02375
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0003791825224955877,
+    "total_variation_distance_mean": 0.0005687737837433815,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0005896897117296855,
+    "total_variation_distance_mean": 0.0008845345675945282,
+    "dominant_expert_agreement": 0.95,
+    "dominant_switch_fraction": 0.05
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0003293387840191523,
+    "total_variation_distance_mean": 0.0004940081760287285,
+    "dominant_expert_agreement": 0.9925,
+    "dominant_switch_fraction": 0.0075
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0007823541884620984,
+    "total_variation_distance_mean": 0.0011735312826931478,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0005338279157876968,
+    "total_variation_distance_mean": 0.0008007418736815453,
+    "dominant_expert_agreement": 0.94,
+    "dominant_switch_fraction": 0.06
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0005903746684392294,
+    "total_variation_distance_mean": 0.000885562002658844,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.000551340455810229,
+    "total_variation_distance_mean": 0.0008270106837153434,
+    "dominant_expert_agreement": 0.985,
+    "dominant_switch_fraction": 0.015
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0012625323546429474,
+    "total_variation_distance_mean": 0.0018937985319644212,
+    "dominant_expert_agreement": 0.955625,
+    "dominant_switch_fraction": 0.044375
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0008389108379681905,
+    "total_variation_distance_mean": 0.0012583662569522857,
+    "dominant_expert_agreement": 0.9,
+    "dominant_switch_fraction": 0.1
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0011067108313242595,
+    "total_variation_distance_mean": 0.0016600662469863892,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.00042438695828119914,
+    "total_variation_distance_mean": 0.0006365804374217987,
+    "dominant_expert_agreement": 0.99,
+    "dominant_switch_fraction": 0.01
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0009683508798480034,
+    "total_variation_distance_mean": 0.001452526319772005,
+    "dominant_expert_agreement": 0.9625,
+    "dominant_switch_fraction": 0.0375
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0005902233223120372,
+    "total_variation_distance_mean": 0.0008853349834680557,
+    "dominant_expert_agreement": 0.945,
+    "dominant_switch_fraction": 0.055
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0007459529240926107,
+    "total_variation_distance_mean": 0.001118929386138916,
+    "dominant_expert_agreement": 0.94,
+    "dominant_switch_fraction": 0.06
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0004242784281571706,
+    "total_variation_distance_mean": 0.0006364176422357559,
+    "dominant_expert_agreement": 0.9975,
+    "dominant_switch_fraction": 0.0025
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.001036873006572326,
+    "total_variation_distance_mean": 0.0015553095098584891,
+    "dominant_expert_agreement": 0.9575,
+    "dominant_switch_fraction": 0.0425
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0006797732412815094,
+    "total_variation_distance_mean": 0.001019659861922264,
+    "dominant_expert_agreement": 0.885,
+    "dominant_switch_fraction": 0.115
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0008172022302945455,
+    "total_variation_distance_mean": 0.0012258033454418183,
+    "dominant_expert_agreement": 0.99,
+    "dominant_switch_fraction": 0.01
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0006016844511032105,
+    "total_variation_distance_mean": 0.0009025266766548157,
+    "dominant_expert_agreement": 0.9875,
+    "dominant_switch_fraction": 0.0125
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.001084484588354826,
+    "total_variation_distance_mean": 0.001626726882532239,
+    "dominant_expert_agreement": 0.941875,
+    "dominant_switch_fraction": 0.058125
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0008171836783488592,
+    "total_variation_distance_mean": 0.0012257755175232887,
+    "dominant_expert_agreement": 0.9075,
+    "dominant_switch_fraction": 0.0925
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0009423742691675822,
+    "total_variation_distance_mean": 0.0014135614037513733,
+    "dominant_expert_agreement": 0.95,
+    "dominant_switch_fraction": 0.05
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0003620263189077377,
+    "total_variation_distance_mean": 0.0005430394783616066,
+    "dominant_expert_agreement": 0.9925,
+    "dominant_switch_fraction": 0.0075
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0007242593914270401,
+    "total_variation_distance_mean": 0.00108638908714056,
+    "dominant_expert_agreement": 0.9775,
+    "dominant_switch_fraction": 0.0225
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0005454642573992411,
+    "total_variation_distance_mean": 0.0008181963860988617,
+    "dominant_expert_agreement": 0.9525,
+    "dominant_switch_fraction": 0.0475
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0006912244359652201,
+    "total_variation_distance_mean": 0.00103683665394783,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0004059279461701711,
+    "total_variation_distance_mean": 0.0006088919192552566,
+    "dominant_expert_agreement": 0.99,
+    "dominant_switch_fraction": 0.01
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0007368365240593752,
+    "total_variation_distance_mean": 0.0011052547860890627,
+    "dominant_expert_agreement": 0.968125,
+    "dominant_switch_fraction": 0.031875
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0005066743989785512,
+    "total_variation_distance_mean": 0.0007600115984678268,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "brightness_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.000716029405593872,
+    "total_variation_distance_mean": 0.0010740441083908082,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0004889750480651855,
+    "total_variation_distance_mean": 0.0007334625720977783,
+    "dominant_expert_agreement": 0.9925,
+    "dominant_switch_fraction": 0.0075
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0006378220207989216,
+    "total_variation_distance_mean": 0.0009567330311983824,
+    "dominant_expert_agreement": 0.985625,
+    "dominant_switch_fraction": 0.014375
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0006022191792726517,
+    "total_variation_distance_mean": 0.0009033287689089775,
+    "dominant_expert_agreement": 0.965,
+    "dominant_switch_fraction": 0.035
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_090",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0008206317822138468,
+    "total_variation_distance_mean": 0.0012309476733207703,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0004025924454132716,
+    "total_variation_distance_mean": 0.0006038886681199074,
+    "dominant_expert_agreement": 0.99,
+    "dominant_switch_fraction": 0.01
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.0005694247720142206,
+    "total_variation_distance_mean": 0.0008541371580213309,
+    "dominant_expert_agreement": 0.980625,
+    "dominant_switch_fraction": 0.019375
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0004889113952716191,
+    "total_variation_distance_mean": 0.0007333670929074288,
+    "dominant_expert_agreement": 0.9625,
+    "dominant_switch_fraction": 0.0375
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "contrast_110",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.0007027667760848999,
+    "total_variation_distance_mean": 0.00105415016412735,
+    "dominant_expert_agreement": 0.96,
+    "dominant_switch_fraction": 0.04
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.13.m.0.router",
+    "probability_mae": 0.0005214130878448487,
+    "total_variation_distance_mean": 0.000782119631767273,
+    "dominant_expert_agreement": 0.98,
+    "dominant_switch_fraction": 0.02
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.16.m.0.router",
+    "probability_mae": 0.000922384907801946,
+    "total_variation_distance_mean": 0.001383577361702919,
+    "dominant_expert_agreement": 0.97375,
+    "dominant_switch_fraction": 0.02625
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.19.m.0.router",
+    "probability_mae": 0.0008893138915300369,
+    "total_variation_distance_mean": 0.0013339708372950554,
+    "dominant_expert_agreement": 0.935,
+    "dominant_switch_fraction": 0.065
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "transform": "gaussian_blur_075",
+    "module": "model.22.m.0.router",
+    "probability_mae": 0.000990148882071177,
+    "total_variation_distance_mean": 0.0014852233231067657,
+    "dominant_expert_agreement": 0.97,
+    "dominant_switch_fraction": 0.03
+  }
+]
