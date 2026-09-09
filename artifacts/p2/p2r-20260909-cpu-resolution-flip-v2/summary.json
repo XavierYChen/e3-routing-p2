@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "scope": "CPU-only resolution and horizontal-flip diagnostics for true MoT/MoA spatial router probabilities",
+  "run_id": "p2r-20260909-cpu-resolution-flip-v2",
+  "official_locked_base_ref": "dab47c5e6e3d680c8d62576cf291e66431758873",
+  "official_runtime_ref": "dab47c5e6e3d680c8d62576cf291e66431758873",
+  "tool_source": {
+    "commit": "abe0d86e81098e004971ba7fe19cd0331e7bda34",
+    "tree": "78587577b468e03b0660f41623a98e68b593ed88",
+    "implementation_status_porcelain": [],
+    "implementation_clean": true
+  },
+  "source_fingerprint_validation": "PASS",
+  "source_fingerprint_count": 4,
+  "device": "cpu",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "resolutions": [
+    64,
+    128,
+    256
+  ],
+  "reference_resolution": 64,
+  "sample_count": 4,
+  "spatial_capture_count": 576,
+  "raw_array_count": 1440,
+  "aligned_comparison_count": 480,
+  "restoration_validation": {
+    "max_pre_normalization_expert_sum_error": 2.384185791015625e-07,
+    "max_post_normalization_expert_sum_error": 1.1920928955078125e-07
+  },
+  "representative_invariants": {
+    "mot:seed-0": {
+      "hook_output_max_abs_delta": 0.0,
+      "repeat_weight_max_abs_delta": 0.0,
+      "repeat_logit_max_abs_delta": 0.0,
+      "repeat_indices_equal": true,
+      "module_order": [
+        "model.13.m.0.router",
+        "model.16.m.0.router",
+        "model.19.m.0.router",
+        "model.22.m.0.router"
+      ],
+      "hook_cleanup": true,
+      "status": "PASS"
+    },
+    "mot:seed-1": {
+      "hook_output_max_abs_delta": 0.0,
+      "repeat_weight_max_abs_delta": 0.0,
+      "repeat_logit_max_abs_delta": 0.0,
+      "repeat_indices_equal": true,
+      "module_order": [
+        "model.13.m.0.router",
+        "model.16.m.0.router",
+        "model.19.m.0.router",
+        "model.22.m.0.router"
+      ],
+      "hook_cleanup": true,
+      "status": "PASS"
+    },
+    "mot:seed-2": {
+      "hook_output_max_abs_delta": 0.0,
+      "repeat_weight_max_abs_delta": 0.0,
+      "repeat_logit_max_abs_delta": 0.0,
+      "repeat_indices_equal": true,
+      "module_order": [
+        "model.13.m.0.router",
+        "model.16.m.0.router",
+        "model.19.m.0.router",
+        "model.22.m.0.router"
+      ],
+      "hook_cleanup": true,
+      "status": "PASS"
+    },
+    "moa:seed-0": {
+      "hook_output_max_abs_delta": 0.0,
+      "repeat_weight_max_abs_delta": 0.0,
+      "repeat_logit_max_abs_delta": 0.0,
+      "repeat_indices_equal": null,
+      "module_order": [
+        "model.13.m.0.router",
+        "model.16.m.0.router",
+        "model.19.m.0.router",
+        "model.22.m.0.router"
+      ],
+      "hook_cleanup": true,
+      "status": "PASS"
+    },
+    "moa:seed-1": {
+      "hook_output_max_abs_delta": 0.0,
+      "repeat_weight_max_abs_delta": 0.0,
+      "repeat_logit_max_abs_delta": 0.0,
+      "repeat_indices_equal": null,
+      "module_order": [
+        "model.13.m.0.router",
+        "model.16.m.0.router",
+        "model.19.m.0.router",
+        "model.22.m.0.router"
+      ],
+      "hook_cleanup": true,
+      "status": "PASS"
+    },
+    "moa:seed-2": {
+      "hook_output_max_abs_delta": 0.0,
+      "repeat_weight_max_abs_delta": 0.0,
+      "repeat_logit_max_abs_delta": 0.0,
+      "repeat_indices_equal": null,
+      "module_order": [
+        "model.13.m.0.router",
+        "model.16.m.0.router",
+        "model.19.m.0.router",
+        "model.22.m.0.router"
+      ],
+      "hook_cleanup": true,
+      "status": "PASS"
+    }
+  },
+  "region_resolution_coverage": {
+    "moa:64": {
+      "capture_count": 16,
+      "supported_capture_count": 11,
+      "insufficient_capture_count": 5,
+      "foreground_token_count": 103,
+      "background_token_count": 201,
+      "padding_token_count": 96
+    },
+    "moa:128": {
+      "capture_count": 16,
+      "supported_capture_count": 16,
+      "insufficient_capture_count": 0,
+      "foreground_token_count": 409,
+      "background_token_count": 799,
+      "padding_token_count": 392
+    },
+    "moa:256": {
+      "capture_count": 16,
+      "supported_capture_count": 16,
+      "insufficient_capture_count": 0,
+      "foreground_token_count": 1621,
+      "background_token_count": 3179,
+      "padding_token_count": 1600
+    },
+    "mot:64": {
+      "capture_count": 16,
+      "supported_capture_count": 11,
+      "insufficient_capture_count": 5,
+      "foreground_token_count": 103,
+      "background_token_count": 201,
+      "padding_token_count": 96
+    },
+    "mot:128": {
+      "capture_count": 16,
+      "supported_capture_count": 16,
+      "insufficient_capture_count": 0,
+      "foreground_token_count": 409,
+      "background_token_count": 799,
+      "padding_token_count": 392
+    },
+    "mot:256": {
+      "capture_count": 16,
+      "supported_capture_count": 16,
+      "insufficient_capture_count": 0,
+      "foreground_token_count": 1621,
+      "background_token_count": 3179,
+      "padding_token_count": 1600
+    }
+  },
+  "interpretation_boundary": "random initialization; pipeline and sensitivity evidence only, not learned robustness",
+  "status_semantics": "PASS means capture, geometry, alignment, determinism and evidence integrity checks completed",
+  "duration_seconds_observation_only": 72.457570999999
+}

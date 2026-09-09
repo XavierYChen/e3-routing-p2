@@ -1,0 +1,3968 @@
+{
+  "method": {
+    "unit": "one seed x sample x router-module aligned comparison",
+    "weighting": "each comparison receives equal weight",
+    "probability_space": "original-image pixels after exact letterbox inverse and expert re-normalization",
+    "correlation_policy": "undefined when either aligned expert map is constant",
+    "interpretation_boundary": "random-initialization pipeline diagnostic; no learned robustness claim"
+  },
+  "comparison_count": 480,
+  "by_type_family_resolution": {
+    "horizontal_flip:moa:64": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 3.9874829975548586e-07,
+        "min": 0.0,
+        "max": 3.030494951761251e-06
+      },
+      "probability_rmse": {
+        "mean": 5.391992627762497e-07,
+        "min": 0.0,
+        "max": 4.301181975197109e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 2.368663748105367e-06,
+        "min": 0.0,
+        "max": 2.1636486053466797e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 5.981224496332287e-07,
+        "min": 0.0,
+        "max": 4.545742427641877e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.7401168086743475e-12,
+        "min": 0.0,
+        "max": 2.081259644543239e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8201377784571399,
+        "min": 0.4371894211065574,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 8.379683977388743e-07,
+        "min": 0.0,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 8.623938426050677e-07,
+        "min": 0.0,
+        "max": 5.374428324812041e-06
+      },
+      "expert_pearson": {
+        "defined_count": 113,
+        "undefined_count": 31,
+        "defined_mean": 0.3274776116702262,
+        "defined_min": -0.99585062240655,
+        "defined_max": 0.9199929913847231
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 7.732806912750282e-07,
+        "min": 0.0,
+        "max": 6.481416146543967e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 8.66716187660125e-07,
+        "min": 0.0,
+        "max": 5.350374315220105e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.8201377784571399,
+          "agreement_min": 0.4371894211065574,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 3.7997961044311523e-07,
+          "selected_pixel_count_total": 11402115,
+          "agreement_mean": 0.8455985908094811,
+          "agreement_min": 0.42829969174854154,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 7.121513287226359e-07,
+          "selected_pixel_count_total": 9294119,
+          "agreement_mean": 0.8675485858300984,
+          "agreement_min": 0.38012713452000685,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.2170833845933278e-06,
+          "selected_pixel_count_total": 6642732,
+          "agreement_mean": 0.8823048063797531,
+          "agreement_min": 0.3046217145193647,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 1.6689300537109375e-06,
+          "selected_pixel_count_total": 4624607,
+          "agreement_mean": 0.8779096234038177,
+          "agreement_min": 0.20227162880618657,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:128": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 3.416333414994585e-07,
+        "min": 0.0,
+        "max": 2.7243654871024346e-06
+      },
+      "probability_rmse": {
+        "mean": 4.86401897807863e-07,
+        "min": 0.0,
+        "max": 4.0437385131820394e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 2.674137552579244e-06,
+        "min": 0.0,
+        "max": 2.658367156982422e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 5.124500122491878e-07,
+        "min": 0.0,
+        "max": 4.086548230653652e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.423661367157698e-12,
+        "min": 0.0,
+        "max": 1.8395721803357062e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8478436389254268,
+        "min": 0.4104764344262295,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 8.332890590455492e-07,
+        "min": 0.0,
+        "max": 5.073835217733708e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 8.46419052382962e-07,
+        "min": 0.0,
+        "max": 5.337704041498539e-06
+      },
+      "expert_pearson": {
+        "defined_count": 116,
+        "undefined_count": 28,
+        "defined_mean": 0.44131993622159493,
+        "defined_min": -0.5114498778320965,
+        "defined_max": 0.9601140591206268
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 37,
+        "mean": 7.395795061862031e-07,
+        "min": 0.0,
+        "max": 5.230981745546397e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 8.425634489850547e-07,
+        "min": 0.0,
+        "max": 5.0763141428763545e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.8478436389254268,
+          "agreement_min": 0.4104764344262295,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 3.8494666417439777e-07,
+          "selected_pixel_count_total": 11378495,
+          "agreement_mean": 0.8721678682695672,
+          "agreement_min": 0.3887890566919433,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 7.202227910359701e-07,
+          "selected_pixel_count_total": 9300659,
+          "agreement_mean": 0.8829763223465364,
+          "agreement_min": 0.34788467064721096,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.2051314115524292e-06,
+          "selected_pixel_count_total": 6434177,
+          "agreement_mean": 0.8950643859341566,
+          "agreement_min": 0.2739231694520513,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 1.6347815593083699e-06,
+          "selected_pixel_count_total": 4768881,
+          "agreement_mean": 0.9007843788569713,
+          "agreement_min": 0.194544335374348,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:256": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 3.0482919594072845e-07,
+        "min": 0.0,
+        "max": 3.0181961340188494e-06
+      },
+      "probability_rmse": {
+        "mean": 4.6318218760690894e-07,
+        "min": 0.0,
+        "max": 4.395928607355719e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 3.170222043991089e-06,
+        "min": 0.0,
+        "max": 2.804398536682129e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 4.572437939110926e-07,
+        "min": 0.0,
+        "max": 4.527294201028273e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.3397641197948092e-12,
+        "min": 0.0,
+        "max": 2.1739600258553465e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8523115712116146,
+        "min": 0.4781378073770492,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 8.522000295386686e-07,
+        "min": 0.0,
+        "max": 4.888226823231054e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 8.560175588160796e-07,
+        "min": 0.0,
+        "max": 5.177031821153295e-06
+      },
+      "expert_pearson": {
+        "defined_count": 123,
+        "undefined_count": 21,
+        "defined_mean": 0.4937804092992977,
+        "defined_min": -0.5658945226887753,
+        "defined_max": 0.978953584077591
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 39,
+        "mean": 7.231924821819671e-07,
+        "min": 9.828425468282496e-09,
+        "max": 5.336663894172165e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 8.702311765063263e-07,
+        "min": 0.0,
+        "max": 4.878082764429956e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.8523115712116146,
+          "agreement_min": 0.4781378073770492,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 3.8494666417439777e-07,
+          "selected_pixel_count_total": 11502810,
+          "agreement_mean": 0.880091288255266,
+          "agreement_min": 0.47620946699872296,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 7.326404253641764e-07,
+          "selected_pixel_count_total": 9181721,
+          "agreement_mean": 0.8948166137222127,
+          "agreement_min": 0.45677890146771843,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.2132028738657634e-06,
+          "selected_pixel_count_total": 6409311,
+          "agreement_mean": 0.9100219071356261,
+          "agreement_min": 0.40676974721529935,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 1.6888603568077304e-06,
+          "selected_pixel_count_total": 4633217,
+          "agreement_mean": 0.9121218711637367,
+          "agreement_min": 0.29454487789406913,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:64": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:128": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:256": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:128": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 2.7156061741766823e-07,
+        "min": 0.0,
+        "max": 1.8064529047210197e-06
+      },
+      "probability_rmse": {
+        "mean": 3.685414666522258e-07,
+        "min": 0.0,
+        "max": 2.3848086367945732e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 1.94646418094635e-06,
+        "min": 0.0,
+        "max": 1.4036893844604492e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 4.073409261265023e-07,
+        "min": 0.0,
+        "max": 2.7096793570815295e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 6.501476151297317e-13,
+        "min": 0.0,
+        "max": 6.398203462639934e-12
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8364165129596843,
+        "min": 0.39751181102362204,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 8.379683977388743e-07,
+        "min": 0.0,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 8.332890590455492e-07,
+        "min": 0.0,
+        "max": 5.073835217733708e-06
+      },
+      "expert_pearson": {
+        "defined_count": 113,
+        "undefined_count": 31,
+        "defined_mean": 0.5456660459365896,
+        "defined_min": -0.06063436849718148,
+        "defined_max": 0.9289121064806257
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 6.145094526007501e-07,
+        "min": 0.0,
+        "max": 3.5094653381879188e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 9.153219474406558e-07,
+        "min": 0.0,
+        "max": 5.9006544918060275e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.8364165129596843,
+          "agreement_min": 0.39751181102362204,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 3.7997961044311523e-07,
+          "selected_pixel_count_total": 11402115,
+          "agreement_mean": 0.8697876361542648,
+          "agreement_min": 0.3472299795207319,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 7.121513287226359e-07,
+          "selected_pixel_count_total": 9294119,
+          "agreement_mean": 0.8980629994800187,
+          "agreement_min": 0.3472299795207319,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.2170833845933278e-06,
+          "selected_pixel_count_total": 6642732,
+          "agreement_mean": 0.9267774666293395,
+          "agreement_min": 0.43395995429566353,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 1.6689300537109375e-06,
+          "selected_pixel_count_total": 4624607,
+          "agreement_mean": 0.9596489500347439,
+          "agreement_min": 0.7088634435962681,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:256": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 3.5534442700706115e-07,
+        "min": 0.0,
+        "max": 2.5411484103975564e-06
+      },
+      "probability_rmse": {
+        "mean": 4.769173377871781e-07,
+        "min": 0.0,
+        "max": 3.461768482520177e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 2.4804224570592246e-06,
+        "min": 0.0,
+        "max": 1.710653305053711e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 5.330166405105918e-07,
+        "min": 0.0,
+        "max": 3.8117226155963343e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.1104076267789597e-12,
+        "min": 0.0,
+        "max": 1.3481780619851337e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7860332524942238,
+        "min": 0.3857007874015748,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 8.379683977388743e-07,
+        "min": 0.0,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 8.522000295386686e-07,
+        "min": 0.0,
+        "max": 4.888226823231054e-06
+      },
+      "expert_pearson": {
+        "defined_count": 115,
+        "undefined_count": 29,
+        "defined_mean": 0.3346902528886591,
+        "defined_min": -0.11940672076243619,
+        "defined_max": 0.8941133781820545
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 39,
+        "mean": 6.786997952318028e-07,
+        "min": 0.0,
+        "max": 4.318593443238482e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 9.10438150020099e-07,
+        "min": 0.0,
+        "max": 5.813536746490189e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.7860332524942238,
+          "agreement_min": 0.3857007874015748,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 3.7997961044311523e-07,
+          "selected_pixel_count_total": 11402115,
+          "agreement_mean": 0.8157903582445272,
+          "agreement_min": 0.3529814622729328,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 7.121513287226359e-07,
+          "selected_pixel_count_total": 9294119,
+          "agreement_mean": 0.8443124709256414,
+          "agreement_min": 0.3529814622729328,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.2170833845933278e-06,
+          "selected_pixel_count_total": 6642732,
+          "agreement_mean": 0.8652432487134608,
+          "agreement_min": 0.32032482724849015,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 1.6689300537109375e-06,
+          "selected_pixel_count_total": 4624607,
+          "agreement_mean": 0.8756986896803967,
+          "agreement_min": 0.46935276468066867,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:128": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:256": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    }
+  },
+  "by_type_family_module": {
+    "horizontal_flip:moa:model.13.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 3.327574706814534e-08,
+        "min": 1.3333084493588692e-08,
+        "max": 9.399120576112602e-08
+      },
+      "probability_rmse": {
+        "mean": 4.6200331880251184e-08,
+        "min": 2.335684120154033e-08,
+        "max": 1.1804969616707554e-07
+      },
+      "probability_max_abs_error": {
+        "mean": 1.9288725323147244e-07,
+        "min": 5.960464477539063e-08,
+        "max": 4.470348358154297e-07
+      },
+      "mean_total_variation_distance": {
+        "mean": 4.9913620602218e-08,
+        "min": 1.999962674038304e-08,
+        "max": 1.4098680864168903e-07
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 3.035174329742776e-15,
+        "min": 6.137347874459953e-16,
+        "max": 1.5677700268105678e-14
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7996366815011928,
+        "min": 0.45557441086065575,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 7.002156809188286e-08,
+        "min": 2.957712553563665e-08,
+        "max": 1.428292564691476e-07
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 6.889390581761926e-08,
+        "min": 3.1190051475079985e-08,
+        "max": 1.3166868172415578e-07
+      },
+      "expert_pearson": {
+        "defined_count": 108,
+        "undefined_count": 0,
+        "defined_mean": 0.4723602228309463,
+        "defined_min": -0.31604237295738435,
+        "defined_max": 0.9347275928544523
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 34,
+        "mean": 4.2931905562561236e-08,
+        "min": 1.5307967414508814e-08,
+        "max": 1.178174176504485e-07
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 7.51834168455999e-08,
+        "min": 2.9642040989979976e-08,
+        "max": 1.4568217131446488e-07
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.7996366815011928,
+          "agreement_min": 0.45557441086065575,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 3.725290298461914e-08,
+          "selected_pixel_count_total": 8438766,
+          "agreement_mean": 0.821046900004383,
+          "agreement_min": 0.4774179374988558,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 6.539954079522027e-08,
+          "selected_pixel_count_total": 6631791,
+          "agreement_mean": 0.8401830767050765,
+          "agreement_min": 0.4774179374988558,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 1.003758774863349e-07,
+          "selected_pixel_count_total": 3780337,
+          "agreement_mean": 0.8809055776268943,
+          "agreement_min": 0.4906201029773897,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 1.341104507446289e-07,
+          "selected_pixel_count_total": 1897348,
+          "agreement_mean": 0.9173069910421278,
+          "agreement_min": 0.4906201029773897,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:model.16.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 1.3038714689495948e-06,
+        "min": 2.7787116986038594e-07,
+        "max": 3.030494951761251e-06
+      },
+      "probability_rmse": {
+        "mean": 1.8568136468634445e-06,
+        "min": 4.4085725197840074e-07,
+        "max": 4.395928607355719e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 1.0420878728230795e-05,
+        "min": 2.294778823852539e-06,
+        "max": 2.804398536682129e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 1.955807203424392e-06,
+        "min": 4.168067547905789e-07,
+        "max": 4.545742427641877e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 5.992216408914308e-12,
+        "min": 2.186482388032506e-13,
+        "max": 2.1739600258553465e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7715977989510785,
+        "min": 0.4104764344262295,
+        "max": 0.9320361226611227
+      },
+      "reference_top1_margin_mean": {
+        "mean": 3.100677332061416e-06,
+        "min": 1.2331091794945205e-06,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 3.157117592248306e-06,
+        "min": 1.1753497419247568e-06,
+        "max": 5.374428324812041e-06
+      },
+      "expert_pearson": {
+        "defined_count": 108,
+        "undefined_count": 0,
+        "defined_mean": 0.39466158080887787,
+        "defined_min": -0.5658945226887753,
+        "defined_max": 0.9668569632015184
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 2.182785683138043e-06,
+        "min": 4.4236526484842143e-07,
+        "max": 6.481416146543967e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 3.153192108684579e-06,
+        "min": 1.3631165384940002e-06,
+        "max": 5.350374315220105e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.7715977989510785,
+          "agreement_min": 0.4104764344262295,
+          "agreement_max": 0.9320361226611227
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 1.4122989442613389e-06,
+          "selected_pixel_count_total": 7571103,
+          "agreement_mean": 0.817911929600251,
+          "agreement_min": 0.3887890566919433,
+          "agreement_max": 0.9800353333995655
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 2.6557180616590713e-06,
+          "selected_pixel_count_total": 5061493,
+          "agreement_mean": 0.8320310416418725,
+          "agreement_min": 0.34788467064721096,
+          "agreement_max": 0.9920461735122084
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 4.450480143229167e-06,
+          "selected_pixel_count_total": 2535787,
+          "agreement_mean": 0.8159942400863316,
+          "agreement_min": 0.2739231694520513,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 6.135221984651382e-06,
+          "selected_pixel_count_total": 1014870,
+          "agreement_mean": 0.778685344145305,
+          "agreement_min": 0.194544335374348,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:model.19.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 5.359334680089345e-08,
+        "min": 1.150270563828142e-08,
+        "max": 1.5984724617171267e-07
+      },
+      "probability_rmse": {
+        "mean": 7.503604220692011e-08,
+        "min": 2.0882139369671442e-08,
+        "max": 2.1101735442522386e-07
+      },
+      "probability_max_abs_error": {
+        "mean": 3.178914388020833e-07,
+        "min": 5.960464477539063e-08,
+        "max": 7.748603820800781e-07
+      },
+      "mean_total_variation_distance": {
+        "mean": 8.039002020134016e-08,
+        "min": 1.7254058457422133e-08,
+        "max": 2.39770869257569e-07
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 9.375123028288004e-15,
+        "min": 4.905717164121444e-16,
+        "max": 5.009434931567188e-14
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8075908556006305,
+        "min": 0.5514225721784777,
+        "max": 0.9877689549180327
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.933477335606571e-07,
+        "min": 3.2950116351979675e-08,
+        "max": 3.6686001800176665e-07
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.927173612942233e-07,
+        "min": 3.267968928471941e-08,
+        "max": 3.5383194450318347e-07
+      },
+      "expert_pearson": {
+        "defined_count": 108,
+        "undefined_count": 0,
+        "defined_mean": 0.5206214703051635,
+        "defined_min": -0.11557747465931616,
+        "defined_max": 0.978953584077591
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 9.160141576519262e-08,
+        "min": 2.1309405033457374e-08,
+        "max": 2.9319725766410777e-07
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 2.1047780794345447e-07,
+        "min": 3.577724882490994e-08,
+        "max": 4.287663322914465e-07
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.8075908556006305,
+          "agreement_min": 0.5514225721784777,
+          "agreement_max": 0.9877689549180327
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 8.361207114325629e-08,
+          "selected_pixel_count_total": 8224331,
+          "agreement_mean": 0.8432861847684445,
+          "agreement_min": 0.5741880127239243,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 1.655684577094184e-07,
+          "selected_pixel_count_total": 6033995,
+          "agreement_mean": 0.873342595445508,
+          "agreement_min": 0.6112957004972214,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 2.9636753929985895e-07,
+          "selected_pixel_count_total": 3120876,
+          "agreement_mean": 0.9047229994801484,
+          "agreement_min": 0.5550481362626511,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 3.8494666417439777e-07,
+          "selected_pixel_count_total": 1526954,
+          "agreement_mean": 0.9101968473059279,
+          "agreement_min": 0.20227162880618657,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:model.22.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 2.8738867755970123e-09,
+        "min": 0.0,
+        "max": 1.4718644783774282e-08
+      },
+      "probability_rmse": {
+        "mean": 6.994443304080016e-09,
+        "min": 0.0,
+        "max": 2.094396803272988e-08
+      },
+      "probability_max_abs_error": {
+        "mean": 1.9040372636583115e-08,
+        "min": 0.0,
+        "max": 2.9802322387695312e-08
+      },
+      "mean_total_variation_distance": {
+        "mean": 4.310830163395519e-09,
+        "min": 0.0,
+        "max": 2.2077967175661422e-08
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 9.63545634663056e-17,
+        "min": 0.0,
+        "max": 4.934810289289527e-16
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.9815653154060067,
+        "min": 0.75,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 5.633480501669705e-10,
+        "min": 0.0,
+        "max": 7.313693289368797e-09
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.0450790453304688e-09,
+        "min": 0.0,
+        "max": 7.450580596923828e-09
+      },
+      "expert_pearson": {
+        "defined_count": 28,
+        "undefined_count": 80,
+        "defined_mean": -0.03330001863587524,
+        "defined_min": -0.99585062240655,
+        "defined_max": 0.7358856197565942
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 6,
+        "mean": 1.157217837394552e-08,
+        "min": 0.0,
+        "max": 2.9802322387695312e-08
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 4.944173950418355e-10,
+        "min": 0.0,
+        "max": 7.313693289368797e-09
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.9815653154060067,
+          "agreement_min": 0.75,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.9815653154060067,
+          "agreement_min": 0.75,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.9815653154060067,
+          "agreement_min": 0.75,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 0.9815653154060067,
+          "agreement_min": 0.75,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 2.483526865641276e-09,
+          "selected_pixel_count_total": 9587533,
+          "agreement_mean": 0.9815653154060067,
+          "agreement_min": 0.75,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:model.13.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 108,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:model.16.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 108,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:model.19.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 108,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:model.22.m.0.router": {
+      "comparison_count": 36,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 108,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 36,
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 36,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 36,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 36,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 36,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 36,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 10049220,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:model.13.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 4.288229971543087e-08,
+        "min": 2.143389546679985e-08,
+        "max": 1.259152031946057e-07
+      },
+      "probability_rmse": {
+        "mean": 5.641985608905962e-08,
+        "min": 2.897086455813427e-08,
+        "max": 1.5833563960355532e-07
+      },
+      "probability_max_abs_error": {
+        "mean": 1.9495685895284018e-07,
+        "min": 8.940696716308594e-08,
+        "max": 5.066394805908203e-07
+      },
+      "mean_total_variation_distance": {
+        "mean": 6.432344957314631e-08,
+        "min": 3.215084320019977e-08,
+        "max": 1.8887280479190858e-07
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 4.873561992175922e-15,
+        "min": 9.442248723247355e-16,
+        "max": 2.8203951343085015e-14
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7044423011109283,
+        "min": 0.3857007874015748,
+        "max": 0.9743852459016393
+      },
+      "reference_top1_margin_mean": {
+        "mean": 7.040405346531328e-08,
+        "min": 4.6394368419881726e-08,
+        "max": 1.428292564691476e-07
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 6.983032540516763e-08,
+        "min": 2.957712553563665e-08,
+        "max": 1.1816857045752591e-07
+      },
+      "expert_pearson": {
+        "defined_count": 72,
+        "undefined_count": 0,
+        "defined_mean": 0.3612596387025699,
+        "defined_min": -0.05570435157550552,
+        "defined_max": 0.8225346730933322
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 4.459107387544291e-08,
+        "min": 0.0,
+        "max": 1.0659127663552477e-07
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 7.811832038905816e-08,
+        "min": 4.683054208003384e-08,
+        "max": 1.572956708843854e-07
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.7044423011109283,
+          "agreement_min": 0.3857007874015748,
+          "agreement_max": 0.9743852459016393
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 3.476937611897787e-08,
+          "selected_pixel_count_total": 5675572,
+          "agreement_mean": 0.7252188773838805,
+          "agreement_min": 0.3472299795207319,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 6.457169850667317e-08,
+          "selected_pixel_count_total": 4493952,
+          "agreement_mean": 0.760446260676695,
+          "agreement_min": 0.3472299795207319,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 9.996195634206136e-08,
+          "selected_pixel_count_total": 2693512,
+          "agreement_mean": 0.8191962354195877,
+          "agreement_min": 0.32032482724849015,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 1.3907750447591147e-07,
+          "selected_pixel_count_total": 1179642,
+          "agreement_mean": 0.8643452421664571,
+          "agreement_min": 0.46935276468066867,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:model.16.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 1.1395955001187456e-06,
+        "min": 4.4120260215285363e-07,
+        "max": 2.5411484103975564e-06
+      },
+      "probability_rmse": {
+        "mean": 1.5368727560355577e-06,
+        "min": 6.053920618152524e-07,
+        "max": 3.461768482520177e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 8.281320333480835e-06,
+        "min": 2.9206275939941406e-06,
+        "max": 1.710653305053711e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 1.7093932501781183e-06,
+        "min": 6.618039032292804e-07,
+        "max": 3.8117226155963343e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 3.503610819838847e-12,
+        "min": 4.1230649580363287e-13,
+        "max": 1.3481780619851337e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7907027704282572,
+        "min": 0.5871894211065574,
+        "max": 0.9291092775467775
+      },
+      "reference_top1_margin_mean": {
+        "mean": 3.1057407867697286e-06,
+        "min": 1.2331091794945205e-06,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 3.0981456047072597e-06,
+        "min": 1.3052353246106964e-06,
+        "max": 5.073835217733708e-06
+      },
+      "expert_pearson": {
+        "defined_count": 72,
+        "undefined_count": 0,
+        "defined_mean": 0.5763205658037039,
+        "defined_min": 0.05156682626208599,
+        "defined_max": 0.9289121064806257
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 1.8996451790224399e-06,
+        "min": 6.137411500465089e-07,
+        "max": 4.318593443238482e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 3.3772028302231114e-06,
+        "min": 1.336512830094906e-06,
+        "max": 5.9006544918060275e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.7907027704282572,
+          "agreement_min": 0.5871894211065574,
+          "agreement_max": 0.9291092775467775
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 1.4056762059529622e-06,
+          "selected_pixel_count_total": 5042264,
+          "agreement_mean": 0.8490937088984971,
+          "agreement_min": 0.6066142441045848,
+          "agreement_max": 0.960012266705828
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 2.62757142384847e-06,
+          "selected_pixel_count_total": 3374736,
+          "agreement_mean": 0.8887920193769805,
+          "agreement_min": 0.6078389036711521,
+          "agreement_max": 0.9864008766894536
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 4.507601261138916e-06,
+          "selected_pixel_count_total": 1691754,
+          "agreement_mean": 0.9088490820474254,
+          "agreement_min": 0.5638057269904551,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 6.18894894917806e-06,
+          "selected_pixel_count_total": 676286,
+          "agreement_mean": 0.9224266430772188,
+          "agreement_min": 0.5535753783928966,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:model.19.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 6.893647669057681e-08,
+        "min": 1.984678281567253e-08,
+        "max": 1.8634607368462562e-07
+      },
+      "probability_rmse": {
+        "mean": 9.097656271983983e-08,
+        "min": 2.8110180887561286e-08,
+        "max": 2.3672722656320552e-07
+      },
+      "probability_max_abs_error": {
+        "mean": 3.5762786865234375e-07,
+        "min": 8.940696716308594e-08,
+        "max": 7.748603820800781e-07
+      },
+      "mean_total_variation_distance": {
+        "mean": 1.0340471503586523e-07,
+        "min": 2.9770174223508794e-08,
+        "max": 2.7951911052693846e-07
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.2545776118061274e-14,
+        "min": 8.889550403859688e-16,
+        "max": 6.304472931065391e-14
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7532238528387981,
+        "min": 0.5565511811023622,
+        "max": 0.9427670338114754
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.7511927627967433e-07,
+        "min": 4.764631024149598e-08,
+        "max": 3.022100981764906e-07
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 2.0246196220114849e-07,
+        "min": 3.2950116351979675e-08,
+        "max": 3.6686001800176665e-07
+      },
+      "expert_pearson": {
+        "defined_count": 72,
+        "undefined_count": 0,
+        "defined_mean": 0.41571745183818165,
+        "defined_min": -0.06063436849718148,
+        "defined_max": 0.762113340117882
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 8.041509325492173e-08,
+        "min": 2.84685121549593e-08,
+        "max": 2.271460323037551e-07
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 1.9558956986855928e-07,
+        "min": 4.800149410364277e-08,
+        "max": 3.5244355038689226e-07
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.7532238528387981,
+          "agreement_min": 0.5565511811023622,
+          "agreement_max": 0.9427670338114754
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 7.947285970052083e-08,
+          "selected_pixel_count_total": 5386914,
+          "agreement_mean": 0.8003127959853739,
+          "agreement_min": 0.5447740199376185,
+          "agreement_max": 0.9991663192997082
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 1.564621925354004e-07,
+          "selected_pixel_count_total": 4020070,
+          "agreement_mean": 0.8389820542278122,
+          "agreement_min": 0.5654930650815424,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 2.60770320892334e-07,
+          "selected_pixel_count_total": 2200718,
+          "agreement_mean": 0.8594655066887551,
+          "agreement_min": 0.4642375731298898,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 3.452102343241374e-07,
+          "selected_pixel_count_total": 981306,
+          "agreement_mean": 0.8873927876567732,
+          "agreement_min": 0.5139684813753582,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:model.22.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 2.395812324705527e-09,
+        "min": 0.0,
+        "max": 7.60545880775752e-09
+      },
+      "probability_rmse": {
+        "mean": 6.648434034350678e-09,
+        "min": 0.0,
+        "max": 1.5055242784330194e-08
+      },
+      "probability_max_abs_error": {
+        "mean": 1.9868214925130207e-08,
+        "min": 0.0,
+        "max": 2.9802322387695312e-08
+      },
+      "mean_total_variation_distance": {
+        "mean": 3.5937184870582897e-09,
+        "min": 0.0,
+        "max": 1.140818821163628e-08
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 8.032586829918769e-17,
+        "min": 0.0,
+        "max": 2.549928810067072e-16
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.9965306065298324,
+        "min": 0.9581589958158996,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 6.094744407807331e-10,
+        "min": 0.0,
+        "max": 7.313693289368797e-09
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 5.402848548600893e-10,
+        "min": 0.0,
+        "max": 6.159928839976393e-09
+      },
+      "expert_pearson": {
+        "defined_count": 12,
+        "undefined_count": 60,
+        "defined_mean": 0.22601758468580244,
+        "defined_min": -0.11940672076243619,
+        "defined_max": 0.5100665154918028
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 3,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 6.094744407807331e-10,
+        "min": 0.0,
+        "max": 7.313693289368797e-09
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.9965306065298324,
+          "agreement_min": 0.9581589958158996,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.9965306065298324,
+          "agreement_min": 0.9581589958158996,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.9965306065298324,
+          "agreement_min": 0.9581589958158996,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 0.9965306065298324,
+          "agreement_min": 0.9581589958158996,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 2.483526865641276e-09,
+          "selected_pixel_count_total": 6411980,
+          "agreement_mean": 0.9965306065298324,
+          "agreement_min": 0.9581589958158996,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:model.13.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 72,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:model.16.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 72,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:model.19.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 72,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:model.22.m.0.router": {
+      "comparison_count": 24,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 72,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 24,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 24,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 24,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 24,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 24,
+          "mean_threshold": 1.0,
+          "selected_pixel_count_total": 6699480,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    }
+  },
+  "by_type_family_seed": {
+    "horizontal_flip:moa:seed-0": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 6.818332715959493e-07,
+        "min": 1.8639359636101883e-09,
+        "max": 3.030494951761251e-06
+      },
+      "probability_rmse": {
+        "mean": 9.868706781311598e-07,
+        "min": 7.453161778569573e-09,
+        "max": 4.395928607355719e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 5.499149362246196e-06,
+        "min": 2.9802322387695312e-08,
+        "max": 2.804398536682129e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 1.022749907393924e-06,
+        "min": 2.7959039454152826e-09,
+        "max": 4.545742427641877e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 3.9569846303335e-12,
+        "min": 6.249332399094473e-17,
+        "max": 2.1739600258553465e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7775956437702768,
+        "min": 0.4104764344262295,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.1215620794363414e-06,
+        "min": 0.0,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.16244972461194e-06,
+        "min": 0.0,
+        "max": 5.374428324812041e-06
+      },
+      "expert_pearson": {
+        "defined_count": 126,
+        "undefined_count": 18,
+        "defined_mean": 0.3220222354733926,
+        "defined_min": -0.99585062240655,
+        "defined_max": 0.9347275928544523
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 41,
+        "mean": 1.401301723007975e-06,
+        "min": 0.0,
+        "max": 6.481416146543967e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 1.0478909638255053e-06,
+        "min": 0.0,
+        "max": 5.103875140595976e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.7775956437702768,
+          "agreement_min": 0.4104764344262295,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 5.227824052174886e-07,
+          "selected_pixel_count_total": 11273182,
+          "agreement_mean": 0.7968266050408436,
+          "agreement_min": 0.3887890566919433,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 9.623666604359944e-07,
+          "selected_pixel_count_total": 8717532,
+          "agreement_mean": 0.8113116265981203,
+          "agreement_min": 0.34788467064721096,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.5503416458765666e-06,
+          "selected_pixel_count_total": 6210283,
+          "agreement_mean": 0.7967047711396334,
+          "agreement_min": 0.2739231694520513,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 2.197300394376119e-06,
+          "selected_pixel_count_total": 4627241,
+          "agreement_mean": 0.7512218527394525,
+          "agreement_min": 0.194544335374348,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:seed-1": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 2.3689396148687308e-07,
+        "min": 0.0,
+        "max": 1.0925282774859393e-06
+      },
+      "probability_rmse": {
+        "mean": 3.282433844453436e-07,
+        "min": 0.0,
+        "max": 1.4854250843575355e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 1.804282267888387e-06,
+        "min": 0.0,
+        "max": 9.387731552124023e-06
+      },
+      "mean_total_variation_distance": {
+        "mean": 3.5534094223030956e-07,
+        "min": 0.0,
+        "max": 1.6387924162289089e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 4.2743895340332663e-13,
+        "min": 0.0,
+        "max": 2.4822911803788823e-12
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8494330019631796,
+        "min": 0.45557441086065575,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.0198550057388737e-06,
+        "min": 0.0,
+        "max": 4.6998324364485715e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.018951206515447e-06,
+        "min": 0.0,
+        "max": 4.68929145260561e-06
+      },
+      "expert_pearson": {
+        "defined_count": 118,
+        "undefined_count": 26,
+        "defined_mean": 0.4576378426080569,
+        "defined_min": -0.43032896679766164,
+        "defined_max": 0.978953584077591
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 37,
+        "mean": 4.948513814682033e-07,
+        "min": 2.1309405033457374e-08,
+        "max": 2.6090772375029365e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 1.1177484321627968e-06,
+        "min": 0.0,
+        "max": 5.350374315220105e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.8494330019631796,
+          "agreement_min": 0.45557441086065575,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 4.569689432779948e-07,
+          "selected_pixel_count_total": 11345814,
+          "agreement_mean": 0.8863317560829108,
+          "agreement_min": 0.4774179374988558,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 8.704761664072672e-07,
+          "selected_pixel_count_total": 9402888,
+          "agreement_mean": 0.9026353700689237,
+          "agreement_min": 0.4774179374988558,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 1.5188318987687428e-06,
+          "selected_pixel_count_total": 6603112,
+          "agreement_mean": 0.9290379283060578,
+          "agreement_min": 0.4906201029773897,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 2.033387621243795e-06,
+          "selected_pixel_count_total": 4397945,
+          "agreement_mean": 0.9585436530237602,
+          "agreement_min": 0.4906201029773897,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:moa:seed-2": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 1.2648360411285052e-07,
+        "min": 0.0,
+        "max": 6.692394324135585e-07
+      },
+      "probability_rmse": {
+        "mean": 1.7366928561451824e-07,
+        "min": 0.0,
+        "max": 9.034955892464491e-07
+      },
+      "probability_max_abs_error": {
+        "mean": 9.095917145411173e-07,
+        "min": 0.0,
+        "max": 5.334615707397461e-06
+      },
+      "mean_total_variation_distance": {
+        "mean": 1.8972540616927573e-07,
+        "min": 0.0,
+        "max": 1.0038591486203378e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.1911871189002765e-13,
+        "min": 0.0,
+        "max": 9.18338772068159e-13
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8932643428607251,
+        "min": 0.6352298924180327,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 3.8204040114787715e-07,
+        "min": 0.0,
+        "max": 1.6810527936680111e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 3.8342952267672204e-07,
+        "min": 0.0,
+        "max": 1.672374764139571e-06
+      },
+      "expert_pearson": {
+        "defined_count": 108,
+        "undefined_count": 36,
+        "defined_mean": 0.5033056108042222,
+        "defined_min": -0.2386119352610261,
+        "defined_max": 0.9668569632015184
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 34,
+        "mean": 2.2482887241872806e-07,
+        "min": 1.5307967414508814e-08,
+        "max": 8.327243671574238e-07
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 4.1387141716320386e-07,
+        "min": 0.0,
+        "max": 1.7842548400757496e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 0.8932643428607251,
+          "agreement_min": 0.6352298924180327,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 1.701215902964274e-07,
+          "selected_pixel_count_total": 11664424,
+          "agreement_mean": 0.9146993862105597,
+          "agreement_min": 0.6499731416057187,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 3.321717182795207e-07,
+          "selected_pixel_count_total": 9656079,
+          "agreement_mean": 0.9313945252318038,
+          "agreement_min": 0.6498340321453528,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 5.662441253662109e-07,
+          "selected_pixel_count_total": 6672825,
+          "agreement_mean": 0.9616484000038444,
+          "agreement_min": 0.725479586817511,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 7.618839542071241e-07,
+          "selected_pixel_count_total": 5001519,
+          "agreement_mean": 0.9810503676613127,
+          "agreement_min": 0.725479586817511,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:seed-0": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:seed-1": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "horizontal_flip:mot:seed-2": {
+      "comparison_count": 48,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 144,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 48,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 48,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 13398960,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:seed-0": {
+      "comparison_count": 32,
+      "probability_mae": {
+        "mean": 5.391038774282314e-07,
+        "min": 2.0678738337347863e-09,
+        "max": 2.5411484103975564e-06
+      },
+      "probability_rmse": {
+        "mean": 7.338772750293976e-07,
+        "min": 7.850314812161583e-09,
+        "max": 3.461768482520177e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 3.762543201446533e-06,
+        "min": 2.9802322387695312e-08,
+        "max": 1.710653305053711e-05
+      },
+      "mean_total_variation_distance": {
+        "mean": 8.086558161423471e-07,
+        "min": 3.1018107506021795e-09,
+        "max": 3.8117226155963343e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 2.0682320923814004e-12,
+        "min": 6.933087401440951e-17,
+        "max": 1.3481780619851337e-11
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.7930029020399096,
+        "min": 0.5871894211065574,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.1241073722737566e-06,
+        "min": 0.0,
+        "max": 5.53527325782876e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.1202894330176335e-06,
+        "min": 0.0,
+        "max": 5.073835217733708e-06
+      },
+      "expert_pearson": {
+        "defined_count": 81,
+        "undefined_count": 15,
+        "defined_mean": 0.47856505556023365,
+        "defined_min": -0.11940672076243619,
+        "defined_max": 0.9182636713536922
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 26,
+        "mean": 1.056810755978769e-06,
+        "min": 0.0,
+        "max": 4.318593443238482e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 32,
+        "mean": 1.2047359540715813e-06,
+        "min": 0.0,
+        "max": 5.9006544918060275e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 32,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 0.7930029020399096,
+          "agreement_min": 0.5871894211065574,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 32,
+          "mean_threshold": 5.19677996635437e-07,
+          "selected_pixel_count_total": 7456654,
+          "agreement_mean": 0.8354114158702404,
+          "agreement_min": 0.6066142441045848,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 32,
+          "mean_threshold": 9.704381227493286e-07,
+          "selected_pixel_count_total": 5783434,
+          "agreement_mean": 0.8766445661475095,
+          "agreement_min": 0.6078389036711521,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 32,
+          "mean_threshold": 1.5962868928909302e-06,
+          "selected_pixel_count_total": 4134936,
+          "agreement_mean": 0.8994095700830528,
+          "agreement_min": 0.5638057269904551,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 32,
+          "mean_threshold": 2.216547727584839e-06,
+          "selected_pixel_count_total": 3094712,
+          "agreement_mean": 0.9080782156305758,
+          "agreement_min": 0.5535753783928966,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:seed-1": {
+      "comparison_count": 32,
+      "probability_mae": {
+        "mean": 2.487812118382661e-07,
+        "min": 1.0352331321436088e-09,
+        "max": 1.1614877833873137e-06
+      },
+      "probability_rmse": {
+        "mean": 3.339253710563071e-07,
+        "min": 5.554489315010644e-09,
+        "max": 1.520479490350726e-06
+      },
+      "probability_max_abs_error": {
+        "mean": 1.8263235688209534e-06,
+        "min": 2.9802322387695312e-08,
+        "max": 9.715557098388672e-06
+      },
+      "mean_total_variation_distance": {
+        "mean": 3.731718177573991e-07,
+        "min": 1.5528496982154132e-09,
+        "max": 1.7422316750809705e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 4.19643257456304e-13,
+        "min": 3.470889539249551e-17,
+        "max": 2.600826220288445e-12
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8087985990090324,
+        "min": 0.3857007874015748,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 1.0265059106433684e-06,
+        "min": 0.0,
+        "max": 4.6998324364485715e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 1.016529553286626e-06,
+        "min": 0.0,
+        "max": 4.5188291492111725e-06
+      },
+      "expert_pearson": {
+        "defined_count": 75,
+        "undefined_count": 21,
+        "defined_mean": 0.413213665817435,
+        "defined_min": -0.05570435157550552,
+        "defined_max": 0.9289121064806257
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 25,
+        "mean": 5.899191893946494e-07,
+        "min": 0.0,
+        "max": 3.2633827179255015e-06
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 32,
+        "mean": 1.1304216865215852e-06,
+        "min": 0.0,
+        "max": 5.205975096520865e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 32,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 0.8087985990090324,
+          "agreement_min": 0.3857007874015748,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 32,
+          "mean_threshold": 4.637986421585083e-07,
+          "selected_pixel_count_total": 7513882,
+          "agreement_mean": 0.8438525074624581,
+          "agreement_min": 0.3472299795207319,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 32,
+          "mean_threshold": 8.568167686462402e-07,
+          "selected_pixel_count_total": 6264542,
+          "agreement_mean": 0.8633928617527733,
+          "agreement_min": 0.3472299795207319,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 32,
+          "mean_threshold": 1.5129335224628448e-06,
+          "selected_pixel_count_total": 4461620,
+          "agreement_mean": 0.8898330086729502,
+          "agreement_min": 0.32032482724849015,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 32,
+          "mean_threshold": 2.0582228899002075e-06,
+          "selected_pixel_count_total": 2873382,
+          "agreement_mean": 0.9252913543814311,
+          "agreement_min": 0.46935276468066867,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:moa:seed-2": {
+      "comparison_count": 32,
+      "probability_mae": {
+        "mean": 1.5247247737059656e-07,
+        "min": 0.0,
+        "max": 7.094064081097887e-07
+      },
+      "probability_rmse": {
+        "mean": 2.0038556057340123e-07,
+        "min": 0.0,
+        "max": 8.873165431247584e-07
+      },
+      "probability_max_abs_error": {
+        "mean": 1.0514631867408752e-06,
+        "min": 0.0,
+        "max": 5.0961971282958984e-06
+      },
+      "mean_total_variation_distance": {
+        "mean": 2.287087160558948e-07,
+        "min": 0.0,
+        "max": 1.064109612164683e-06
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 1.5295751302533306e-13,
+        "min": 0.0,
+        "max": 8.857428353097798e-13
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 0.8318731471319201,
+        "min": 0.5565511811023622,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 3.6329191029949736e-07,
+        "min": 0.0,
+        "max": 1.450473085788917e-06
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 3.9141464657206705e-07,
+        "min": 0.0,
+        "max": 1.6810527936680111e-06
+      },
+      "expert_pearson": {
+        "defined_count": 72,
+        "undefined_count": 24,
+        "defined_mean": 0.42215066439366505,
+        "defined_min": -0.06063436849718148,
+        "defined_max": 0.900557791994522
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 24,
+        "mean": 2.652738715563789e-07,
+        "min": 0.0,
+        "max": 8.226761428436431e-07
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 32,
+        "mean": 4.034825055979654e-07,
+        "min": 0.0,
+        "max": 1.667968936717515e-06
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 32,
+          "mean_threshold": 0.0,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 0.8318731471319201,
+          "agreement_min": 0.5565511811023622,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 32,
+          "mean_threshold": 1.564621925354004e-07,
+          "selected_pixel_count_total": 7833694,
+          "agreement_mean": 0.8491030682654894,
+          "agreement_min": 0.5447740199376185,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 32,
+          "mean_threshold": 3.0919909477233887e-07,
+          "selected_pixel_count_total": 6540262,
+          "agreement_mean": 0.8735257777082072,
+          "agreement_min": 0.5654930650815424,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 32,
+          "mean_threshold": 5.420297384262085e-07,
+          "selected_pixel_count_total": 4688908,
+          "agreement_mean": 0.8987884942581975,
+          "agreement_min": 0.4642375731298898,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 32,
+          "mean_threshold": 7.320195436477661e-07,
+          "selected_pixel_count_total": 3281120,
+          "agreement_mean": 0.9196518895607041,
+          "agreement_min": 0.5139684813753582,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:seed-0": {
+      "comparison_count": 32,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 96,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 32,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:seed-1": {
+      "comparison_count": 32,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 96,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 32,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    },
+    "resolution_vs_reference:mot:seed-2": {
+      "comparison_count": 32,
+      "probability_mae": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_rmse": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "probability_max_abs_error": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_jensen_shannon_divergence_nats": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "dominant_expert_agreement_fraction": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "reference_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "candidate_top1_margin_mean": {
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "expert_pearson": {
+        "defined_count": 0,
+        "undefined_count": 96,
+        "defined_mean": null,
+        "defined_min": null,
+        "defined_max": null
+      },
+      "changed_pixel_reference_margin_mean": {
+        "defined_comparison_count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "unchanged_pixel_reference_margin_mean": {
+        "defined_comparison_count": 32,
+        "mean": 0.25,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "agreement_at_or_above_reference_margin_percentiles": {
+        "0": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "25": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "50": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "75": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        },
+        "90": {
+          "comparison_count": 32,
+          "mean_threshold": 0.25,
+          "selected_pixel_count_total": 8932640,
+          "agreement_mean": 1.0,
+          "agreement_min": 1.0,
+          "agreement_max": 1.0
+        }
+      }
+    }
+  }
+}

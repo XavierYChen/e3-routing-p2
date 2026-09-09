@@ -1,0 +1,54 @@
+{
+  "dataset": "configs/coco8-local.yaml",
+  "split": "val",
+  "dataset_root": "D:\\AI\\datasets\\coco8",
+  "split_image_count": 4,
+  "selected_image_count": 4,
+  "images": [
+    {
+      "sample_index": 0,
+      "name": "000000000036.jpg",
+      "original_width": 481,
+      "original_height": 640,
+      "sha256": "4c28394898302bef227834d63498a0fc54e4295f11c590c8a8ebcba51347bc03",
+      "label_sha256": "638773d69e1348c8d213cc0fdaf4107d170df7811af56f2cce372ca245556149",
+      "ground_truth_box_count": 2,
+      "image_artifact": "inputs/sample-0--000000000036.jpg",
+      "label_artifact": "inputs/sample-0--000000000036.txt"
+    },
+    {
+      "sample_index": 1,
+      "name": "000000000042.jpg",
+      "original_width": 640,
+      "original_height": 478,
+      "sha256": "c87afb6dfe55db1cada52479ed939a231e030d64f5e3c3eaf7eb1544591f853a",
+      "label_sha256": "c0e1ac95cf47310a3de9692cf0505fbf1ddcabceed575a3ecfac3c87f184f168",
+      "ground_truth_box_count": 1,
+      "image_artifact": "inputs/sample-1--000000000042.jpg",
+      "label_artifact": "inputs/sample-1--000000000042.txt"
+    },
+    {
+      "sample_index": 2,
+      "name": "000000000049.jpg",
+      "original_width": 381,
+      "original_height": 500,
+      "sha256": "86b46022d382f67b0934147fe515e1c3c3f5c04db45045516214b5e3092148e3",
+      "label_sha256": "0c0973cfb10a591266b92769e7cd43686133ea12faaa9d583702bf1c55e126e3",
+      "ground_truth_box_count": 9,
+      "image_artifact": "inputs/sample-2--000000000049.jpg",
+      "label_artifact": "inputs/sample-2--000000000049.txt"
+    },
+    {
+      "sample_index": 3,
+      "name": "000000000061.jpg",
+      "original_width": 640,
+      "original_height": 488,
+      "sha256": "6460e4a7cc80e34815aba8910a23152a16a24a416fa598138bd9231cccd413e2",
+      "label_sha256": "d7988d745a68480c7331b323adeec29adb1b0a4df53b072ed45d9650893eb812",
+      "ground_truth_box_count": 5,
+      "image_artifact": "inputs/sample-3--000000000061.jpg",
+      "label_artifact": "inputs/sample-3--000000000061.txt"
+    }
+  ],
+  "image_and_annotation_set_sha256": "86f9352c1096b06d6a00860134454fa7f105a27f38490c7342943b6858850bb6"
+}

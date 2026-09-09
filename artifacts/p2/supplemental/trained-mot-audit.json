@@ -1,0 +1,582 @@
+{
+  "status": "PASS",
+  "checkpoint_path_local_only": "D:\\AI\\tmp\\e3-p2-local-checkpoints\\mot-coco8-seed0-best.pt",
+  "checkpoint_sha256": "8658764afae0a471e524f7b85f8066c36210c29118c45dac56fe00b8b6591d59",
+  "checkpoint_published": false,
+  "input_size": 160,
+  "sample_count": 4,
+  "capture_count": 16,
+  "interpretation_boundary": "Colors are true dominant-expert argmax. Small margins mean a multicolor map is not, by itself, evidence of stable semantic specialization.",
+  "by_module": {
+    "model.13.m.0.router": {
+      "active_dominant_experts_max": 1,
+      "dominant_token_count_total": [
+        0,
+        0,
+        400
+      ],
+      "top1_margin_mean": 2.0891204258077778e-05,
+      "neighbor_probability_l1_mean": 5.536885172574557e-08
+    },
+    "model.16.m.0.router": {
+      "active_dominant_experts_max": 1,
+      "dominant_token_count_total": [
+        1600,
+        0,
+        0
+      ],
+      "top1_margin_mean": 4.839085067942506e-05,
+      "neighbor_probability_l1_mean": 3.2729289500821324e-07
+    },
+    "model.19.m.0.router": {
+      "active_dominant_experts_max": 3,
+      "dominant_token_count_total": [
+        75,
+        8,
+        317
+      ],
+      "top1_margin_mean": 4.1509569200570695e-05,
+      "neighbor_probability_l1_mean": 0.029637197963893414
+    },
+    "model.22.m.0.router": {
+      "active_dominant_experts_max": 1,
+      "dominant_token_count_total": [
+        100,
+        0,
+        0
+      ],
+      "top1_margin_mean": 1.0,
+      "neighbor_probability_l1_mean": 0.0
+    }
+  },
+  "records": [
+    {
+      "sample_index": 0,
+      "sample_name": "000000000036.jpg",
+      "module": "model.13.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.0,
+        0.49998947978019714,
+        0.5000105500221252
+      ],
+      "dominant_token_count": [
+        0,
+        0,
+        100
+      ],
+      "dominant_token_fraction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 1.9818544387817383e-05,
+        "max": 2.205371856689453e-05,
+        "mean": 2.089083136525005e-05
+      },
+      "neighbor_probability_l1_mean": 5.552062276592551e-08
+    },
+    {
+      "sample_index": 0,
+      "sample_name": "000000000036.jpg",
+      "module": "model.16.m.0.router",
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5000241994857788,
+        0.4999758005142212,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 3.299117088317871e-05,
+        "max": 5.996227264404297e-05,
+        "mean": 4.839621396968141e-05
+      },
+      "neighbor_probability_l1_mean": 3.2905424518503423e-07
+    },
+    {
+      "sample_index": 0,
+      "sample_name": "000000000036.jpg",
+      "module": "model.19.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.49998342990875244,
+        0.07499842345714569,
+        0.42501816153526306
+      ],
+      "dominant_token_count": [
+        19,
+        2,
+        79
+      ],
+      "dominant_token_fraction": [
+        0.19,
+        0.02,
+        0.79
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.00019979476928710938,
+        "mean": 4.15235772379674e-05
+      },
+      "neighbor_probability_l1_mean": 0.029637198895215988
+    },
+    {
+      "sample_index": 0,
+      "sample_name": "000000000036.jpg",
+      "module": "model.22.m.0.router",
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    {
+      "sample_index": 1,
+      "sample_name": "000000000042.jpg",
+      "module": "model.13.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.0,
+        0.49998947978019714,
+        0.5000105500221252
+      ],
+      "dominant_token_count": [
+        0,
+        0,
+        100
+      ],
+      "dominant_token_fraction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 1.9818544387817383e-05,
+        "max": 2.205371856689453e-05,
+        "mean": 2.0891726308036596e-05
+      },
+      "neighbor_probability_l1_mean": 5.546543491163902e-08
+    },
+    {
+      "sample_index": 1,
+      "sample_name": "000000000042.jpg",
+      "module": "model.16.m.0.router",
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5000241994857788,
+        0.4999758005142212,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 3.361701965332031e-05,
+        "max": 6.029009819030762e-05,
+        "mean": 4.8401878302684054e-05
+      },
+      "neighbor_probability_l1_mean": 3.2834839203133015e-07
+    },
+    {
+      "sample_index": 1,
+      "sample_name": "000000000042.jpg",
+      "module": "model.19.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.49998342990875244,
+        0.07499843835830688,
+        0.4250181317329407
+      ],
+      "dominant_token_count": [
+        20,
+        2,
+        78
+      ],
+      "dominant_token_fraction": [
+        0.2,
+        0.02,
+        0.78
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.630929708480835,
+        "max": 0.6309297680854797,
+        "mean": 0.630929708480835
+      },
+      "top1_margin": {
+        "min": 3.8743019104003906e-07,
+        "max": 0.00020068883895874023,
+        "mean": 4.147440267843194e-05
+      },
+      "neighbor_probability_l1_mean": 0.029637183994054794
+    },
+    {
+      "sample_index": 1,
+      "sample_name": "000000000042.jpg",
+      "module": "model.22.m.0.router",
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    {
+      "sample_index": 2,
+      "sample_name": "000000000049.jpg",
+      "module": "model.13.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.0,
+        0.49998947978019714,
+        0.5000105500221252
+      ],
+      "dominant_token_count": [
+        0,
+        0,
+        100
+      ],
+      "dominant_token_fraction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 1.9818544387817383e-05,
+        "max": 2.205371856689453e-05,
+        "mean": 2.0891129679512233e-05
+      },
+      "neighbor_probability_l1_mean": 5.5906948404071954e-08
+    },
+    {
+      "sample_index": 2,
+      "sample_name": "000000000049.jpg",
+      "module": "model.16.m.0.router",
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5000241994857788,
+        0.4999758005142212,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 3.325939178466797e-05,
+        "max": 6.0111284255981445e-05,
+        "mean": 4.837468441110104e-05
+      },
+      "neighbor_probability_l1_mean": 3.2332906130250194e-07
+    },
+    {
+      "sample_index": 2,
+      "sample_name": "000000000049.jpg",
+      "module": "model.19.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.49998337030410767,
+        0.07499846816062927,
+        0.42501816153526306
+      ],
+      "dominant_token_count": [
+        17,
+        2,
+        81
+      ],
+      "dominant_token_fraction": [
+        0.17,
+        0.02,
+        0.81
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 3.8743019104003906e-07,
+        "max": 0.00020051002502441406,
+        "mean": 4.150509994360618e-05
+      },
+      "neighbor_probability_l1_mean": 0.029637198895215988
+    },
+    {
+      "sample_index": 2,
+      "sample_name": "000000000049.jpg",
+      "module": "model.22.m.0.router",
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    {
+      "sample_index": 3,
+      "sample_name": "000000000061.jpg",
+      "module": "model.13.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.0,
+        0.49998947978019714,
+        0.5000105500221252
+      ],
+      "dominant_token_count": [
+        0,
+        0,
+        100
+      ],
+      "dominant_token_fraction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 1.9818544387817383e-05,
+        "max": 2.205371856689453e-05,
+        "mean": 2.0891129679512233e-05
+      },
+      "neighbor_probability_l1_mean": 5.45824008213458e-08
+    },
+    {
+      "sample_index": 3,
+      "sample_name": "000000000061.jpg",
+      "module": "model.16.m.0.router",
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5000241994857788,
+        0.4999758005142212,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 3.299117088317871e-05,
+        "max": 6.064772605895996e-05,
+        "mean": 4.839062603423372e-05
+      },
+      "neighbor_probability_l1_mean": 3.284398815139866e-07
+    },
+    {
+      "sample_index": 3,
+      "sample_name": "000000000061.jpg",
+      "module": "model.19.m.0.router",
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.49998337030410767,
+        0.07499844580888748,
+        0.42501816153526306
+      ],
+      "dominant_token_count": [
+        19,
+        2,
+        79
+      ],
+      "dominant_token_fraction": [
+        0.19,
+        0.02,
+        0.79
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.630929708480835,
+        "max": 0.6309297680854797,
+        "mean": 0.630929708480835
+      },
+      "top1_margin": {
+        "min": 4.470348358154297e-07,
+        "max": 0.00019943714141845703,
+        "mean": 4.153519694227725e-05
+      },
+      "neighbor_probability_l1_mean": 0.029637210071086884
+    },
+    {
+      "sample_index": 3,
+      "sample_name": "000000000061.jpg",
+      "module": "model.22.m.0.router",
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    }
+  ]
+}

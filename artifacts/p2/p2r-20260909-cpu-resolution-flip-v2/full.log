@@ -1,0 +1,26 @@
+2026-09-09 11:48:33,740 | INFO | scope=CPU resolution and horizontal-flip diagnostics resolutions=[64, 128, 256] seeds=[0, 1, 2] samples=[0, 1, 2, 3]
+2026-09-09 11:48:37,727 | INFO | family=mot seed=0 sample=0 captures=24
+2026-09-09 11:48:40,661 | INFO | family=mot seed=0 sample=1 captures=24
+2026-09-09 11:48:42,553 | INFO | family=mot seed=0 sample=2 captures=24
+2026-09-09 11:48:45,583 | INFO | family=mot seed=0 sample=3 captures=24
+2026-09-09 11:48:48,921 | INFO | family=mot seed=1 sample=0 captures=24
+2026-09-09 11:48:52,060 | INFO | family=mot seed=1 sample=1 captures=24
+2026-09-09 11:48:53,877 | INFO | family=mot seed=1 sample=2 captures=24
+2026-09-09 11:48:57,052 | INFO | family=mot seed=1 sample=3 captures=24
+2026-09-09 11:49:00,251 | INFO | family=mot seed=2 sample=0 captures=24
+2026-09-09 11:49:03,370 | INFO | family=mot seed=2 sample=1 captures=24
+2026-09-09 11:49:05,154 | INFO | family=mot seed=2 sample=2 captures=24
+2026-09-09 11:49:08,419 | INFO | family=mot seed=2 sample=3 captures=24
+2026-09-09 11:49:12,101 | INFO | family=moa seed=0 sample=0 captures=24
+2026-09-09 11:49:15,467 | INFO | family=moa seed=0 sample=1 captures=24
+2026-09-09 11:49:17,360 | INFO | family=moa seed=0 sample=2 captures=24
+2026-09-09 11:49:20,839 | INFO | family=moa seed=0 sample=3 captures=24
+2026-09-09 11:49:24,083 | INFO | family=moa seed=1 sample=0 captures=24
+2026-09-09 11:49:27,068 | INFO | family=moa seed=1 sample=1 captures=24
+2026-09-09 11:49:29,003 | INFO | family=moa seed=1 sample=2 captures=24
+2026-09-09 11:49:32,036 | INFO | family=moa seed=1 sample=3 captures=24
+2026-09-09 11:49:35,327 | INFO | family=moa seed=2 sample=0 captures=24
+2026-09-09 11:49:38,328 | INFO | family=moa seed=2 sample=1 captures=24
+2026-09-09 11:49:40,324 | INFO | family=moa seed=2 sample=2 captures=24
+2026-09-09 11:49:43,520 | INFO | family=moa seed=2 sample=3 captures=24
+2026-09-09 11:49:44,192 | INFO | status=PASS captures=576 comparisons=480 arrays=1440

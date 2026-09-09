@@ -6,6 +6,13 @@ tmp-config/
 .runtime/
 artifacts/p2/p2-v2-five-family-cpu-20260908/
 artifacts/p2/*/spatial-routing-raw.npz
+artifacts/p2/*/stability-routing-raw.npz
+artifacts/p2/p2r-*/stability-comparisons.json
+artifacts/p2/p2r-*/spatial-captures.json
+artifacts/p2/p2r-*/inputs/
+artifacts/p2/p2r-20260909-cpu-resolution-flip-v1/
+artifacts/p2/supplemental/moa-resolution-[0-9]*.png
+artifacts/p2/supplemental/trained-mot-sample-*.png
 results/run-*/
 checkpoints/**/args.yaml
 checkpoints/**/weights/last*.pt

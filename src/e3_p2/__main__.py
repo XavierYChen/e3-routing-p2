@@ -18,13 +18,20 @@ def main() -> None:
     demo_parser.add_argument("--port", type=int, default=8766)
     demo_parser.add_argument("--run-dir", type=Path)
     demo_parser.add_argument("--no-browser", action="store_true")
+    robustness_parser = commands.add_parser("robustness", help="run CPU resolution and flip diagnostics")
+    robustness_parser.add_argument("--config", type=Path, default=Path("configs/robustness.yaml"))
+    robustness_parser.add_argument("--run-id")
+    robustness_parser.add_argument("--no-latest", action="store_true")
     args = parser.parse_args()
     if args.command == "run":
         from .runner import run
         print(run(args.config, run_id=args.run_id, update_latest=not args.no_latest))
-    else:
+    elif args.command == "demo":
         from .demo import serve
         serve(host=args.host, port=args.port, run_dir=args.run_dir, open_browser=not args.no_browser)
+    else:
+        from .robustness_runner import run
+        print(run(args.config, run_id=args.run_id, update_latest=not args.no_latest))
 
 
 if __name__ == "__main__":

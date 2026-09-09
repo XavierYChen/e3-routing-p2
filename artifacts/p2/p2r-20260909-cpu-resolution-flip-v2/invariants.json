@@ -1,0 +1,86 @@
+{
+  "mot:seed-0": {
+    "hook_output_max_abs_delta": 0.0,
+    "repeat_weight_max_abs_delta": 0.0,
+    "repeat_logit_max_abs_delta": 0.0,
+    "repeat_indices_equal": true,
+    "module_order": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "hook_cleanup": true,
+    "status": "PASS"
+  },
+  "mot:seed-1": {
+    "hook_output_max_abs_delta": 0.0,
+    "repeat_weight_max_abs_delta": 0.0,
+    "repeat_logit_max_abs_delta": 0.0,
+    "repeat_indices_equal": true,
+    "module_order": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "hook_cleanup": true,
+    "status": "PASS"
+  },
+  "mot:seed-2": {
+    "hook_output_max_abs_delta": 0.0,
+    "repeat_weight_max_abs_delta": 0.0,
+    "repeat_logit_max_abs_delta": 0.0,
+    "repeat_indices_equal": true,
+    "module_order": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "hook_cleanup": true,
+    "status": "PASS"
+  },
+  "moa:seed-0": {
+    "hook_output_max_abs_delta": 0.0,
+    "repeat_weight_max_abs_delta": 0.0,
+    "repeat_logit_max_abs_delta": 0.0,
+    "repeat_indices_equal": null,
+    "module_order": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "hook_cleanup": true,
+    "status": "PASS"
+  },
+  "moa:seed-1": {
+    "hook_output_max_abs_delta": 0.0,
+    "repeat_weight_max_abs_delta": 0.0,
+    "repeat_logit_max_abs_delta": 0.0,
+    "repeat_indices_equal": null,
+    "module_order": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "hook_cleanup": true,
+    "status": "PASS"
+  },
+  "moa:seed-2": {
+    "hook_output_max_abs_delta": 0.0,
+    "repeat_weight_max_abs_delta": 0.0,
+    "repeat_logit_max_abs_delta": 0.0,
+    "repeat_indices_equal": null,
+    "module_order": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "hook_cleanup": true,
+    "status": "PASS"
+  }
+}
