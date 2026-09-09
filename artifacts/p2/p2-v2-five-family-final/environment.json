@@ -8,8 +8,8 @@
   "cuda_version": "12.8",
   "device_requested": "cpu",
   "cpu_threads": 14,
-  "project_commit": "02321240e0ec635defca9735c944feaab2f8ea16",
-  "project_tree": "4a318fa2ed9e0731a62baa6a275dc6982768719b",
+  "project_commit": "29d53975dcf078444cd539dffe105b6e61fbfe61",
+  "project_tree": "20493e7f93d1bd305aeec3bd55d3816803426023",
   "source_root": "D:\\AI\\YOLO-Master",
   "source_git_commit": "dab47c5e6e3d680c8d62576cf291e66431758873",
   "source_git_status": [

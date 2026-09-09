@@ -351,6 +351,9 @@ def _build_demo_sprites(run_dir: Path, entries: list[dict[str, Any]], cell_size:
         sheet.quantize(colors=256, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE).save(
             run_dir / relative, optimize=True
         )
+        for entry in group:
+            entry["individual_view_validated_before_packing"] = True
+            entry.pop("path", None)
 
 
 def _batch_equivalence(
@@ -1028,6 +1031,10 @@ def run(config_path: Path, *, run_id: str | None = None, update_latest: bool = T
     demo_asset_validation = _validate_demo_assets(run_dir, demo_entries, inputs)
     _build_demo_sprites(run_dir, demo_entries)
     shutil.rmtree(run_dir / "overlays")
+    demo_asset_validation.update(
+        individual_views_packed_into_sprites=True,
+        published_sprite_count=len({entry["sprite_path"] for entry in demo_entries}),
+    )
     demo_index = {
         "schema_version": config["schema_version"],
         "run_id": config["run_id"],

@@ -250,8 +250,8 @@
   "source_fingerprint_validation": "PASS",
   "source_fingerprint_count": 9,
   "tool_source": {
-    "commit": "02321240e0ec635defca9735c944feaab2f8ea16",
-    "tree": "4a318fa2ed9e0731a62baa6a275dc6982768719b",
+    "commit": "29d53975dcf078444cd539dffe105b6e61fbfe61",
+    "tree": "20493e7f93d1bd305aeec3bd55d3816803426023",
     "implementation_status_porcelain": [],
     "implementation_clean": true
   },
@@ -280,7 +280,9 @@
     "unique_rendered_asset_count": 192,
     "all_rendered_assets_match_original_size": true,
     "all_original_assets_present": true,
-    "all_annotated_original_assets_present_and_match_original_size": true
+    "all_annotated_original_assets_present_and_match_original_size": true,
+    "individual_views_packed_into_sprites": true,
+    "published_sprite_count": 32
   },
   "single_vs_batch_equivalence": {
     "moa": {
@@ -344,5 +346,5 @@
     "primary_conclusion_basis": "paired_capture_contrast; pooled_contrast is diagnostic only"
   },
   "interpretation_boundary": "random initialization; pipeline evidence only, not learned specialization",
-  "duration_seconds_observation_only": 83.36899380000068
+  "duration_seconds_observation_only": 58.53316369999993
 }
