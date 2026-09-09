@@ -1,38 +1,41 @@
-# `e3.spatial_routing.v1` 字段字典
+# E3 P2 空间路由 Schema v2.0
 
-P2 在 P0 结构化日志之上增加空间坐标、原图身份和可视化产物。所有族名在机器字段中保持小写，在图表和界面中统一显示为 **MOE / MOT / LATENT / MOA / MOLORA**。
+Schema ID：`e3.spatial-routing/v2.0.0`。GitHub 机器可读入口为 `demo-index.json`、`spatial-captures.json`、`spatial-diagnostics.json` 与 `family-feasibility.json`。完整复现时还会在本地生成 `spatial-routing-raw.npz`；该原始 logits/weights 文件不公开上传。
+
+## 五族能力矩阵
+
+| family | runtime evidence | observed shape | spatial granularity | overlay |
+|---|---|---|---|---|
+| `mot` | full detector forward hook | `[B,3,H,W]` | `token` | supported |
+| `moa` | full detector forward hook | `[B,3,H,W]` | `token` | supported |
+| `moe` | nested router hook | `[B,2]` | `image` | unsupported |
+| `latent` | runtime snapshot | `[B,4]` | `image` | unsupported |
+| `molora` | official router contract | `[B,4]` | `image` | unsupported |
+
+只有 `H>1 且 W>1`、专家轴和为 1 的 `[B,E,H,W]` 才能进入空间叠加。`[B,E]` 或带单例空间轴的张量不能广播成 token 热图。
+
+## capture 字段
 
 | 字段 | 类型 | 含义 |
 |---|---|---|
-| `schema_version` | string | 固定为 `e3.spatial_routing.v1` |
-| `family` / `family_display` | string | 规范族名 / 大写显示名 |
-| `layer` | string | 被 hook 的路由器层名 |
-| `source` | string | 原始路由张量的形状语义 |
-| `spatial_granularity` | enum | `token` 或 `image`；消费方必须据此决定能否做空间解释 |
-| `feature_grid_hw` | `[H,W]` | 原始路由网格；图像级路由固定 `[1,1]` |
-| `num_experts` / `top_k` | int | 专家数与激活数 |
-| `probability_sum_max_error` | float | 专家维概率和相对 1 的最大误差，门槛 `1e-4` |
-| `mean_router_probs` | float[] | 该层平均专家权重 |
-| `transform` | object | letterbox 比例、四边 padding、输入与原图大小，支持逆映射 |
-| `artifacts` | object | 专家图、熵图、主导专家图文件名 |
-| `representative_expert_probability` | object | 代表专家原始概率的 min/mean/max/range；相对对比图必须同时提供这些真值 |
-| `semantics` | string | 当前图可被怎样解释 |
-| `downstream_consumers` | string[] | `B1`、`D1`、`A3`、`WebUI` |
+| `family` | string | 小写机器标识；UI 使用大写 |
+| `sample_index` | int | COCO8 val 排序后的样本号 |
+| `module` | string | 完整模型内 router 模块路径 |
+| `weights_key` | string | NPZ 中 `[B,E,H,W]` 概率数组键 |
+| `logits_key` | string | NPZ 中原始 logits 键 |
+| `indices_key` | string/null | MOT Top-K 索引；MOA 为 null |
+| `validation.shape` | int[4] | `[B,E,H,W]` |
+| `validation.max_expert_sum_error` | float | 每 token 专家概率和对 1 的最大误差 |
+| `diagnostics.normalized_entropy` | object | 以 `log(E)` 归一化到 `[0,1]` |
+| `diagnostics.top1_margin` | object | 最大与次大专家概率差 |
+| `region_diagnostics` | object | 前景、背景、padding 与差异统计 |
 
-输入身份只记录相对路径和 SHA-256。绝对数据路径、用户名、令牌和环境变量不会写入证据。
+MOT 的 `indices_key` 与稀疏 `weights` 会交叉验证：已选专家概率和必须为 1，未选专家最大概率必须接近 0。因此精确零是合法值。
 
-## 五族覆盖和缺口
+## 空间映射
 
-| 族 | 状态 | 缺口或接入条件 |
-|---|---|---|
-| MOE | 已支持 | 当前 `EfficientSpatialRouter` 最终对空间求均值得到 `[B,E]`，所以标记 image-level |
-| MOT | 已支持 | `_MoTRouter` 直接提供 `[B,E,H,W]`，是真实 token-level 空间路由 |
-| LATENT | 已支持 | `LatentRouter` 对尺度 token 输出 `[B,E]`，所以标记 image-level |
-| MOA | 暂不支持 | 源码存在 `[B,M,H,W]` 空间路由器，但尚未进入 P0 三族 contract；需补 P0 adapter、模型层选择和回归测试后接入 |
-| MoLoRA | 暂不支持 | 需要先提供已挂载 PEFT adapter 的 checkpoint，并统一 Linear/Conv 路由坐标和 merge 状态；裸检测配置中没有可采集实例 |
+原图先按比例 letterbox 到 160×160；每张图保存整数 padding。热图先升采样到输入平面，再严格去除 padding，最后恢复原图尺寸。区域分析以 token 中心是否落入 YOLO ground-truth box 判定前景；padding 不计入前景或背景。
 
-降级原则是先交真实三族并显式返回 unsupported。不得用随机热图、特征激活或插值后的常数图冒充缺失族的 token 路由。
+## 下游消费规则
 
-`relative_contrast` 仅对单张专家图做 `(p-min)/(max-min)`，用途是观察窄区间内的空间结构。它不改变或替代绝对概率；同一记录同时提供 absolute probability 图和原始 min/mean/max/range，禁止把相对色差解释为专家概率的大幅变化。
-
-验证包中的 MOT 状态采用 `e3.mot_router_state.v1`，只保存路由器张量并在相同 seed 的配置骨干上回放。它适合验证 schema、坐标映射和 WebUI，不代表完整训练 checkpoint 的检测输出。
+B1、D1、A3 和 WebUI 必须先读取 `family-feasibility.json`。只有 `token_overlay=supported` 才读取空间数组；其余族应展示 unsupported 原因。可视化不得对每张图单独 min-max 拉伸后冒充概率强度；概率色阶固定为 `[0,1]`。

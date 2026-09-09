@@ -1,16 +1,21 @@
 ## 改动摘要
 
-<!-- 改了什么、为何改；说明对 B1、D1、A3 或 WebUI 的影响。 -->
+- 五族路由接口审计；仅对真实 `[B,E,H,W]` 的 MOT/MOA 生成 token 叠加。
+- 完整 detector forward hook、固定尺度图、交互 UI、GT 区域分析与复现证据。
 
 ## 测试证据
 
-<!-- 命令、环境、单测/集成测试结果、机器可读结果目录。 -->
+- `run_tests.cmd`
+- `run_p2_v2.cmd --run-id p2-v2-five-family-final`
+- 概率语义、hook 等价、确定性、batch 2/4、几何、资源清单全部 PASS。
 
 ## 消融数据
 
-<!-- 同数据、同预算、同增广、同评测口径；原则上 ≥3 seed。没有精度声明时明确写出。 -->
+- 同 COCO8 val 4 图、同 160 输入、同 CPU、同 seed 0 对比 MOT/MOA。
+- 当前是单 seed 功能证据，不声明检测精度或训练收益。
 
 ## 已知局限
 
-<!-- unsupported、fallback、单 seed、性能开销和后续工作。 -->
-
+- MOE、LATENT、MoLoRA 输出没有可逆 H/W token 轴，明确标记 unsupported。
+- 随机初始化的 MOA 近似均匀；鲜艳 argmax 色块不代表强路由置信度。
+- 动态演示由本地 WebUI 录屏，仓库不提交静态图片拼接视频。

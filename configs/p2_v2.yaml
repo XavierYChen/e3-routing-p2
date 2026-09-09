@@ -1,0 +1,55 @@
+run_id: p2-v2-five-family-final
+schema_version: e3.spatial-routing/v2.0.0
+require_committed_source: true
+
+runtime_root: ../YOLO-Master
+python_root: ../envs/yolo_master
+official_locked_base_ref: dab47c5e6e3d680c8d62576cf291e66431758873
+official_runtime_ref: dab47c5e6e3d680c8d62576cf291e66431758873
+official_runtime_tree: local-working-tree-recorded-in-environment.json
+official_source_archive_url: https://github.com/Tencent/YOLO-Master
+official_source_archive_sha256: not-applicable-local-clone
+
+device: cpu
+seed: 0
+dataset: configs/coco8-local.yaml
+dataset_split: val
+sample_indices: [0, 1, 2, 3]
+image_size: 160
+overlay_alpha: 0.58
+batch_equivalence_sizes: [2, 4]
+
+region_analysis:
+  enabled: true
+  label_format: yolo_detection_normalized_xywh
+  assignment_rule: valid_token_center_inside_any_ground_truth_box
+  exclude_letterbox_padding: true
+
+spatial_profiles:
+  mot:
+    model_config: ultralytics/cfg/models/26/yolo26-master-mot-n.yaml
+    router_class: _MoTRouter
+    expert_labels: [local, window, deformable]
+  moa:
+    model_config: ultralytics/cfg/models/26/yolo26-master-moa-n.yaml
+    router_class: _MoARouter
+    expert_labels: [local, regional, global]
+
+non_spatial_profiles:
+  moe:
+    model_config: ultralytics/cfg/models/26/yolo26-master-n.yaml
+  latent:
+    model_config: ultralytics/cfg/models/26/yolo26-master-latent-n.yaml
+  molora:
+    audit: isolated_official_router_contract
+
+source_fingerprints:
+  ultralytics/nn/modules/mot/router.py: 24c42e57474d8a322150f9e1a65f75a7c72a66fd46baa72f39d8b4fcf8eba9df
+  ultralytics/nn/modules/moa/router.py: 249ebbee0e3f35e18cfe6bf01ff7f58476b0d5bec62b8704e745232c45592595
+  ultralytics/nn/modules/latent_mixture.py: 3477c84156cc24982c32d11c624074357a992cd2342a345af90210e41109b91e
+  ultralytics/nn/modules/moe/gated.py: 2711c00aec3679659352cf5018da9987e1b0e7cb7fd34b9b3e157e121c700bc6
+  ultralytics/nn/peft/molora/router.py: 5cac0b2ba5ae333123b013df0eaf4689f8adc964f5fca57eb24fe67277ced9b6
+  ultralytics/cfg/models/26/yolo26-master-mot-n.yaml: f327bb95d9cdf2dc1d81da060ad663a4e9bc38ff1d3ae13db58d36d761452614
+  ultralytics/cfg/models/26/yolo26-master-moa-n.yaml: a7643be80f70d5968a9cbe12595544186b42acaf54d3b5e24fed908bf81ba1e3
+  ultralytics/cfg/models/26/yolo26-master-n.yaml: be403b10940030d6eb960f3e82cc40b1e142ab28bb8e16010f0ba1d95cb60306
+  ultralytics/cfg/models/26/yolo26-master-latent-n.yaml: 052ff10474b20e422022bd463cf8dc7385158820ec75eb8d84ae23c3455f7167

@@ -3,6 +3,9 @@ __pycache__/
 env/runtime/
 Ultralytics/
 tmp-config/
+.runtime/
+artifacts/p2/p2-v2-five-family-cpu-20260908/
+artifacts/p2/*/spatial-routing-raw.npz
 results/run-*/
 checkpoints/**/args.yaml
 checkpoints/**/weights/last*.pt

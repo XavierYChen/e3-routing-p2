@@ -4,11 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "e3-routing-p2"
-version = "0.1.0"
-description = "Token routing to original-image overlays for Tencent Rhino-Bird E3"
-requires-python = ">=3.11"
-dependencies = ["numpy", "opencv-python", "matplotlib", "torch"]
+version = "0.2.0"
+description = "Five-family routing audit with truthful MOT/MOA token overlays and an interactive demo"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23", "Pillow>=9.0", "PyYAML>=6.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.pytest.ini_options]
+addopts = "-q"
 testpaths = ["tests"]
-
+pythonpath = ["src"]

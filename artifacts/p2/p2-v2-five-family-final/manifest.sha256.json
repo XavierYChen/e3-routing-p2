@@ -1,0 +1,301 @@
+{
+  "algorithm": "sha256",
+  "file_count": 59,
+  "files": [
+    {
+      "path": "command.txt",
+      "bytes": 12,
+      "sha256": "94e5976689d9453f578fef41376933f8ac452c7c783ee1a93074d5f852925288"
+    },
+    {
+      "path": "config.resolved.yaml",
+      "bytes": 2513,
+      "sha256": "9dad3b7513ec74db9dd41b106abf87fe33dc0500b15e8244fbecd5de3f9821d7"
+    },
+    {
+      "path": "demo-assets/moa--sample-0--model.13.m.0.router.png",
+      "bytes": 380455,
+      "sha256": "52ae1905f96994b2ad95a1ff4668ade27ebf296fa46ddaaa2779e03a9d8fd37d"
+    },
+    {
+      "path": "demo-assets/moa--sample-0--model.16.m.0.router.png",
+      "bytes": 388611,
+      "sha256": "5a962ac695999d1f7494ccfa716b74a3da7efddba085a2a94a74ab32a0300808"
+    },
+    {
+      "path": "demo-assets/moa--sample-0--model.19.m.0.router.png",
+      "bytes": 388681,
+      "sha256": "becf2f8377e4f25360803610f0881b557eb96a30832c393cd12727b3daadfe3e"
+    },
+    {
+      "path": "demo-assets/moa--sample-0--model.22.m.0.router.png",
+      "bytes": 390161,
+      "sha256": "3b4b2b49ad3387226a312555ec83b226656d951a1999446e48b73762a7a5f722"
+    },
+    {
+      "path": "demo-assets/moa--sample-1--model.13.m.0.router.png",
+      "bytes": 409174,
+      "sha256": "f2c1eef0cec2a67c9c71a0e762542bca92729266af1fd00b94e4b4d9eb3fa793"
+    },
+    {
+      "path": "demo-assets/moa--sample-1--model.16.m.0.router.png",
+      "bytes": 407373,
+      "sha256": "c574abefcc42be1f9ebd2f6e2511f2acb1b4c335faf0d685d0ff7bccf8c7c3c9"
+    },
+    {
+      "path": "demo-assets/moa--sample-1--model.19.m.0.router.png",
+      "bytes": 412661,
+      "sha256": "3e72288eeafb1115ce65c0c761fd95d8509879d83762d23cb5aa1929bde7abd0"
+    },
+    {
+      "path": "demo-assets/moa--sample-1--model.22.m.0.router.png",
+      "bytes": 417636,
+      "sha256": "b31b7f80fc89d06f1786c01e603eb46abc876b92c32a17cf3419aff65014422b"
+    },
+    {
+      "path": "demo-assets/moa--sample-2--model.13.m.0.router.png",
+      "bytes": 346412,
+      "sha256": "6e2978925533ce2f9fbd302e8fc68f4e7590cd2726db057fdaddbd327dbf8c89"
+    },
+    {
+      "path": "demo-assets/moa--sample-2--model.16.m.0.router.png",
+      "bytes": 363912,
+      "sha256": "dc4687aad30c1df8ebe40abbc56f5cd59333f17df9a0cd3a889d2d8e6946eb69"
+    },
+    {
+      "path": "demo-assets/moa--sample-2--model.19.m.0.router.png",
+      "bytes": 357889,
+      "sha256": "754e939600018b88978599a4af7e4ce7e1871efe8dd164f671bf8799f195252f"
+    },
+    {
+      "path": "demo-assets/moa--sample-2--model.22.m.0.router.png",
+      "bytes": 355372,
+      "sha256": "087ad2bc175b769979784cb7b2420a12f27d2d4d03988affdf1bd6d975077a58"
+    },
+    {
+      "path": "demo-assets/moa--sample-3--model.13.m.0.router.png",
+      "bytes": 617354,
+      "sha256": "0211b28a0b3224becd1b8f9a5e1a1b793f75a80182d174f418176760e5d1dbeb"
+    },
+    {
+      "path": "demo-assets/moa--sample-3--model.16.m.0.router.png",
+      "bytes": 616901,
+      "sha256": "f99b1a94d862ac8cea4cefac436b1ca89f6f549edfc786aac506d9a778a63a7d"
+    },
+    {
+      "path": "demo-assets/moa--sample-3--model.19.m.0.router.png",
+      "bytes": 620760,
+      "sha256": "feddaa516a636bfa3032d6e49dcbcf379c5a8b2847adac732bbb0bbbf715741e"
+    },
+    {
+      "path": "demo-assets/moa--sample-3--model.22.m.0.router.png",
+      "bytes": 620517,
+      "sha256": "e353aea42e393c04ffb5a39dc09eced3076409cd56c0053c0eb894f47711d133"
+    },
+    {
+      "path": "demo-assets/mot--sample-0--model.13.m.0.router.png",
+      "bytes": 356109,
+      "sha256": "0ea0700d4efb96ef93053ab912dd77a971d24e12d0a9a2a819e1141cfcec654a"
+    },
+    {
+      "path": "demo-assets/mot--sample-0--model.16.m.0.router.png",
+      "bytes": 356109,
+      "sha256": "0ea0700d4efb96ef93053ab912dd77a971d24e12d0a9a2a819e1141cfcec654a"
+    },
+    {
+      "path": "demo-assets/mot--sample-0--model.19.m.0.router.png",
+      "bytes": 356109,
+      "sha256": "0ea0700d4efb96ef93053ab912dd77a971d24e12d0a9a2a819e1141cfcec654a"
+    },
+    {
+      "path": "demo-assets/mot--sample-0--model.22.m.0.router.png",
+      "bytes": 340239,
+      "sha256": "bf430f9ce65fd7060214761ec2754740a9c2f74601dcdfd17e71a2251104b359"
+    },
+    {
+      "path": "demo-assets/mot--sample-1--model.13.m.0.router.png",
+      "bytes": 348981,
+      "sha256": "517f19e22f92c221b12cb7ba255b67f2682d7c652cbc58b5c7d4ccf1f4fc6c07"
+    },
+    {
+      "path": "demo-assets/mot--sample-1--model.16.m.0.router.png",
+      "bytes": 348981,
+      "sha256": "517f19e22f92c221b12cb7ba255b67f2682d7c652cbc58b5c7d4ccf1f4fc6c07"
+    },
+    {
+      "path": "demo-assets/mot--sample-1--model.19.m.0.router.png",
+      "bytes": 348981,
+      "sha256": "517f19e22f92c221b12cb7ba255b67f2682d7c652cbc58b5c7d4ccf1f4fc6c07"
+    },
+    {
+      "path": "demo-assets/mot--sample-1--model.22.m.0.router.png",
+      "bytes": 351329,
+      "sha256": "be2faa4639095ec6d75da381cd8e99557ef1f0a23b4eb38bebbab1b845907ceb"
+    },
+    {
+      "path": "demo-assets/mot--sample-2--model.13.m.0.router.png",
+      "bytes": 305970,
+      "sha256": "85c91437d5356248cb7e26e38d37384512434da0a81855ffb1c243dffa268e62"
+    },
+    {
+      "path": "demo-assets/mot--sample-2--model.16.m.0.router.png",
+      "bytes": 305970,
+      "sha256": "85c91437d5356248cb7e26e38d37384512434da0a81855ffb1c243dffa268e62"
+    },
+    {
+      "path": "demo-assets/mot--sample-2--model.19.m.0.router.png",
+      "bytes": 305970,
+      "sha256": "85c91437d5356248cb7e26e38d37384512434da0a81855ffb1c243dffa268e62"
+    },
+    {
+      "path": "demo-assets/mot--sample-2--model.22.m.0.router.png",
+      "bytes": 320611,
+      "sha256": "c89d41dd32132da19a6d30da0b23da5f043f731a5564c57db5e61b88ac3a6d30"
+    },
+    {
+      "path": "demo-assets/mot--sample-3--model.13.m.0.router.png",
+      "bytes": 530587,
+      "sha256": "3957e727c9632dea6192217096405359a74414a6b9288aee8b3045eb2f389cef"
+    },
+    {
+      "path": "demo-assets/mot--sample-3--model.16.m.0.router.png",
+      "bytes": 530587,
+      "sha256": "3957e727c9632dea6192217096405359a74414a6b9288aee8b3045eb2f389cef"
+    },
+    {
+      "path": "demo-assets/mot--sample-3--model.19.m.0.router.png",
+      "bytes": 530587,
+      "sha256": "3957e727c9632dea6192217096405359a74414a6b9288aee8b3045eb2f389cef"
+    },
+    {
+      "path": "demo-assets/mot--sample-3--model.22.m.0.router.png",
+      "bytes": 499069,
+      "sha256": "cd4a970c41d2d9220e0d3ad87f937f1b8eb6494a8683532a5a0d7295688211b1"
+    },
+    {
+      "path": "demo-index.json",
+      "bytes": 530273,
+      "sha256": "2c4aa80a929f7d43d8cd2e40878cb6a8504371951436514f9ba6bb9d7c4f4da5"
+    },
+    {
+      "path": "demo.html",
+      "bytes": 8843,
+      "sha256": "a43314528ba61e3c09b273d56db3ccf1054372dc3e238fd0147eaaa42720c15d"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 2247,
+      "sha256": "c9d11e4e3d555fe65bb53a9225741d38dee6e448dff0ea36318053fd69543cb9"
+    },
+    {
+      "path": "family-feasibility.json",
+      "bytes": 7628,
+      "sha256": "05992efd18a6ac378c430a6871bcedc3a4226b274d1ae9b69dc68d822d577d3a"
+    },
+    {
+      "path": "full.log",
+      "bytes": 1576,
+      "sha256": "e0c2e23860b7479343cdf6712d507314ff429364c23ce62efc301ccaf58f6c7a"
+    },
+    {
+      "path": "input.json",
+      "bytes": 7576,
+      "sha256": "c5c4a612e4e0d6c41517e5a50a99c3fe1b4a541a2f9565364a45007a37a064e3"
+    },
+    {
+      "path": "inputs/sample-0--000000000036.jpg",
+      "bytes": 49262,
+      "sha256": "4c28394898302bef227834d63498a0fc54e4295f11c590c8a8ebcba51347bc03"
+    },
+    {
+      "path": "inputs/sample-0--000000000036.txt",
+      "bytes": 77,
+      "sha256": "638773d69e1348c8d213cc0fdaf4107d170df7811af56f2cce372ca245556149"
+    },
+    {
+      "path": "inputs/sample-0--ground-truth.png",
+      "bytes": 188325,
+      "sha256": "21e14de01eff6f8beb2cf1e098385345e73a4d085f87edc5c9af3cf0a395b7c8"
+    },
+    {
+      "path": "inputs/sample-1--000000000042.jpg",
+      "bytes": 42264,
+      "sha256": "c87afb6dfe55db1cada52479ed939a231e030d64f5e3c3eaf7eb1544591f853a"
+    },
+    {
+      "path": "inputs/sample-1--000000000042.txt",
+      "bytes": 35,
+      "sha256": "c0e1ac95cf47310a3de9692cf0505fbf1ddcabceed575a3ecfac3c87f184f168"
+    },
+    {
+      "path": "inputs/sample-1--ground-truth.png",
+      "bytes": 184890,
+      "sha256": "7ef46d048c3244244fce3181774963016ab3abd1479713172b62616cdecf22c4"
+    },
+    {
+      "path": "inputs/sample-2--000000000049.jpg",
+      "bytes": 30297,
+      "sha256": "86b46022d382f67b0934147fe515e1c3c3f5c04db45045516214b5e3092148e3"
+    },
+    {
+      "path": "inputs/sample-2--000000000049.txt",
+      "bytes": 328,
+      "sha256": "0c0973cfb10a591266b92769e7cd43686133ea12faaa9d583702bf1c55e126e3"
+    },
+    {
+      "path": "inputs/sample-2--ground-truth.png",
+      "bytes": 103105,
+      "sha256": "0beb3eec708a8732d8ad24bb923072e50363d430020e66babb5817530d650168"
+    },
+    {
+      "path": "inputs/sample-3--000000000061.jpg",
+      "bytes": 99547,
+      "sha256": "6460e4a7cc80e34815aba8910a23152a16a24a416fa598138bd9231cccd413e2"
+    },
+    {
+      "path": "inputs/sample-3--000000000061.txt",
+      "bytes": 193,
+      "sha256": "d7988d745a68480c7331b323adeec29adb1b0a4df53b072ed45d9650893eb812"
+    },
+    {
+      "path": "inputs/sample-3--ground-truth.png",
+      "bytes": 275812,
+      "sha256": "038b269c059268d88ca7ccd3c582fc89137b83fd24024ad9a7032b5c9cc24e38"
+    },
+    {
+      "path": "region-routing-analysis.json",
+      "bytes": 25172,
+      "sha256": "d5a2f3989170e66057aacae414a57668ccc9ccfbe407af3cf504d75da3971c95"
+    },
+    {
+      "path": "routing-overview.png",
+      "bytes": 75973,
+      "sha256": "33e300ea66153c7564f8ae1a44e9d1dcc4fb9c7b47441e40f033f894ae5d49ce"
+    },
+    {
+      "path": "source-fingerprint-checks.json",
+      "bytes": 2448,
+      "sha256": "10b7d322b44b1a49a95139503ec195a1a6dc400cff324f0150736abe416deab6"
+    },
+    {
+      "path": "spatial-captures.json",
+      "bytes": 139749,
+      "sha256": "f612be44afc81962803da68515b787646fe083e02d818965b4ae2a6dd009212e"
+    },
+    {
+      "path": "spatial-diagnostics.json",
+      "bytes": 4474,
+      "sha256": "e9813fce41ecd9cbc803ee4bde5e29746536cc1843ff5d611473a206f4f0fe56"
+    },
+    {
+      "path": "spatial-routing-raw.npz",
+      "bytes": 111098,
+      "sha256": "78b75fb4f04016e90aa08472c452fb20c6bd75c79e7ad9efc0040ec1d4898a30"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 11679,
+      "sha256": "07f531f08b9034fb7c87eea5830df79def9a44944b2e355bd691769ac1111403"
+    }
+  ]
+}

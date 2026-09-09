@@ -1,0 +1,239 @@
+{
+  "dataset": "configs/coco8-local.yaml",
+  "split": "val",
+  "dataset_root": "D:\\AI\\datasets\\coco8",
+  "split_image_count": 4,
+  "selected_image_count": 4,
+  "images": [
+    {
+      "sample_index": 0,
+      "name": "000000000036.jpg",
+      "path": "D:\\AI\\datasets\\coco8\\images\\val\\000000000036.jpg",
+      "sha256": "4c28394898302bef227834d63498a0fc54e4295f11c590c8a8ebcba51347bc03",
+      "label_path": "D:\\AI\\datasets\\coco8\\labels\\val\\000000000036.txt",
+      "label_sha256": "638773d69e1348c8d213cc0fdaf4107d170df7811af56f2cce372ca245556149",
+      "ground_truth_box_count": 2,
+      "ground_truth_boxes": [
+        {
+          "class_id": 25,
+          "center_x": 0.475759,
+          "center_y": 0.414523,
+          "width": 0.951518,
+          "height": 0.672422
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.671279,
+          "center_y": 0.617945,
+          "width": 0.645759,
+          "height": 0.726859
+        }
+      ],
+      "geometry": {
+        "original_width": 481,
+        "original_height": 640,
+        "input_size": 160,
+        "resized_width": 120,
+        "resized_height": 160,
+        "pad_left": 20,
+        "pad_top": 0,
+        "pad_right": 20,
+        "pad_bottom": 0,
+        "scale": 0.25
+      },
+      "normalization": "RGB uint8 / 255.0",
+      "artifact_path": "inputs/sample-0--000000000036.jpg",
+      "label_artifact_path": "inputs/sample-0--000000000036.txt",
+      "annotated_artifact_path": "inputs/sample-0--ground-truth.png"
+    },
+    {
+      "sample_index": 1,
+      "name": "000000000042.jpg",
+      "path": "D:\\AI\\datasets\\coco8\\images\\val\\000000000042.jpg",
+      "sha256": "c87afb6dfe55db1cada52479ed939a231e030d64f5e3c3eaf7eb1544591f853a",
+      "label_path": "D:\\AI\\datasets\\coco8\\labels\\val\\000000000042.txt",
+      "label_sha256": "c0e1ac95cf47310a3de9692cf0505fbf1ddcabceed575a3ecfac3c87f184f168",
+      "ground_truth_box_count": 1,
+      "ground_truth_boxes": [
+        {
+          "class_id": 16,
+          "center_x": 0.606687,
+          "center_y": 0.341381,
+          "width": 0.544156,
+          "height": 0.51
+        }
+      ],
+      "geometry": {
+        "original_width": 640,
+        "original_height": 478,
+        "input_size": 160,
+        "resized_width": 160,
+        "resized_height": 120,
+        "pad_left": 0,
+        "pad_top": 20,
+        "pad_right": 0,
+        "pad_bottom": 20,
+        "scale": 0.25
+      },
+      "normalization": "RGB uint8 / 255.0",
+      "artifact_path": "inputs/sample-1--000000000042.jpg",
+      "label_artifact_path": "inputs/sample-1--000000000042.txt",
+      "annotated_artifact_path": "inputs/sample-1--ground-truth.png"
+    },
+    {
+      "sample_index": 2,
+      "name": "000000000049.jpg",
+      "path": "D:\\AI\\datasets\\coco8\\images\\val\\000000000049.jpg",
+      "sha256": "86b46022d382f67b0934147fe515e1c3c3f5c04db45045516214b5e3092148e3",
+      "label_path": "D:\\AI\\datasets\\coco8\\labels\\val\\000000000049.txt",
+      "label_sha256": "0c0973cfb10a591266b92769e7cd43686133ea12faaa9d583702bf1c55e126e3",
+      "ground_truth_box_count": 9,
+      "ground_truth_boxes": [
+        {
+          "class_id": 17,
+          "center_x": 0.597835,
+          "center_y": 0.63755,
+          "width": 0.342283,
+          "height": 0.36886
+        },
+        {
+          "class_id": 17,
+          "center_x": 0.324291,
+          "center_y": 0.64808,
+          "width": 0.219711,
+          "height": 0.3164
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.620039,
+          "center_y": 0.5939,
+          "width": 0.172415,
+          "height": 0.14608
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.385525,
+          "center_y": 0.58557,
+          "width": 0.14937,
+          "height": 0.12586
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.328898,
+          "center_y": 0.70199,
+          "width": 0.0313386,
+          "height": 0.06714
+        },
+        {
+          "class_id": 58,
+          "center_x": 0.622546,
+          "center_y": 0.89961,
+          "width": 0.185932,
+          "height": 0.09446
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.760577,
+          "center_y": 0.69423,
+          "width": 0.0285564,
+          "height": 0.05486
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.510709,
+          "center_y": 0.69215,
+          "width": 0.0187927,
+          "height": 0.04682
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.929554,
+          "center_y": 0.67602,
+          "width": 0.0388451,
+          "height": 0.01844
+        }
+      ],
+      "geometry": {
+        "original_width": 381,
+        "original_height": 500,
+        "input_size": 160,
+        "resized_width": 122,
+        "resized_height": 160,
+        "pad_left": 19,
+        "pad_top": 0,
+        "pad_right": 19,
+        "pad_bottom": 0,
+        "scale": 0.32
+      },
+      "normalization": "RGB uint8 / 255.0",
+      "artifact_path": "inputs/sample-2--000000000049.jpg",
+      "label_artifact_path": "inputs/sample-2--000000000049.txt",
+      "annotated_artifact_path": "inputs/sample-2--ground-truth.png"
+    },
+    {
+      "sample_index": 3,
+      "name": "000000000061.jpg",
+      "path": "D:\\AI\\datasets\\coco8\\images\\val\\000000000061.jpg",
+      "sha256": "6460e4a7cc80e34815aba8910a23152a16a24a416fa598138bd9231cccd413e2",
+      "label_path": "D:\\AI\\datasets\\coco8\\labels\\val\\000000000061.txt",
+      "label_sha256": "d7988d745a68480c7331b323adeec29adb1b0a4df53b072ed45d9650893eb812",
+      "ground_truth_box_count": 5,
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "center_x": 0.445688,
+          "center_y": 0.480615,
+          "width": 0.075125,
+          "height": 0.117295
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.640086,
+          "center_y": 0.471742,
+          "width": 0.0508281,
+          "height": 0.0814344
+        },
+        {
+          "class_id": 20,
+          "center_x": 0.643211,
+          "center_y": 0.558852,
+          "width": 0.129828,
+          "height": 0.097623
+        },
+        {
+          "class_id": 20,
+          "center_x": 0.459703,
+          "center_y": 0.592121,
+          "width": 0.22175,
+          "height": 0.159242
+        },
+        {
+          "class_id": 0,
+          "center_x": 0.435383,
+          "center_y": 0.45832,
+          "width": 0.0534531,
+          "height": 0.111025
+        }
+      ],
+      "geometry": {
+        "original_width": 640,
+        "original_height": 488,
+        "input_size": 160,
+        "resized_width": 160,
+        "resized_height": 122,
+        "pad_left": 0,
+        "pad_top": 19,
+        "pad_right": 0,
+        "pad_bottom": 19,
+        "scale": 0.25
+      },
+      "normalization": "RGB uint8 / 255.0",
+      "artifact_path": "inputs/sample-3--000000000061.jpg",
+      "label_artifact_path": "inputs/sample-3--000000000061.txt",
+      "annotated_artifact_path": "inputs/sample-3--ground-truth.png"
+    }
+  ],
+  "input_set_sha256": "7fa6f1c5acfa9878c64e6352ddac7a2a6e59c8d748a3c7e216fa7aebab7fcd79",
+  "annotation_set_sha256": "1c87fa325461afe409c1e9ae00c052e959030c9ec761c06f1845fa92f6a10b20",
+  "image_and_annotation_set_sha256": "86f9352c1096b06d6a00860134454fa7f105a27f38490c7342943b6858850bb6"
+}

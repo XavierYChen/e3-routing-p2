@@ -1,0 +1,187 @@
+{
+  "capture_count": 32,
+  "by_family": {
+    "moa": {
+      "capture_count": 16,
+      "token_count": 2500,
+      "dominant_token_count": [
+        460,
+        1068,
+        972
+      ],
+      "dominant_token_fraction": [
+        0.184,
+        0.4272,
+        0.3888
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy_mean": 1.0,
+      "top1_margin_mean": 3.115510927511611e-06,
+      "neighbor_probability_l1_mean": 1.670528433030949e-06
+    },
+    "mot": {
+      "capture_count": 16,
+      "token_count": 2500,
+      "dominant_token_count": [
+        2500,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy_mean": 0.6056925773620605,
+      "top1_margin_mean": 0.04,
+      "neighbor_probability_l1_mean": 0.0
+    }
+  },
+  "by_module": {
+    "moa:model.13.m.0.router": {
+      "capture_count": 4,
+      "token_count": 400,
+      "dominant_token_count": [
+        60,
+        61,
+        279
+      ],
+      "dominant_token_fraction": [
+        0.15,
+        0.1525,
+        0.6975
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy_mean": 1.0,
+      "top1_margin_mean": 1.129508024888537e-07,
+      "neighbor_probability_l1_mean": 6.773129612724915e-08
+    },
+    "moa:model.16.m.0.router": {
+      "capture_count": 4,
+      "token_count": 1600,
+      "dominant_token_count": [
+        14,
+        893,
+        693
+      ],
+      "dominant_token_fraction": [
+        0.00875,
+        0.558125,
+        0.433125
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy_mean": 1.0,
+      "top1_margin_mean": 4.763808078678267e-06,
+      "neighbor_probability_l1_mean": 2.5701921799736738e-06
+    },
+    "moa:model.19.m.0.router": {
+      "capture_count": 4,
+      "token_count": 400,
+      "dominant_token_count": [
+        287,
+        113,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.7175,
+        0.2825,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy_mean": 1.0,
+      "top1_margin_mean": 3.0368567394134516e-07,
+      "neighbor_probability_l1_mean": 9.157315439267677e-08
+    },
+    "moa:model.22.m.0.router": {
+      "capture_count": 4,
+      "token_count": 100,
+      "dominant_token_count": [
+        99,
+        1,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.99,
+        0.01,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy_mean": 1.0,
+      "top1_margin_mean": 2.98023217215615e-10,
+      "neighbor_probability_l1_mean": 2.9181441152381637e-09
+    },
+    "mot:model.13.m.0.router": {
+      "capture_count": 4,
+      "token_count": 400,
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy_mean": 0.6309297680854797,
+      "top1_margin_mean": 0.0,
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "mot:model.16.m.0.router": {
+      "capture_count": 4,
+      "token_count": 1600,
+      "dominant_token_count": [
+        1600,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy_mean": 0.6309297680854797,
+      "top1_margin_mean": 0.0,
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "mot:model.19.m.0.router": {
+      "capture_count": 4,
+      "token_count": 400,
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy_mean": 0.6309297680854797,
+      "top1_margin_mean": 0.0,
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "mot:model.22.m.0.router": {
+      "capture_count": 4,
+      "token_count": 100,
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy_mean": 0.0,
+      "top1_margin_mean": 1.0,
+      "neighbor_probability_l1_mean": 0.0
+    }
+  }
+}

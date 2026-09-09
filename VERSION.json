@@ -1,9 +1,7 @@
 {
-  "release_tag": "p2-v0.1.1",
-  "schema_version": "e3.spatial_routing.v1",
-  "yolo_master_commit": "dab47c5e6e3d680c8d62576cf291e66431758873",
-  "yolo_master_describe": "dab47c5-dirty",
-  "official_smoke_base_commit": "246e79cfe418cfd90f4738bace56b02245dc38f8",
-  "config_path": "configs/p2.yaml",
-  "evidence_path": "results/verified-p2-cpu-20260907"
+  "version": "0.2.0",
+  "schema_version": "e3.spatial-routing/v2.0.0",
+  "status": "five-family-audited",
+  "spatial_families": ["MOT", "MOA"],
+  "non_spatial_families": ["MOE", "LATENT", "MoLoRA"]
 }

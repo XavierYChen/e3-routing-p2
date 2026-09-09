@@ -1,0 +1,358 @@
+{
+  "mot": {
+    "status": "SUPPORTED",
+    "token_overlay": "supported",
+    "evidence_kind": "full_detector_forward",
+    "model_config": "ultralytics/cfg/models/26/yolo26-master-mot-n.yaml",
+    "model_parameters": 2927512,
+    "router_class": "_MoTRouter",
+    "registered_modules": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "registered_module_count": 4,
+    "samples": 4,
+    "capture_count": 16,
+    "feature_grids_hw": [
+      [
+        5,
+        5
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        20,
+        20
+      ]
+    ],
+    "expert_labels": [
+      "local",
+      "window",
+      "deformable"
+    ],
+    "probability_validation": "PASS",
+    "hook_output_equivalence": "PASS",
+    "max_output_abs_delta": 0.0,
+    "deterministic_repeat": "PASS",
+    "repeat_max_weight_or_logit_abs_delta": 0.0,
+    "repeat_indices_equal": true,
+    "single_vs_batch_equivalence": {
+      "status": "PASS",
+      "sizes": [
+        {
+          "batch_size": 2,
+          "compared_samples": 4,
+          "compared_router_records": 16,
+          "max_weight_abs_delta": 0.0,
+          "max_logit_abs_delta": 0.0,
+          "indices_equal": true,
+          "tolerance": 1e-05,
+          "status": "PASS"
+        },
+        {
+          "batch_size": 4,
+          "compared_samples": 4,
+          "compared_router_records": 16,
+          "max_weight_abs_delta": 0.0,
+          "max_logit_abs_delta": 0.0,
+          "indices_equal": true,
+          "tolerance": 1e-05,
+          "status": "PASS"
+        }
+      ]
+    },
+    "hooks_removed": true
+  },
+  "moa": {
+    "status": "SUPPORTED",
+    "token_overlay": "supported",
+    "evidence_kind": "full_detector_forward",
+    "model_config": "ultralytics/cfg/models/26/yolo26-master-moa-n.yaml",
+    "model_parameters": 2450630,
+    "router_class": "_MoARouter",
+    "registered_modules": [
+      "model.13.m.0.router",
+      "model.16.m.0.router",
+      "model.19.m.0.router",
+      "model.22.m.0.router"
+    ],
+    "registered_module_count": 4,
+    "samples": 4,
+    "capture_count": 16,
+    "feature_grids_hw": [
+      [
+        5,
+        5
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        20,
+        20
+      ]
+    ],
+    "expert_labels": [
+      "local",
+      "regional",
+      "global"
+    ],
+    "probability_validation": "PASS",
+    "hook_output_equivalence": "PASS",
+    "max_output_abs_delta": 0.0,
+    "deterministic_repeat": "PASS",
+    "repeat_max_weight_or_logit_abs_delta": 0.0,
+    "repeat_indices_equal": true,
+    "single_vs_batch_equivalence": {
+      "status": "PASS",
+      "sizes": [
+        {
+          "batch_size": 2,
+          "compared_samples": 4,
+          "compared_router_records": 16,
+          "max_weight_abs_delta": 2.9802322387695312e-08,
+          "max_logit_abs_delta": 9.094947017729282e-11,
+          "indices_equal": null,
+          "tolerance": 1e-05,
+          "status": "PASS"
+        },
+        {
+          "batch_size": 4,
+          "compared_samples": 4,
+          "compared_router_records": 16,
+          "max_weight_abs_delta": 2.9802322387695312e-08,
+          "max_logit_abs_delta": 9.094947017729282e-11,
+          "indices_equal": null,
+          "tolerance": 1e-05,
+          "status": "PASS"
+        }
+      ]
+    },
+    "hooks_removed": true
+  },
+  "moe": {
+    "status": "UNSUPPORTED",
+    "token_overlay": "unsupported",
+    "evidence_kind": "full_detector_nested_router_forward",
+    "model_config": "ultralytics/cfg/models/26/yolo26-master-n.yaml",
+    "reason": "router decisions are image/sample-level; singleton H/W axes are broadcast containers, not token maps",
+    "captured_modules": [
+      {
+        "module": "model.4.m.0.0.mlp",
+        "router_output_shapes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "module": "model.4.m.0.1.mlp",
+        "router_output_shapes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "module": "model.6.m.0.0.mlp",
+        "router_output_shapes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "module": "model.6.m.0.1.mlp",
+        "router_output_shapes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "module": "model.8.m.0.0.mlp",
+        "router_output_shapes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "module": "model.8.m.0.1.mlp",
+        "router_output_shapes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "observed_shapes": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "spatial_shape_count": 0
+  },
+  "latent": {
+    "status": "UNSUPPORTED",
+    "token_overlay": "unsupported",
+    "evidence_kind": "full_detector_runtime_state",
+    "model_config": "ultralytics/cfg/models/26/yolo26-master-latent-n.yaml",
+    "reason": "routing axes are expert or scale-by-expert after spatial pooling; no reversible H/W token axis exists",
+    "captured_modules": [
+      {
+        "module": "model.23",
+        "routing_probs_shape": [
+          1,
+          4
+        ],
+        "routing_axis": "expert"
+      },
+      {
+        "module": "model.24",
+        "routing_probs_shape": [
+          1,
+          4
+        ],
+        "routing_axis": "expert"
+      },
+      {
+        "module": "model.25",
+        "routing_probs_shape": [
+          1,
+          4
+        ],
+        "routing_axis": "expert"
+      }
+    ],
+    "spatial_shape_count": 0
+  },
+  "molora": {
+    "status": "UNSUPPORTED",
+    "token_overlay": "unsupported",
+    "evidence_kind": "isolated_official_router_contract",
+    "reason": "all official MoLoRA router variants reduce spatial features and return one [B,E] decision per image",
+    "captured_router_variants": [
+      {
+        "router_type": "LinearRouter",
+        "input_shape": [
+          1,
+          16,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          4
+        ]
+      },
+      {
+        "router_type": "SpatialRouter",
+        "input_shape": [
+          1,
+          16,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          4
+        ]
+      },
+      {
+        "router_type": "HybridRouter",
+        "input_shape": [
+          1,
+          16,
+          8,
+          8
+        ],
+        "output_shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "spatial_shape_count": 0
+  }
+}

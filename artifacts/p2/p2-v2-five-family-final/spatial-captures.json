@@ -1,0 +1,5086 @@
+[
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample0__mot__model.13.m.0.router__weights",
+    "logits_key": "sample0__mot__model.13.m.0.router__logits",
+    "indices_key": "sample0__mot__model.13.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__mot__model.13.m.0.router__foreground_mask",
+      "background": "sample0__mot__model.13.m.0.router__background_mask",
+      "padding": "sample0__mot__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 64,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          64,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 16,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          16,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample0__mot__model.16.m.0.router__weights",
+    "logits_key": "sample0__mot__model.16.m.0.router__logits",
+    "indices_key": "sample0__mot__model.16.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__mot__model.16.m.0.router__foreground_mask",
+      "background": "sample0__mot__model.16.m.0.router__background_mask",
+      "padding": "sample0__mot__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 240,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          240,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309298276901245,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 60,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          60,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309296488761902,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 100,
+      "valid_token_count": 300,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 1.7881393432617188e-07,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample0__mot__model.19.m.0.router__weights",
+    "logits_key": "sample0__mot__model.19.m.0.router__logits",
+    "indices_key": "sample0__mot__model.19.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__mot__model.19.m.0.router__foreground_mask",
+      "background": "sample0__mot__model.19.m.0.router__background_mask",
+      "padding": "sample0__mot__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 64,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          64,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 16,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          16,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 0,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample0__mot__model.22.m.0.router__weights",
+    "logits_key": "sample0__mot__model.22.m.0.router__logits",
+    "indices_key": "sample0__mot__model.22.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.0,
+      "max": 1.0,
+      "max_expert_sum_error": 0.0,
+      "top_k": 1,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": -0.0,
+        "feature_max": -0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      "top1_margin": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__mot__model.22.m.0.router__foreground_mask",
+      "background": "sample0__mot__model.22.m.0.router__background_mask",
+      "padding": "sample0__mot__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 14,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          14,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "background": {
+        "token_count": 1,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          1,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample1__mot__model.13.m.0.router__weights",
+    "logits_key": "sample1__mot__model.13.m.0.router__logits",
+    "indices_key": "sample1__mot__model.13.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__mot__model.13.m.0.router__foreground_mask",
+      "background": "sample1__mot__model.13.m.0.router__background_mask",
+      "padding": "sample1__mot__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 24,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          24,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 56,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          56,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample1__mot__model.16.m.0.router__weights",
+    "logits_key": "sample1__mot__model.16.m.0.router__logits",
+    "indices_key": "sample1__mot__model.16.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__mot__model.16.m.0.router__foreground_mask",
+      "background": "sample1__mot__model.16.m.0.router__background_mask",
+      "padding": "sample1__mot__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 77,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          77,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309296488761902,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 223,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          223,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.630929708480835,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 100,
+      "valid_token_count": 300,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": -5.960464477539063e-08,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample1__mot__model.19.m.0.router__weights",
+    "logits_key": "sample1__mot__model.19.m.0.router__logits",
+    "indices_key": "sample1__mot__model.19.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__mot__model.19.m.0.router__foreground_mask",
+      "background": "sample1__mot__model.19.m.0.router__background_mask",
+      "padding": "sample1__mot__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 24,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          24,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 56,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          56,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 1,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample1__mot__model.22.m.0.router__weights",
+    "logits_key": "sample1__mot__model.22.m.0.router__logits",
+    "indices_key": "sample1__mot__model.22.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.0,
+      "max": 1.0,
+      "max_expert_sum_error": 0.0,
+      "top_k": 1,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": -0.0,
+        "feature_max": -0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      "top1_margin": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__mot__model.22.m.0.router__foreground_mask",
+      "background": "sample1__mot__model.22.m.0.router__background_mask",
+      "padding": "sample1__mot__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 4,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          4,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "background": {
+        "token_count": 11,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          11,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample2__mot__model.13.m.0.router__weights",
+    "logits_key": "sample2__mot__model.13.m.0.router__logits",
+    "indices_key": "sample2__mot__model.13.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__mot__model.13.m.0.router__foreground_mask",
+      "background": "sample2__mot__model.13.m.0.router__background_mask",
+      "padding": "sample2__mot__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 12,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          12,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309298276901245,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 68,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          68,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309296488761902,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 1.7881393432617188e-07,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample2__mot__model.16.m.0.router__weights",
+    "logits_key": "sample2__mot__model.16.m.0.router__logits",
+    "indices_key": "sample2__mot__model.16.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__mot__model.16.m.0.router__foreground_mask",
+      "background": "sample2__mot__model.16.m.0.router__background_mask",
+      "padding": "sample2__mot__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 60,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          60,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309296488761902,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 260,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          260,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309298276901245,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 80,
+      "valid_token_count": 320,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": -1.7881393432617188e-07,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample2__mot__model.19.m.0.router__weights",
+    "logits_key": "sample2__mot__model.19.m.0.router__logits",
+    "indices_key": "sample2__mot__model.19.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__mot__model.19.m.0.router__foreground_mask",
+      "background": "sample2__mot__model.19.m.0.router__background_mask",
+      "padding": "sample2__mot__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 12,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          12,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309298276901245,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 68,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          68,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309296488761902,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 1.7881393432617188e-07,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 2,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample2__mot__model.22.m.0.router__weights",
+    "logits_key": "sample2__mot__model.22.m.0.router__logits",
+    "indices_key": "sample2__mot__model.22.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.0,
+      "max": 1.0,
+      "max_expert_sum_error": 0.0,
+      "top_k": 1,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": -0.0,
+        "feature_max": -0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      "top1_margin": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__mot__model.22.m.0.router__foreground_mask",
+      "background": "sample2__mot__model.22.m.0.router__background_mask",
+      "padding": "sample2__mot__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 6,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          6,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "background": {
+        "token_count": 9,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          9,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample3__mot__model.13.m.0.router__weights",
+    "logits_key": "sample3__mot__model.13.m.0.router__logits",
+    "indices_key": "sample3__mot__model.13.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__mot__model.13.m.0.router__foreground_mask",
+      "background": "sample3__mot__model.13.m.0.router__background_mask",
+      "padding": "sample3__mot__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 6,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          6,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 74,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          74,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample3__mot__model.16.m.0.router__weights",
+    "logits_key": "sample3__mot__model.16.m.0.router__logits",
+    "indices_key": "sample3__mot__model.16.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        400,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__mot__model.16.m.0.router__foreground_mask",
+      "background": "sample3__mot__model.16.m.0.router__background_mask",
+      "padding": "sample3__mot__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 19,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          19,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 301,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          301,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.630929708480835,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 80,
+      "valid_token_count": 320,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 5.960464477539063e-08,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample3__mot__model.19.m.0.router__weights",
+    "logits_key": "sample3__mot__model.19.m.0.router__logits",
+    "indices_key": "sample3__mot__model.19.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.0,
+      "max": 0.5,
+      "max_expert_sum_error": 0.0,
+      "top_k": 2,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.5,
+        "feature_max": 0.5,
+        "feature_mean": 0.5,
+        "restored_min": 0.5,
+        "restored_max": 0.5
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.6309297680854797,
+        "feature_max": 0.6309297680854797,
+        "feature_mean": 0.6309297680854797,
+        "restored_min": 0.6309297680854797,
+        "restored_max": 0.6309297680854797
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "dominant_token_count": [
+        100,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 0.6309297680854797,
+        "max": 0.6309297680854797,
+        "mean": 0.6309297680854797
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__mot__model.19.m.0.router__foreground_mask",
+      "background": "sample3__mot__model.19.m.0.router__background_mask",
+      "padding": "sample3__mot__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 6,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          6,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 74,
+        "mean_expert_probability": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "dominant_token_count": [
+          74,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.6309297680854797,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "mot",
+    "sample_index": 3,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoTRouter",
+    "weights_key": "sample3__mot__model.22.m.0.router__weights",
+    "logits_key": "sample3__mot__model.22.m.0.router__logits",
+    "indices_key": "sample3__mot__model.22.m.0.router__indices",
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.0,
+      "max": 1.0,
+      "max_expert_sum_error": 0.0,
+      "top_k": 1,
+      "selected_mass_error": 0.0,
+      "max_unselected_probability": 0.0,
+      "indices_in_range": true
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "window",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "deformable",
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": -0.0,
+        "feature_max": -0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      },
+      "top1_margin": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": -0.0,
+        "max": -0.0,
+        "mean": 0.0
+      },
+      "top1_margin": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "neighbor_probability_l1_mean": 0.0
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__mot__model.22.m.0.router__foreground_mask",
+      "background": "sample3__mot__model.22.m.0.router__background_mask",
+      "padding": "sample3__mot__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "INSUFFICIENT_TOKENS",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 0,
+        "mean_expert_probability": null,
+        "dominant_token_count": [
+          0,
+          0,
+          0
+        ],
+        "dominant_token_fraction": null,
+        "normalized_entropy_mean": null,
+        "top1_margin_mean": null
+      },
+      "background": {
+        "token_count": 15,
+        "mean_expert_probability": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "dominant_token_count": [
+          15,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 0.0,
+        "top1_margin_mean": 1.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": null
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample0__moa__model.13.m.0.router__weights",
+    "logits_key": "sample0__moa__model.13.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.33333301544189453,
+      "max": 0.3333335816860199,
+      "max_expert_sum_error": 5.960464477539063e-08
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.33333301544189453,
+        "feature_max": 0.3333335220813751,
+        "feature_mean": 0.33333319425582886,
+        "restored_min": 0.33333301544189453,
+        "restored_max": 0.3333335220813751
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333331048488617,
+        "feature_max": 0.3333335220813751,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.3333331048488617,
+        "restored_max": 0.3333335220813751
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.33333325386047363,
+        "feature_max": 0.3333335816860199,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.33333325386047363,
+        "restored_max": 0.3333335816860199
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 2.682209014892578e-07,
+        "feature_mean": 1.1891126661112139e-07,
+        "restored_min": 5.838513672529189e-09,
+        "restored_max": 2.6203321112916456e-07
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333319425582886,
+        0.33333325386047363,
+        0.33333343267440796
+      ],
+      "dominant_token_count": [
+        10,
+        6,
+        84
+      ],
+      "dominant_token_fraction": [
+        0.1,
+        0.06,
+        0.84
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 2.682209014892578e-07,
+        "mean": 1.1891126661112139e-07
+      },
+      "neighbor_probability_l1_mean": 6.617219128202123e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__moa__model.13.m.0.router__foreground_mask",
+      "background": "sample0__moa__model.13.m.0.router__background_mask",
+      "padding": "sample0__moa__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 64,
+        "mean_expert_probability": [
+          0.33333319425582886,
+          0.3333333134651184,
+          0.33333349227905273
+        ],
+        "dominant_token_count": [
+          0,
+          6,
+          58
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.09375,
+          0.90625
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.1548399925231934e-07
+      },
+      "background": {
+        "token_count": 16,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.33333325386047363,
+          0.33333340287208557
+        ],
+        "dominant_token_count": [
+          8,
+          0,
+          8
+        ],
+        "dominant_token_fraction": [
+          0.5,
+          0.0,
+          0.5
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.4901161193847656e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -1.4901161193847656e-07,
+          5.960464477539063e-08,
+          8.940696716308594e-08
+        ],
+        "total_variation_distance": 1.4901161193847656e-07,
+        "jensen_shannon_divergence_nats": 1.2656543264894005e-14,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": -3.3527612686157227e-08
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample0__moa__model.16.m.0.router__weights",
+    "logits_key": "sample0__moa__model.16.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.3333170711994171,
+      "max": 0.3333507776260376,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333170711994171,
+        "feature_max": 0.3333345651626587,
+        "feature_mean": 0.3333258032798767,
+        "restored_min": 0.3333173990249634,
+        "restored_max": 0.3333340585231781
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333258032798767,
+        "feature_max": 0.3333461582660675,
+        "feature_mean": 0.3333369791507721,
+        "restored_min": 0.33332720398902893,
+        "restored_max": 0.33334535360336304
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.333326518535614,
+        "feature_max": 0.3333507776260376,
+        "feature_mean": 0.3333372473716736,
+        "restored_min": 0.33332762122154236,
+        "restored_max": 0.33334940671920776
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 2.4974346160888672e-05,
+        "feature_mean": 4.284233000362292e-06,
+        "restored_min": 2.594676971057197e-07,
+        "restored_max": 2.2163629182614386e-05
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.3333258032798767,
+        0.3333369791507721,
+        0.3333372473716736
+      ],
+      "dominant_token_count": [
+        2,
+        198,
+        200
+      ],
+      "dominant_token_fraction": [
+        0.005,
+        0.495,
+        0.5
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 2.4974346160888672e-05,
+        "mean": 4.284233000362292e-06
+      },
+      "neighbor_probability_l1_mean": 2.3148170384956757e-06
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__moa__model.16.m.0.router__foreground_mask",
+      "background": "sample0__moa__model.16.m.0.router__background_mask",
+      "padding": "sample0__moa__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 240,
+        "mean_expert_probability": [
+          0.3333248198032379,
+          0.3333371579647064,
+          0.33333805203437805
+        ],
+        "dominant_token_count": [
+          2,
+          96,
+          142
+        ],
+        "dominant_token_fraction": [
+          0.008333333333333333,
+          0.4,
+          0.5916666666666667
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 4.850327968597412e-06
+      },
+      "background": {
+        "token_count": 60,
+        "mean_expert_probability": [
+          0.3333265483379364,
+          0.3333366811275482,
+          0.3333367705345154
+        ],
+        "dominant_token_count": [
+          0,
+          27,
+          33
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.45,
+          0.55
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 3.9199990169436205e-06
+      },
+      "padding_token_count": 100,
+      "valid_token_count": 300,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -1.7285346984863281e-06,
+          4.76837158203125e-07,
+          1.2814998626708984e-06
+        ],
+        "total_variation_distance": 1.7434358596801758e-06,
+        "jensen_shannon_divergence_nats": 1.8215231694116368e-12,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 9.303289516537916e-07
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample0__moa__model.19.m.0.router__weights",
+    "logits_key": "sample0__moa__model.19.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.33333301544189453,
+      "max": 0.3333338499069214,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.33333301544189453,
+        "feature_max": 0.3333338499069214,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.3333330750465393,
+        "restored_max": 0.3333338499069214
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333330452442169,
+        "feature_max": 0.3333336114883423,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.3333330452442169,
+        "restored_max": 0.3333335518836975
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333330452442169,
+        "feature_max": 0.33333340287208557,
+        "feature_mean": 0.33333316445350647,
+        "restored_min": 0.3333330452442169,
+        "restored_max": 0.33333340287208557
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 7.450580596923828e-07,
+        "feature_mean": 3.093481097948825e-07,
+        "restored_min": 5.111624901132927e-09,
+        "restored_max": 7.286100753844948e-07
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333343267440796,
+        0.33333325386047363,
+        0.33333316445350647
+      ],
+      "dominant_token_count": [
+        80,
+        20,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.8,
+        0.2,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 7.450580596923828e-07,
+        "mean": 3.093481097948825e-07
+      },
+      "neighbor_probability_l1_mean": 8.112854743558273e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__moa__model.19.m.0.router__foreground_mask",
+      "background": "sample0__moa__model.19.m.0.router__background_mask",
+      "padding": "sample0__moa__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 64,
+        "mean_expert_probability": [
+          0.3333335816860199,
+          0.33333325386047363,
+          0.33333319425582886
+        ],
+        "dominant_token_count": [
+          63,
+          1,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.984375,
+          0.015625,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 3.394670784473419e-07
+      },
+      "background": {
+        "token_count": 16,
+        "mean_expert_probability": [
+          0.3333333730697632,
+          0.3333333730697632,
+          0.33333325386047363
+        ],
+        "dominant_token_count": [
+          8,
+          8,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.5,
+          0.5,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 2.3655593395233154e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          2.086162567138672e-07,
+          -1.1920928955078125e-07,
+          -5.960464477539063e-08
+        ],
+        "total_variation_distance": 1.9371509552001953e-07,
+        "jensen_shannon_divergence_nats": 2.298161030331575e-14,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 1.0291114449501038e-07
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 0,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample0__moa__model.22.m.0.router__weights",
+    "logits_key": "sample0__moa__model.22.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.3333333134651184,
+      "max": 0.3333333432674408,
+      "max_expert_sum_error": 0.0
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333333432674408,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333432674408,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        0.3333333134651184,
+        0.3333333134651184,
+        0.3333333134651184
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 3.228584954939606e-09
+    },
+    "region_mask_keys": {
+      "foreground": "sample0__moa__model.22.m.0.router__foreground_mask",
+      "background": "sample0__moa__model.22.m.0.router__background_mask",
+      "padding": "sample0__moa__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 14,
+        "mean_expert_probability": [
+          0.3333333134651184,
+          0.3333333134651184,
+          0.3333333134651184
+        ],
+        "dominant_token_count": [
+          14,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 1,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "dominant_token_count": [
+          1,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -2.9802322387695312e-08,
+          -2.9802322387695312e-08,
+          -2.9802322387695312e-08
+        ],
+        "total_variation_distance": 4.470348358154297e-08,
+        "jensen_shannon_divergence_nats": 9.992007353975307e-16,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample1__moa__model.13.m.0.router__weights",
+    "logits_key": "sample1__moa__model.13.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.33333292603492737,
+      "max": 0.3333336412906647,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.33333292603492737,
+        "feature_max": 0.3333335220813751,
+        "feature_mean": 0.33333319425582886,
+        "restored_min": 0.33333292603492737,
+        "restored_max": 0.3333335220813751
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.33333301544189453,
+        "feature_max": 0.3333336412906647,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.33333301544189453,
+        "restored_max": 0.3333336412906647
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333336114883423,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333336114883423
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 3.8743019104003906e-07,
+        "feature_mean": 1.0222196777931458e-07,
+        "restored_min": 1.9055093058995e-09,
+        "restored_max": 3.68818035667573e-07
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333319425582886,
+        0.33333325386047363,
+        0.33333343267440796
+      ],
+      "dominant_token_count": [
+        24,
+        20,
+        56
+      ],
+      "dominant_token_fraction": [
+        0.24,
+        0.2,
+        0.56
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 3.8743019104003906e-07,
+        "mean": 1.0222196777931458e-07
+      },
+      "neighbor_probability_l1_mean": 6.986989120605358e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__moa__model.13.m.0.router__foreground_mask",
+      "background": "sample1__moa__model.13.m.0.router__background_mask",
+      "padding": "sample1__moa__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 24,
+        "mean_expert_probability": [
+          0.33333316445350647,
+          0.3333333730697632,
+          0.33333349227905273
+        ],
+        "dominant_token_count": [
+          0,
+          5,
+          19
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.20833333333333334,
+          0.7916666666666666
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.2293457984924316e-07
+      },
+      "background": {
+        "token_count": 56,
+        "mean_expert_probability": [
+          0.333333283662796,
+          0.333333283662796,
+          0.33333343267440796
+        ],
+        "dominant_token_count": [
+          10,
+          15,
+          31
+        ],
+        "dominant_token_fraction": [
+          0.17857142857142858,
+          0.26785714285714285,
+          0.5535714285714286
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.0164720976035824e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -1.1920928955078125e-07,
+          8.940696716308594e-08,
+          5.960464477539063e-08
+        ],
+        "total_variation_distance": 1.341104507446289e-07,
+        "jensen_shannon_divergence_nats": 9.658941588097005e-15,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 2.1287370088884927e-08
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample1__moa__model.16.m.0.router__weights",
+    "logits_key": "sample1__moa__model.16.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.3333146870136261,
+      "max": 0.33335262537002563,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333146870136261,
+        "feature_max": 0.3333345055580139,
+        "feature_mean": 0.3333263397216797,
+        "restored_min": 0.3333151340484619,
+        "restored_max": 0.33333444595336914
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333233892917633,
+        "feature_max": 0.3333497643470764,
+        "feature_mean": 0.33333685994148254,
+        "restored_min": 0.33332449197769165,
+        "restored_max": 0.33334851264953613
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333238363265991,
+        "feature_max": 0.33335262537002563,
+        "feature_mean": 0.33333680033683777,
+        "restored_min": 0.3333253860473633,
+        "restored_max": 0.33335164189338684
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 2.771615982055664e-05,
+        "feature_mean": 4.65132279714453e-06,
+        "restored_min": 1.2508144209277816e-07,
+        "restored_max": 2.5960887796827592e-05
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.3333263397216797,
+        0.33333685994148254,
+        0.33333680033683777
+      ],
+      "dominant_token_count": [
+        2,
+        242,
+        156
+      ],
+      "dominant_token_fraction": [
+        0.005,
+        0.605,
+        0.39
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 2.771615982055664e-05,
+        "mean": 4.65132279714453e-06
+      },
+      "neighbor_probability_l1_mean": 2.828697915902012e-06
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__moa__model.16.m.0.router__foreground_mask",
+      "background": "sample1__moa__model.16.m.0.router__background_mask",
+      "padding": "sample1__moa__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 77,
+        "mean_expert_probability": [
+          0.3333248198032379,
+          0.3333371579647064,
+          0.33333805203437805
+        ],
+        "dominant_token_count": [
+          0,
+          36,
+          41
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.4675324675324675,
+          0.5324675324675324
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 5.206117293710122e-06
+      },
+      "background": {
+        "token_count": 223,
+        "mean_expert_probability": [
+          0.3333265483379364,
+          0.33333683013916016,
+          0.33333659172058105
+        ],
+        "dominant_token_count": [
+          2,
+          142,
+          79
+        ],
+        "dominant_token_fraction": [
+          0.008968609865470852,
+          0.6367713004484304,
+          0.3542600896860987
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 5.21046149515314e-06
+      },
+      "padding_token_count": 100,
+      "valid_token_count": 300,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -1.7285346984863281e-06,
+          3.2782554626464844e-07,
+          1.4603137969970703e-06
+        ],
+        "total_variation_distance": 1.7583370208740234e-06,
+        "jensen_shannon_divergence_nats": 1.9604105098222528e-12,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": -4.344201443018392e-09
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample1__moa__model.19.m.0.router__weights",
+    "logits_key": "sample1__moa__model.19.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.33333292603492737,
+      "max": 0.3333340883255005,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333330452442169,
+        "feature_max": 0.3333340883255005,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.3333331048488617,
+        "restored_max": 0.3333340883255005
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.33333292603492737,
+        "feature_max": 0.3333336114883423,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.33333292603492737,
+        "restored_max": 0.3333335518836975
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.33333295583724976,
+        "feature_max": 0.33333340287208557,
+        "feature_mean": 0.33333316445350647,
+        "restored_min": 0.33333295583724976,
+        "restored_max": 0.33333340287208557
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 1.1324882507324219e-06,
+        "feature_mean": 3.135204451609752e-07,
+        "restored_min": 3.3574738544928096e-09,
+        "restored_max": 1.1270171853539068e-06
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333343267440796,
+        0.33333325386047363,
+        0.33333316445350647
+      ],
+      "dominant_token_count": [
+        64,
+        36,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.64,
+        0.36,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 1.1324882507324219e-06,
+        "mean": 3.135204451609752e-07
+      },
+      "neighbor_probability_l1_mean": 8.708900622877991e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__moa__model.19.m.0.router__foreground_mask",
+      "background": "sample1__moa__model.19.m.0.router__background_mask",
+      "padding": "sample1__moa__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 24,
+        "mean_expert_probability": [
+          0.3333335816860199,
+          0.33333325386047363,
+          0.33333316445350647
+        ],
+        "dominant_token_count": [
+          21,
+          3,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.875,
+          0.125,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 3.650784492492676e-07
+      },
+      "background": {
+        "token_count": 56,
+        "mean_expert_probability": [
+          0.33333349227905273,
+          0.333333283662796,
+          0.33333322405815125
+        ],
+        "dominant_token_count": [
+          37,
+          19,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.6607142857142857,
+          0.3392857142857143,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 3.2835774277373275e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          8.940696716308594e-08,
+          -2.9802322387695312e-08,
+          -5.960464477539063e-08
+        ],
+        "total_variation_distance": 8.940696716308594e-08,
+        "jensen_shannon_divergence_nats": 4.6629354907788795e-15,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 3.6720706475534826e-08
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 1,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample1__moa__model.22.m.0.router__weights",
+    "logits_key": "sample1__moa__model.22.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.3333333134651184,
+      "max": 0.3333333432674408,
+      "max_expert_sum_error": 0.0
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333333432674408,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333432674408,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        0.3333333134651184,
+        0.3333333134651184,
+        0.3333333134651184
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 2.9802322831784522e-09
+    },
+    "region_mask_keys": {
+      "foreground": "sample1__moa__model.22.m.0.router__foreground_mask",
+      "background": "sample1__moa__model.22.m.0.router__background_mask",
+      "padding": "sample1__moa__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 4,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "dominant_token_count": [
+          4,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 11,
+        "mean_expert_probability": [
+          0.3333333134651184,
+          0.333333283662796,
+          0.333333283662796
+        ],
+        "dominant_token_count": [
+          11,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          2.9802322387695312e-08,
+          5.960464477539063e-08,
+          5.960464477539063e-08
+        ],
+        "total_variation_distance": 7.450580596923828e-08,
+        "jensen_shannon_divergence_nats": 2.997602331924045e-15,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample2__moa__model.13.m.0.router__weights",
+    "logits_key": "sample2__moa__model.13.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.3333328366279602,
+      "max": 0.33333370089530945,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333328366279602,
+        "feature_max": 0.33333346247673035,
+        "feature_mean": 0.33333319425582886,
+        "restored_min": 0.3333328366279602,
+        "restored_max": 0.33333346247673035
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.33333292603492737,
+        "feature_max": 0.33333370089530945,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.33333292603492737,
+        "restored_max": 0.33333370089530945
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.33333325386047363,
+        "feature_max": 0.3333336412906647,
+        "feature_mean": 0.33333340287208557,
+        "restored_min": 0.33333325386047363,
+        "restored_max": 0.3333336412906647
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 4.470348358154297e-07,
+        "feature_mean": 1.1175870895385742e-07,
+        "restored_min": 0.0,
+        "restored_max": 4.2913924858112296e-07
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333319425582886,
+        0.33333325386047363,
+        0.33333340287208557
+      ],
+      "dominant_token_count": [
+        16,
+        21,
+        63
+      ],
+      "dominant_token_fraction": [
+        0.16,
+        0.21,
+        0.63
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 4.470348358154297e-07,
+        "mean": 1.1175870895385742e-07
+      },
+      "neighbor_probability_l1_mean": 7.44506181149518e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__moa__model.13.m.0.router__foreground_mask",
+      "background": "sample2__moa__model.13.m.0.router__background_mask",
+      "padding": "sample2__moa__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 12,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.33333322405815125,
+          0.33333349227905273
+        ],
+        "dominant_token_count": [
+          1,
+          1,
+          10
+        ],
+        "dominant_token_fraction": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.8333333333333334
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.4652808033588371e-07
+      },
+      "background": {
+        "token_count": 68,
+        "mean_expert_probability": [
+          0.33333325386047363,
+          0.33333340287208557,
+          0.33333346247673035
+        ],
+        "dominant_token_count": [
+          13,
+          20,
+          35
+        ],
+        "dominant_token_fraction": [
+          0.19117647058823528,
+          0.29411764705882354,
+          0.5147058823529411
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.1044389935932486e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          8.940696716308594e-08,
+          -1.7881393432617188e-07,
+          2.9802322387695312e-08
+        ],
+        "total_variation_distance": 1.4901161193847656e-07,
+        "jensen_shannon_divergence_nats": 1.5321078610021165e-14,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 3.6084180976558855e-08
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample2__moa__model.16.m.0.router__weights",
+    "logits_key": "sample2__moa__model.16.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.3333166241645813,
+      "max": 0.3333514928817749,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333166241645813,
+        "feature_max": 0.33333516120910645,
+        "feature_mean": 0.3333262503147125,
+        "restored_min": 0.3333166837692261,
+        "restored_max": 0.3333345651626587
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333229720592499,
+        "feature_max": 0.3333514928817749,
+        "feature_mean": 0.3333371877670288,
+        "restored_min": 0.33332452178001404,
+        "restored_max": 0.3333498537540436
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.33332499861717224,
+        "feature_max": 0.33335044980049133,
+        "feature_mean": 0.33333656191825867,
+        "restored_min": 0.3333258032798767,
+        "restored_max": 0.33334994316101074
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 2.9802322387695312e-08,
+        "feature_max": 2.6494264602661133e-05,
+        "feature_mean": 5.704760496882955e-06,
+        "restored_min": 1.0303781294851433e-07,
+        "restored_max": 2.4529179427190684e-05
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.3333262503147125,
+        0.3333371877670288,
+        0.33333656191825867
+      ],
+      "dominant_token_count": [
+        3,
+        240,
+        157
+      ],
+      "dominant_token_fraction": [
+        0.0075,
+        0.6,
+        0.3925
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 2.9802322387695312e-08,
+        "max": 2.6494264602661133e-05,
+        "mean": 5.704760496882955e-06
+      },
+      "neighbor_probability_l1_mean": 2.1761316020274535e-06
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__moa__model.16.m.0.router__foreground_mask",
+      "background": "sample2__moa__model.16.m.0.router__background_mask",
+      "padding": "sample2__moa__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 60,
+        "mean_expert_probability": [
+          0.3333275616168976,
+          0.33333757519721985,
+          0.33333489298820496
+        ],
+        "dominant_token_count": [
+          1,
+          39,
+          20
+        ],
+        "dominant_token_fraction": [
+          0.016666666666666666,
+          0.65,
+          0.3333333333333333
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 7.408857527479995e-06
+      },
+      "background": {
+        "token_count": 260,
+        "mean_expert_probability": [
+          0.3333250880241394,
+          0.3333371877670288,
+          0.3333376944065094
+        ],
+        "dominant_token_count": [
+          2,
+          124,
+          134
+        ],
+        "dominant_token_fraction": [
+          0.007692307692307693,
+          0.47692307692307695,
+          0.5153846153846153
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 6.380447757692309e-06
+      },
+      "padding_token_count": 80,
+      "valid_token_count": 320,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          2.473592758178711e-06,
+          3.8743019104003906e-07,
+          -2.8014183044433594e-06
+        ],
+        "total_variation_distance": 2.8312206268310547e-06,
+        "jensen_shannon_divergence_nats": 5.293731338659017e-12,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 1.028409769787686e-06
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample2__moa__model.19.m.0.router__weights",
+    "logits_key": "sample2__moa__model.19.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.33333274722099304,
+      "max": 0.33333438634872437,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.33333301544189453,
+        "feature_max": 0.33333438634872437,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.3333330750465393,
+        "restored_max": 0.33333438634872437
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.33333274722099304,
+        "feature_max": 0.3333336114883423,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.33333274722099304,
+        "restored_max": 0.3333335220813751
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333328366279602,
+        "feature_max": 0.33333340287208557,
+        "feature_mean": 0.33333316445350647,
+        "restored_min": 0.3333328366279602,
+        "restored_max": 0.33333340287208557
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 1.5497207641601562e-06,
+        "feature_mean": 3.2186508747145126e-07,
+        "restored_min": 0.0,
+        "restored_max": 1.512723997620924e-06
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333343267440796,
+        0.33333325386047363,
+        0.33333316445350647
+      ],
+      "dominant_token_count": [
+        62,
+        38,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.62,
+        0.38,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 1.5497207641601562e-06,
+        "mean": 3.2186508747145126e-07
+      },
+      "neighbor_probability_l1_mean": 1.0701241137667239e-07
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__moa__model.19.m.0.router__foreground_mask",
+      "background": "sample2__moa__model.19.m.0.router__background_mask",
+      "padding": "sample2__moa__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 12,
+        "mean_expert_probability": [
+          0.33333346247673035,
+          0.3333333134651184,
+          0.33333322405815125
+        ],
+        "dominant_token_count": [
+          10,
+          2,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.8333333333333334,
+          0.16666666666666666,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.8378098332050286e-07
+      },
+      "background": {
+        "token_count": 68,
+        "mean_expert_probability": [
+          0.3333336114883423,
+          0.33333325386047363,
+          0.33333325386047363
+        ],
+        "dominant_token_count": [
+          48,
+          20,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.7058823529411765,
+          0.29411764705882354,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 3.791030849242816e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -1.4901161193847656e-07,
+          5.960464477539063e-08,
+          -2.9802322387695312e-08
+        ],
+        "total_variation_distance": 1.1920928955078125e-07,
+        "jensen_shannon_divergence_nats": 9.992002423978856e-15,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": -1.9532210160377872e-07
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 2,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample2__moa__model.22.m.0.router__weights",
+    "logits_key": "sample2__moa__model.22.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.3333333134651184,
+      "max": 0.3333333432674408,
+      "max_expert_sum_error": 0.0
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333333432674408,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333432674408,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 0.0,
+        "feature_mean": 0.0,
+        "restored_min": 0.0,
+        "restored_max": 0.0
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        0.3333333134651184,
+        0.3333333134651184,
+        0.3333333134651184
+      ],
+      "dominant_token_count": [
+        25,
+        0,
+        0
+      ],
+      "dominant_token_fraction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "active_dominant_experts": 1,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "neighbor_probability_l1_mean": 2.2351742678949904e-09
+    },
+    "region_mask_keys": {
+      "foreground": "sample2__moa__model.22.m.0.router__foreground_mask",
+      "background": "sample2__moa__model.22.m.0.router__background_mask",
+      "padding": "sample2__moa__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 6,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "dominant_token_count": [
+          6,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "background": {
+        "token_count": 9,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "dominant_token_count": [
+          9,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "total_variation_distance": 0.0,
+        "jensen_shannon_divergence_nats": 0.0,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 0.0
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "module": "model.13.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample3__moa__model.13.m.0.router__weights",
+    "logits_key": "sample3__moa__model.13.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.33333298563957214,
+      "max": 0.3333336114883423,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.33333298563957214,
+        "feature_max": 0.33333343267440796,
+        "feature_mean": 0.33333319425582886,
+        "restored_min": 0.33333298563957214,
+        "restored_max": 0.33333340287208557
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333331048488617,
+        "feature_max": 0.3333336114883423,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.3333331346511841,
+        "restored_max": 0.3333336114883423
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333333432674408,
+        "feature_max": 0.3333335816860199,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.3333333432674408,
+        "restored_max": 0.3333335518836975
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 2.682209014892578e-07,
+        "feature_mean": 1.1891126661112139e-07,
+        "restored_min": 3.22552295983769e-09,
+        "restored_max": 2.6531051844358444e-07
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333319425582886,
+        0.33333325386047363,
+        0.33333343267440796
+      ],
+      "dominant_token_count": [
+        10,
+        14,
+        76
+      ],
+      "dominant_token_fraction": [
+        0.1,
+        0.14,
+        0.76
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 2.682209014892578e-07,
+        "mean": 1.1891126661112139e-07
+      },
+      "neighbor_probability_l1_mean": 6.043248390597e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__moa__model.13.m.0.router__foreground_mask",
+      "background": "sample3__moa__model.13.m.0.router__background_mask",
+      "padding": "sample3__moa__model.13.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 6,
+        "mean_expert_probability": [
+          0.3333333134651184,
+          0.33333322405815125,
+          0.33333340287208557
+        ],
+        "dominant_token_count": [
+          0,
+          1,
+          5
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 8.44399110633276e-08
+      },
+      "background": {
+        "token_count": 74,
+        "mean_expert_probability": [
+          0.33333325386047363,
+          0.3333333134651184,
+          0.33333349227905273
+        ],
+        "dominant_token_count": [
+          0,
+          13,
+          61
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.17567567567567569,
+          0.8243243243243243
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.2565303109113302e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          5.960464477539063e-08,
+          -8.940696716308594e-08,
+          -8.940696716308594e-08
+        ],
+        "total_variation_distance": 1.1920928955078125e-07,
+        "jensen_shannon_divergence_nats": 7.327471711063127e-15,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": -4.1213120027805417e-08
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "module": "model.16.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample3__moa__model.16.m.0.router__weights",
+    "logits_key": "sample3__moa__model.16.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        20,
+        20
+      ],
+      "min": 0.3333137333393097,
+      "max": 0.3333509862422943,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333137333393097,
+        "feature_max": 0.3333359956741333,
+        "feature_mean": 0.3333263695240021,
+        "restored_min": 0.33331456780433655,
+        "restored_max": 0.33333590626716614
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333275318145752,
+        "feature_max": 0.33334600925445557,
+        "feature_mean": 0.333336740732193,
+        "restored_min": 0.3333287835121155,
+        "restored_max": 0.3333452641963959
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.33332687616348267,
+        "feature_max": 0.3333509862422943,
+        "feature_mean": 0.33333685994148254,
+        "restored_min": 0.3333270847797394,
+        "restored_max": 0.3333500027656555
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 2.9802322387695312e-08,
+        "feature_max": 1.8209218978881836e-05,
+        "feature_mean": 4.4149160203232896e-06,
+        "restored_min": 1.2060627341270447e-07,
+        "restored_max": 1.6966258044703864e-05
+      }
+    },
+    "diagnostics": {
+      "token_count": 400,
+      "mean_expert_probability": [
+        0.3333263695240021,
+        0.333336740732193,
+        0.33333685994148254
+      ],
+      "dominant_token_count": [
+        7,
+        213,
+        180
+      ],
+      "dominant_token_fraction": [
+        0.0175,
+        0.5325,
+        0.45
+      ],
+      "active_dominant_experts": 3,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 2.9802322387695312e-08,
+        "max": 1.8209218978881836e-05,
+        "mean": 4.4149160203232896e-06
+      },
+      "neighbor_probability_l1_mean": 2.961122163469554e-06
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__moa__model.16.m.0.router__foreground_mask",
+      "background": "sample3__moa__model.16.m.0.router__background_mask",
+      "padding": "sample3__moa__model.16.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 19,
+        "mean_expert_probability": [
+          0.33332544565200806,
+          0.333336740732193,
+          0.3333378732204437
+        ],
+        "dominant_token_count": [
+          0,
+          8,
+          11
+        ],
+        "dominant_token_fraction": [
+          0.0,
+          0.42105263157894735,
+          0.5789473684210527
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 5.469510597322369e-06
+      },
+      "background": {
+        "token_count": 301,
+        "mean_expert_probability": [
+          0.33332616090774536,
+          0.3333369791507721,
+          0.33333683013916016
+        ],
+        "dominant_token_count": [
+          6,
+          160,
+          135
+        ],
+        "dominant_token_fraction": [
+          0.019933554817275746,
+          0.53156146179402,
+          0.4485049833887043
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 4.8165898078877944e-06
+      },
+      "padding_token_count": 80,
+      "valid_token_count": 320,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -7.152557373046875e-07,
+          -2.384185791015625e-07,
+          1.043081283569336e-06
+        ],
+        "total_variation_distance": 9.98377799987793e-07,
+        "jensen_shannon_divergence_nats": 6.211504689207261e-13,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": 6.529207894345745e-07
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "module": "model.19.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample3__moa__model.19.m.0.router__weights",
+    "logits_key": "sample3__moa__model.19.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        10,
+        10
+      ],
+      "min": 0.3333328664302826,
+      "max": 0.3333340585231781,
+      "max_expert_sum_error": 1.1920928955078125e-07
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.33333301544189453,
+        "feature_max": 0.3333340585231781,
+        "feature_mean": 0.33333343267440796,
+        "restored_min": 0.3333331048488617,
+        "restored_max": 0.3333340585231781
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333328664302826,
+        "feature_max": 0.3333336114883423,
+        "feature_mean": 0.33333325386047363,
+        "restored_min": 0.3333328664302826,
+        "restored_max": 0.3333335816860199
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.33333301544189453,
+        "feature_max": 0.33333340287208557,
+        "feature_mean": 0.33333319425582886,
+        "restored_min": 0.3333330452442169,
+        "restored_max": 0.3333333730697632
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 0.9999998807907104,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 0.9999998807907104,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 2.9802322387695312e-08,
+        "feature_max": 9.834766387939453e-07,
+        "feature_mean": 2.700090533380717e-07,
+        "restored_min": 3.012064553331584e-08,
+        "restored_max": 9.665800462244079e-07
+      }
+    },
+    "diagnostics": {
+      "token_count": 100,
+      "mean_expert_probability": [
+        0.33333343267440796,
+        0.33333325386047363,
+        0.33333319425582886
+      ],
+      "dominant_token_count": [
+        81,
+        19,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.81,
+        0.19,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy": {
+        "min": 0.9999998807907104,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 2.9802322387695312e-08,
+        "max": 9.834766387939453e-07,
+        "mean": 2.700090533380717e-07
+      },
+      "neighbor_probability_l1_mean": 9.106265252967205e-08
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__moa__model.19.m.0.router__foreground_mask",
+      "background": "sample3__moa__model.19.m.0.router__background_mask",
+      "padding": "sample3__moa__model.19.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "SUPPORTED",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 6,
+        "mean_expert_probability": [
+          0.33333349227905273,
+          0.3333333134651184,
+          0.33333322405815125
+        ],
+        "dominant_token_count": [
+          6,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 1.688798221266552e-07
+      },
+      "background": {
+        "token_count": 74,
+        "mean_expert_probability": [
+          0.3333335518836975,
+          0.3333333134651184,
+          0.33333325386047363
+        ],
+        "dominant_token_count": [
+          66,
+          8,
+          0
+        ],
+        "dominant_token_fraction": [
+          0.8918918918918919,
+          0.10810810810810811,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 2.9480133889592253e-07
+      },
+      "padding_token_count": 20,
+      "valid_token_count": 80,
+      "contrast": {
+        "foreground_minus_background_expert_probability": [
+          -5.960464477539063e-08,
+          0.0,
+          -2.9802322387695312e-08
+        ],
+        "total_variation_distance": 4.470348358154297e-08,
+        "jensen_shannon_divergence_nats": 1.6653338785019672e-15,
+        "foreground_minus_background_entropy": 0.0,
+        "foreground_minus_background_top1_margin": -1.2592151676926733e-07
+      }
+    }
+  },
+  {
+    "family": "moa",
+    "sample_index": 3,
+    "module": "model.22.m.0.router",
+    "module_type": "_MoARouter",
+    "weights_key": "sample3__moa__model.22.m.0.router__weights",
+    "logits_key": "sample3__moa__model.22.m.0.router__logits",
+    "indices_key": null,
+    "validation": {
+      "shape": [
+        1,
+        3,
+        5,
+        5
+      ],
+      "min": 0.3333333134651184,
+      "max": 0.3333333432674408,
+      "max_expert_sum_error": 5.960464477539063e-08
+    },
+    "expert_stats": [
+      {
+        "expert_index": 0,
+        "expert_label": "local",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 1,
+        "expert_label": "regional",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      },
+      {
+        "expert_index": 2,
+        "expert_label": "global",
+        "feature_min": 0.3333333134651184,
+        "feature_max": 0.3333333432674408,
+        "feature_mean": 0.3333333134651184,
+        "restored_min": 0.3333333134651184,
+        "restored_max": 0.3333333432674408
+      }
+    ],
+    "metric_stats": {
+      "normalized_entropy": {
+        "feature_min": 1.0,
+        "feature_max": 1.0,
+        "feature_mean": 1.0,
+        "restored_min": 1.0,
+        "restored_max": 1.0
+      },
+      "top1_margin": {
+        "feature_min": 0.0,
+        "feature_max": 2.9802322387695312e-08,
+        "feature_mean": 1.19209286886246e-09,
+        "restored_min": 0.0,
+        "restored_max": 2.6542693376541138e-08
+      }
+    },
+    "diagnostics": {
+      "token_count": 25,
+      "mean_expert_probability": [
+        0.3333333134651184,
+        0.3333333134651184,
+        0.3333333134651184
+      ],
+      "dominant_token_count": [
+        24,
+        1,
+        0
+      ],
+      "dominant_token_fraction": [
+        0.96,
+        0.04,
+        0.0
+      ],
+      "active_dominant_experts": 2,
+      "normalized_entropy": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0
+      },
+      "top1_margin": {
+        "min": 0.0,
+        "max": 2.9802322387695312e-08,
+        "mean": 1.19209286886246e-09
+      },
+      "neighbor_probability_l1_mean": 3.228584954939606e-09
+    },
+    "region_mask_keys": {
+      "foreground": "sample3__moa__model.22.m.0.router__foreground_mask",
+      "background": "sample3__moa__model.22.m.0.router__background_mask",
+      "padding": "sample3__moa__model.22.m.0.router__padding_mask"
+    },
+    "region_diagnostics": {
+      "status": "INSUFFICIENT_TOKENS",
+      "assignment_rule": "valid token center inside any ground-truth box",
+      "padding_policy": "excluded from both foreground and background",
+      "foreground": {
+        "token_count": 0,
+        "mean_expert_probability": null,
+        "dominant_token_count": [
+          0,
+          0,
+          0
+        ],
+        "dominant_token_fraction": null,
+        "normalized_entropy_mean": null,
+        "top1_margin_mean": null
+      },
+      "background": {
+        "token_count": 15,
+        "mean_expert_probability": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "dominant_token_count": [
+          15,
+          0,
+          0
+        ],
+        "dominant_token_fraction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "normalized_entropy_mean": 1.0,
+        "top1_margin_mean": 0.0
+      },
+      "padding_token_count": 10,
+      "valid_token_count": 15,
+      "contrast": null
+    }
+  }
+]
