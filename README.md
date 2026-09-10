@@ -2,7 +2,7 @@
 
 腾讯犀牛鸟 E3「五族混合系统的路由透视镜」P2 独立仓库。本版在腾讯 YOLO-Master 的**完整检测模型 forward**上，以可移除 hook 采集真实路由张量；不修改腾讯源码，不再使用旧版 router-only replay。
 
-阶段导航：[Smoke](https://github.com/XavierYChen/e3-routing-smoke) · [P0](https://github.com/XavierYChen/e3-routing-p0) · [P1](https://github.com/XavierYChen/e3-routing-p1) · **P2（本仓库）**
+阶段导航：[Smoke](https://github.com/XavierYChen/e3-routing-smoke) · [P0](https://github.com/XavierYChen/e3-routing-p0) · [P1](https://github.com/XavierYChen/e3-routing-p1) · **P2（本仓库）** · [最终报告与消融](https://github.com/XavierYChen/e3-routing-final-report)
 
 ![MOT 与 MOA token 路由总览](artifacts/p2/p2-v2-five-family-final/routing-overview.png)
 
@@ -13,6 +13,10 @@
 ![训练后 MOT/MOA 路由层](artifacts/p2/trained-routing-analysis-20260909/trained-routing-overlays.png)
 
 这次 MOT 不再是 `active experts=1`：前三层的平均概率质量分别约为 `[27.3%,22.7%,50.0%]`、`[49.9%,27.5%,22.6%]`、`[48.4%,20.8%,30.8%]`，图上也能看到三种真实 argmax 颜色；末层仍有一个专家未被 Top-K 选中。MOA 四层的平均概率仍接近三等分，但其空间 argmax 已形成不同区域。颜色只代表每个 token 概率最大的专家编号，并不是聚类类别或物体语义。
+
+![MOT 逐层活跃专家](artifacts/p2/trained-routing-analysis-20260909/trained-mot-layer-focus.png)
+
+逐层查看可以避免误读：同一个已训练 checkpoint、同一张图中，MOT 的 `model.13/16/19/22` 分别激活 `2/2/3/2` 个主导专家。只有 `model.19` 在这张图上三色齐全；其他层出现一大片单色或只有两色仍是当前真实结果，并非旧图或绘图错误。验收应结合图下注明的 token counts、概率、margin 和多图汇总，不能以“每层必须三色”作为判据。
 
 ![外观敏感性](artifacts/p2/trained-routing-analysis-20260909/appearance-sensitivity.png)
 
@@ -77,17 +81,19 @@ MOT 的 Top-K=2 会把三个专家中未选中的一个概率精确置零，所�
 
 详细表格见 [实验报告](docs/EXPERIMENT_REPORT.md)，五族判定依据见 [可行性审计](docs/FEASIBILITY_AUDIT.md)，字段定义见 [Schema](docs/SCHEMA.md)。
 
-## 打开交互 UI
+## 打开交互 UI 与两分钟视频
 
-双击 `run_demo.cmd`，浏览器会打开 `http://127.0.0.1:8766/demo.html`。可以切换 **MOT/MOA、4 张图片、4 个路由层、6 类视图**，也可显示 COCO 标注框并导出当前图。
+双击 `run_trained_demo.cmd`，浏览器会打开训练后证据页。页面可切换 **MOT/MOA、4 个路由层、外观敏感性、路由归因、散点分析和专家使用率**。旧的 `run_demo.cmd` 保留为随机初始化五族能力审计页，不能用来代替训练后结论。
 
-两分钟现场演示按 [演示与录屏脚本](docs/DEMO.md) 操作。这里采用真实交互页面，而不是把静态图拼成假视频。
+已生成的 [两分钟 MP4](artifacts/p2/e3-p2-trained-two-minute-demo.mp4) 恰好为 120.0 秒、1600×900、10 fps；其 SHA-256、大小和来源页记录在 [视频清单](artifacts/p2/e3-p2-trained-two-minute-demo.json)。需要重建时双击 `record_demo_video.cmd`。详细讲解顺序见 [演示与录屏脚本](docs/DEMO.md)。
+
+![两分钟训练后演示抽帧](artifacts/p2/e3-p2-trained-two-minute-demo-contact-sheet.jpg)
 
 ## 从零复现
 
 1. 保持 `D:\AI\YOLO-Master`、`D:\AI\datasets\coco8` 与 `D:\AI\envs\yolo_master` 可用。
 2. 双击 `run_p2_v2.cmd`。
-3. 运行结束后双击 `run_demo.cmd`。
+3. 运行结束后双击 `run_trained_demo.cmd`。
 4. 双击 `run_robustness.cmd` 复现 3-seed 稳定性图；已有本地训练权重时，双击 `run_trained_analysis.cmd` 重建训练后外观敏感性、归因、散点图、柱图和路由叠加。
 
 等价命令：

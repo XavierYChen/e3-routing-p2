@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 import os
 import sys
@@ -18,6 +19,7 @@ from .geometry import letterbox
 from .io_utils import sha256_file, write_json, write_manifest
 from .plotting import save_dominant_overlay
 from .supplemental import _save_sheet
+from .trained_demo import build_trained_demo
 
 ROOT = Path(__file__).resolve().parents[2]
 YOLO_ROOT = (ROOT.parent / "YOLO-Master").resolve()
@@ -236,6 +238,23 @@ def run(config_path: Path) -> Path:
     save_scatter(comparisons, output / "sensitivity-scatter.png")
     save_usage(summary, output / "expert-usage-bars.png")
     _save_sheet(overlay_cards, "TRAINED MOT / MOA ROUTING", "Same COCO8 image · 320px · true dominant experts · all spatial router layers", output / "trained-routing-overlays.png", columns=4)
+    mot_cards = []
+    for card in overlay_cards:
+        if not card["caption"].startswith("MOT"):
+            continue
+        parts = card["caption"].split(" | ")
+        layer = parts[1].split(".")[1]
+        counts = parts[-1].removeprefix("dominant ")
+        active = sum(value > 0 for value in ast.literal_eval(counts))
+        mot_cards.append({"path": card["path"], "caption": f"MOT L{layer} · active {active}/3 · counts {counts}"})
+    _save_sheet(
+        mot_cards,
+        "TRAINED MOT / LAYER-BY-LAYER",
+        "Same checkpoint and image · true argmax colors · active experts legitimately vary by layer",
+        output / "trained-mot-layer-focus.png",
+        columns=4,
+    )
+    build_trained_demo(output)
     (output / "config.resolved.yaml").write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
     write_manifest(output)
     print(json.dumps(summary, indent=2))
