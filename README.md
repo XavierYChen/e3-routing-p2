@@ -4,13 +4,11 @@
 
 阶段导航：[Smoke](https://github.com/XavierYChen/e3-routing-smoke) · [P0](https://github.com/XavierYChen/e3-routing-p0) · [P1](https://github.com/XavierYChen/e3-routing-p1) · **P2（本仓库）** · [最终报告与消融](https://github.com/XavierYChen/e3-routing-final-report)
 
-![MOT 与 MOA token 路由总览](artifacts/p2/p2-v2-five-family-final/routing-overview.png)
+![训练后 MOT/MOA 路由层](artifacts/p2/trained-routing-analysis-20260909/trained-routing-overlays.png)
 
 ## 训练后 P2 分析（2026-09-09）
 
 新版 P2 直接加载 P1 产生的 10-epoch 预训练迁移 checkpoint，在 4 张 COCO8 原图、320px 输入上采集 MOT/MOA 的全部 4 个空间路由层。五种外观扰动共得到 192 次真实 capture 和 160 组与 identity 对齐的比较。
-
-![训练后 MOT/MOA 路由层](artifacts/p2/trained-routing-analysis-20260909/trained-routing-overlays.png)
 
 这次 MOT 不再是 `active experts=1`：前三层的平均概率质量分别约为 `[27.3%,22.7%,50.0%]`、`[49.9%,27.5%,22.6%]`、`[48.4%,20.8%,30.8%]`，图上也能看到三种真实 argmax 颜色；末层仍有一个专家未被 Top-K 选中。MOA 四层的平均概率仍接近三等分，但其空间 argmax 已形成不同区域。颜色只代表每个 token 概率最大的专家编号，并不是聚类类别或物体语义。
 
@@ -35,7 +33,7 @@ MOT 的 `model.22` 占各扰动层均值 MAE 总和的 41.4%～48.4%；MOA 的 `
 
 本轮训练 checkpoint 只有 seed 0，因此这些图用于完成工具链和提出下一轮消融假设，不能宣称多 seed 鲁棒性。权重不上传；仓库公开 checkpoint SHA-256、逐项比较、逐 capture 统计、配置和 manifest。
 
-## 新增稳健性与训练后证据
+## 补充冷启动稳定性证据（不作为最终训练结论）
 
 ![CPU 路由稳定性](artifacts/p2/p2r-20260909-cpu-resolution-flip-v2/robustness-overview.png)
 
@@ -44,10 +42,6 @@ MOT 的 `model.22` 占各扰动层均值 MAE 总和的 41.4%～48.4%；MOA 的 `
 ![MOA 分辨率细节](artifacts/p2/supplemental/moa-resolution-overview.png)
 
 MOA 没有通过人为阈值或调色制造区域。上图固定 seed、图片、路由层和映射方法，仅把输入从 64 提升至 128/256；token 数从 64 增至 256/1024，因而边界更细。三个专家仍接近均匀，颜色表示真实 argmax，不表示高置信度。
-
-![训练后 MOT 多专家路由](artifacts/p2/supplemental/trained-mot-spatial-overview.png)
-
-本地已有训练 checkpoint 在 `model.19.m.0.router` 上真实激活 3 个专家，四图合计主导 token 为 `[75, 8, 317]`，邻域概率 L1 均值为 `0.02964`；所以 MOT 可以呈现多色。其余三层仍由单专家主导，且该层 top-1 margin 均值只有 `4.15e-5`。这是一项有 checkpoint SHA-256 的机制证据，不声称已经形成稳定语义专门化。权重文件不上传，公开仓库提供派生图、逐层统计和哈希。
 
 ## 验收结论
 
@@ -117,3 +111,4 @@ D:\AI\envs\yolo_master\python.exe -m e3_p2 run --config configs\p2_v2.yaml --run
 - 日志不记录凭据，不执行任意 shell，不自动上传数据。
 - COCO8 图像遵循其原许可；腾讯源码不在本仓库重新分发。
 - 参考项目只用于核对验收口径和交互设计，来源见 [NOTICE](NOTICE.md)。
+
