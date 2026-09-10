@@ -29,8 +29,10 @@ def build_trained_demo(output: Path) -> Path:
         "cards": cards,
         "appearance": summary["appearance"],
         "figures": {
+            "inputs": "appearance-inputs.png",
             "appearance": "appearance-sensitivity.png",
             "attribution": "router-attribution.png",
+            "absolute": "router-absolute-sensitivity.png",
             "scatter": "sensitivity-scatter.png",
             "usage": "expert-usage-bars.png",
         },
@@ -54,7 +56,7 @@ label{{display:block;color:var(--muted);margin:8px 0 4px}}select,button{{width:1
 <section class="hero"><div class="eyebrow">E3://TRAINED ROUTING EVIDENCE</div><h1>From constant routing to measurable spatial specialization</h1><p>True router probabilities captured from Tencent YOLO-Master after compatible weight transfer and 10 COCO8 epochs. Colors are per-token argmax expert IDs; every panel keeps counts, probability, entropy and margin beside the image.</p>
 <div class="cards"><div class="card"><b>192</b>trained captures</div><div class="card"><b>160</b>aligned comparisons</div><div class="card"><b>4 + 4</b>MOT/MOA spatial layers</div><div class="card"><b>0</b>core forward edits</div></div></section>
 <section class="grid"><aside class="panel"><label>Family</label><select id="family"><option value="mot">MOT</option><option value="moa">MOA</option></select><label>Spatial router layer</label><select id="layer"></select>
-<div class="tabs"><button data-tab="routing" class="active">Routing map</button><button data-tab="appearance">Appearance</button><button data-tab="attribution">Attribution</button><button data-tab="scatter">Scatter</button><button data-tab="usage">Expert usage</button></div>
+<div class="tabs"><button data-tab="routing" class="active">Routing map</button><button data-tab="inputs">Appearance inputs</button><button data-tab="appearance">Appearance metrics</button><button data-tab="attribution">Relative attribution</button><button data-tab="absolute">Absolute MAE</button><button data-tab="scatter">Scatter</button><button data-tab="usage">Expert usage</button></div>
 <div class="note">A layer is not required to show all three colors. Active expert counts are measured, not cosmetically forced.</div><pre id="detail"></pre></aside>
 <section class="panel"><div id="routing"><div class="compare"><figure><figcaption>ORIGINAL / COCO8 GROUND TRUTH</figcaption><img src="../p2-v2-five-family-final/inputs/sample-0--ground-truth.png"></figure><figure><figcaption>TRAINED DOMINANT EXPERT MAP</figcaption><img id="overlay"></figure></div><div class="stats" id="stats"></div></div>
 <div id="analysis"><figure><figcaption id="analysisTitle"></figcaption><img id="analysisImage"></figure></div></section></section></main>

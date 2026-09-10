@@ -18,6 +18,12 @@
 
 ![外观敏感性](artifacts/p2/trained-routing-analysis-20260909/appearance-sensitivity.png)
 
+误差条是 4 张图片 × 4 个路由层共 16 个比较单元的描述性样本标准差，不作为独立样本置信区间。
+
+![外观输入审计](artifacts/p2/trained-routing-analysis-20260909/appearance-inputs.png)
+
+输入审计图保存实际使用的原图、亮度 ±10%、对比度 ±10% 和 Gaussian blur 0.75；六幅图保持完全相同的空间几何。
+
 | 族 | 最低主导专家一致率 | 最大概率 MAE | 观察 |
 |---|---:|---:|---|
 | **MOT** | 95.33%（blur 0.75） | 0.02098 | 连续概率变化更明显，但大多数 token 不换专家 |
@@ -26,6 +32,10 @@
 ![路由层归因](artifacts/p2/trained-routing-analysis-20260909/router-attribution.png)
 
 MOT 的 `model.22` 占各扰动层均值 MAE 总和的 41.4%～48.4%；MOA 的 `model.16` 占 31.3%～33.2%。这是“哪一层变化贡献更大”的描述性分解，不是因果归因。
+
+![绝对路由敏感性](artifacts/p2/trained-routing-analysis-20260909/router-absolute-sensitivity.png)
+
+绝对 MAE 图让 MOT 与 MOA 共用同一 log10 色阶。它揭示相对归因图没有表达的量级差异：即使某层在 MOA 内部占比最高，绝对变化仍可能远小于 MOT。
 
 ![敏感性散点图](artifacts/p2/trained-routing-analysis-20260909/sensitivity-scatter.png)
 

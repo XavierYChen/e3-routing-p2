@@ -94,16 +94,18 @@ def main() -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     scenes = [
         (12, "E3 ROUTING LENS", "Interactive evidence generated from the trained checkpoint", dict(top=True)),
-        (10, "MOT / LAYER 13", "Two active experts are measured on this image", dict(family="mot", layer="13")),
-        (10, "MOT / LAYER 16", "Expert activity changes with router depth", dict(family="mot", layer="16")),
-        (12, "MOT / LAYER 19", "All three experts are active; colors are real argmax assignments", dict(family="mot", layer="19")),
-        (10, "MOT / LAYER 22", "Two active experts here is valid Top-K behavior", dict(family="mot", layer="22")),
-        (12, "MOA / LAYER 16", "Three spatial regions with continuous probability statistics", dict(family="moa", layer="16")),
-        (10, "MOA / LAYER 19", "Margin and entropy prevent over-reading the color map", dict(family="moa", layer="19")),
-        (12, "APPEARANCE SENSITIVITY", "Brightness, contrast and blur are measured across three seeds", dict(tab="appearance")),
-        (12, "ROUTER ATTRIBUTION", "Layer contributions and low-margin switches are traceable", dict(tab="attribution")),
-        (10, "SCATTER ANALYSIS", "Probability margin explains apparent routing instability", dict(tab="scatter")),
-        (10, "EXPERT USAGE", "Per-layer usage exposes balance and specialization", dict(tab="usage")),
+        (9, "MOT / LAYER 13", "Two active experts are measured on this image", dict(family="mot", layer="13")),
+        (9, "MOT / LAYER 16", "Expert activity changes with router depth", dict(family="mot", layer="16")),
+        (11, "MOT / LAYER 19", "All three experts are active; colors are real argmax assignments", dict(family="mot", layer="19")),
+        (9, "MOT / LAYER 22", "Two active experts here is valid Top-K behavior", dict(family="mot", layer="22")),
+        (11, "MOA / LAYER 16", "Three spatial regions with continuous probability statistics", dict(family="moa", layer="16")),
+        (9, "MOA / LAYER 19", "Margin and entropy prevent over-reading the color map", dict(family="moa", layer="19")),
+        (8, "APPEARANCE INPUT AUDIT", "Exact brightness, contrast and blur inputs keep the same geometry", dict(tab="inputs")),
+        (10, "APPEARANCE SENSITIVITY", "Mean and descriptive SD cover 16 image-by-layer units", dict(tab="appearance")),
+        (10, "RELATIVE ATTRIBUTION", "Layer shares are descriptive rather than causal", dict(tab="attribution")),
+        (8, "ABSOLUTE ROUTER MAE", "One shared log scale exposes the MOT/MOA magnitude gap", dict(tab="absolute")),
+        (7, "SCATTER ANALYSIS", "Probability margin explains apparent routing instability", dict(tab="scatter")),
+        (7, "EXPERT USAGE", "Per-layer usage exposes balance and specialization", dict(tab="usage")),
     ]
     total_seconds = sum(scene[0] for scene in scenes)
     if total_seconds != 120:

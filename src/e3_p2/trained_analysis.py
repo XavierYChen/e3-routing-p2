@@ -74,10 +74,12 @@ def save_appearance(summary: dict, output: Path) -> None:
     width = 0.36
     for index, family in enumerate(("mot", "moa")):
         values = [summary["appearance"][family][name]["dominant_expert_agreement_mean"] * 100 for name in transforms]
-        bars = axes[0].bar(x + (index - 0.5) * width, values, width, label=family.upper(), color=COLORS[family])
+        errors = [summary["appearance"][family][name]["dominant_expert_agreement_std"] * 100 for name in transforms]
+        bars = axes[0].bar(x + (index - 0.5) * width, values, width, yerr=errors, capsize=3, label=family.upper(), color=COLORS[family])
         axes[0].bar_label(bars, fmt="%.1f", fontsize=8, padding=2)
         maes = [summary["appearance"][family][name]["probability_mae_mean"] for name in transforms]
-        bars = axes[1].bar(x + (index - 0.5) * width, maes, width, label=family.upper(), color=COLORS[family])
+        mae_errors = [summary["appearance"][family][name]["probability_mae_std"] for name in transforms]
+        bars = axes[1].bar(x + (index - 0.5) * width, maes, width, yerr=mae_errors, capsize=3, label=family.upper(), color=COLORS[family])
         axes[1].bar_label(bars, labels=[f"{value:.4f}" for value in maes], fontsize=7, padding=2, rotation=90)
     labels = [name.replace("_", "\n") for name in transforms]
     axes[0].set(title="Dominant expert agreement", ylabel="Agreement (%)", xticks=x, xticklabels=labels, ylim=(0, 102))
@@ -85,7 +87,63 @@ def save_appearance(summary: dict, output: Path) -> None:
     for axis in axes:
         axis.grid(axis="y", alpha=0.15)
         axis.legend(frameon=False)
-    fig.suptitle("E3 P2 / TRAINED APPEARANCE SENSITIVITY\n320px · 4 COCO8 images · one checkpoint seed", color="#00e5ff", fontsize=18)
+    fig.suptitle("E3 P2 / TRAINED APPEARANCE SENSITIVITY\nmean ± descriptive SD across 16 image×layer comparisons", color="#00e5ff", fontsize=18)
+    fig.savefig(output, dpi=180)
+    plt.close(fig)
+
+
+def save_appearance_inputs(image: Image.Image, specs: list[dict], output: Path) -> None:
+    """Archive the exact visual perturbations used by the trained analysis."""
+    plt = setup_plot()
+    fig, axes = plt.subplots(2, 3, figsize=(12, 8), constrained_layout=True)
+    for axis, spec in zip(axes.flat, specs):
+        axis.imshow(apply_transform(image, spec))
+        axis.set_title(spec["name"].replace("_", " ").upper())
+        axis.axis("off")
+    fig.suptitle("E3 P2 / APPEARANCE INPUT AUDIT\nSame original geometry · exact configured transformations", color="#00e5ff", fontsize=18)
+    fig.savefig(output, dpi=180)
+    plt.close(fig)
+
+
+def enrich_summary(summary: dict, comparisons: list[dict]) -> dict:
+    """Add dispersion and absolute per-layer response to the published means."""
+    absolute = {family: {} for family in summary["modules"]}
+    for family, modules in summary["modules"].items():
+        for transform in summary["transformations"]:
+            rows = [row for row in comparisons if row["family"] == family and row["transform"] == transform]
+            appearance = summary["appearance"][family][transform]
+            appearance["probability_mae_std"] = float(np.std([row["probability_mae"] for row in rows], ddof=1))
+            appearance["dominant_expert_agreement_std"] = float(
+                np.std([row["dominant_expert_agreement"] for row in rows], ddof=1)
+            )
+            absolute[family][transform] = {
+                module: float(np.mean([row["probability_mae"] for row in rows if row["module"] == module]))
+                for module in modules
+            }
+    summary["absolute_layer_sensitivity"] = absolute
+    summary["dispersion_unit"] = "descriptive sample SD across 4 images × 4 router layers; not an independent CI"
+    return summary
+
+
+def save_absolute_sensitivity(summary: dict, output: Path) -> None:
+    """Plot absolute layer MAE on one shared log scale to ground relative attribution."""
+    plt = setup_plot()
+    transforms = summary["transformations"]
+    fig, axes = plt.subplots(2, 1, figsize=(13, 8), constrained_layout=True)
+    image = None
+    for axis, family in zip(axes, ("mot", "moa")):
+        modules = summary["modules"][family]
+        matrix = np.asarray([
+            [summary["absolute_layer_sensitivity"][family][transform][module] for transform in transforms]
+            for module in modules
+        ])
+        image = axis.imshow(np.log10(np.maximum(matrix, 1e-8)), vmin=-8, vmax=-1, cmap="viridis", aspect="auto")
+        axis.set(title=f"{family.upper()} absolute probability MAE", yticks=np.arange(len(modules)), yticklabels=modules,
+                 xticks=np.arange(len(transforms)), xticklabels=[name.replace("_", "\n") for name in transforms])
+        for row, column in np.ndindex(matrix.shape):
+            axis.text(column, row, f"{matrix[row, column]:.2e}", ha="center", va="center", color="white", fontsize=8)
+    fig.colorbar(image, ax=axes, label="log10(mean absolute probability change)", shrink=0.8)
+    fig.suptitle("E3 P2 / ABSOLUTE ROUTER SENSITIVITY\nShared scale prevents relative attribution from exaggerating tiny changes", color="#00e5ff", fontsize=18)
     fig.savefig(output, dpi=180)
     plt.close(fig)
 
@@ -230,11 +288,14 @@ def run(config_path: Path) -> Path:
         "checkpoints": {family: {"sha256": sha256_file(Path(path)), "published": False} for family, path in config["checkpoints"].items()},
         "interpretation_boundary": "Attribution is descriptive share of probability change. Dominant colors are argmax categories, not learned semantic classes. COCO8 and one seed cannot establish robustness or specialization.",
     }
+    enrich_summary(summary, comparisons)
     write_json(output / "summary.json", summary)
     write_json(output / "comparisons.json", comparisons)
     write_json(output / "captures.json", captures)
     save_appearance(summary, output / "appearance-sensitivity.png")
+    save_appearance_inputs(Image.open(image_paths[0]).convert("RGB"), config["transformations"], output / "appearance-inputs.png")
     save_attribution(summary, output / "router-attribution.png")
+    save_absolute_sensitivity(summary, output / "router-absolute-sensitivity.png")
     save_scatter(comparisons, output / "sensitivity-scatter.png")
     save_usage(summary, output / "expert-usage-bars.png")
     _save_sheet(overlay_cards, "TRAINED MOT / MOA ROUTING", "Same COCO8 image · 320px · true dominant experts · all spatial router layers", output / "trained-routing-overlays.png", columns=4)

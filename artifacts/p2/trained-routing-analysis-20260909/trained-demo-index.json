@@ -199,31 +199,41 @@
         "comparison_count": 16,
         "probability_mae_mean": 0.015508022195038695,
         "dominant_expert_agreement_mean": 0.9634375,
-        "dominant_switch_fraction_mean": 0.0365625
+        "dominant_switch_fraction_mean": 0.0365625,
+        "probability_mae_std": 0.010776988260043703,
+        "dominant_expert_agreement_std": 0.02522915806495861
       },
       "brightness_110": {
         "comparison_count": 16,
         "probability_mae_mean": 0.02007839355423736,
         "dominant_expert_agreement_mean": 0.9612499999999999,
-        "dominant_switch_fraction_mean": 0.03875000000000001
+        "dominant_switch_fraction_mean": 0.03875000000000001,
+        "probability_mae_std": 0.015658290239823656,
+        "dominant_expert_agreement_std": 0.029854682770602884
       },
       "contrast_090": {
         "comparison_count": 16,
         "probability_mae_mean": 0.013997587088185052,
         "dominant_expert_agreement_mean": 0.9683593749999999,
-        "dominant_switch_fraction_mean": 0.031640625
+        "dominant_switch_fraction_mean": 0.031640625,
+        "probability_mae_std": 0.012751192198156144,
+        "dominant_expert_agreement_std": 0.027584977607084137
       },
       "contrast_110": {
         "comparison_count": 16,
         "probability_mae_mean": 0.013099159858732794,
         "dominant_expert_agreement_mean": 0.9717578124999999,
-        "dominant_switch_fraction_mean": 0.028242187499999998
+        "dominant_switch_fraction_mean": 0.028242187499999998,
+        "probability_mae_std": 0.008206220122332622,
+        "dominant_expert_agreement_std": 0.022287443622568445
       },
       "gaussian_blur_075": {
         "comparison_count": 16,
         "probability_mae_mean": 0.020976809622176615,
         "dominant_expert_agreement_mean": 0.9533203125,
-        "dominant_switch_fraction_mean": 0.0466796875
+        "dominant_switch_fraction_mean": 0.0466796875,
+        "probability_mae_std": 0.016811436156051004,
+        "dominant_expert_agreement_std": 0.03518161122275621
       }
     },
     "moa": {
@@ -231,37 +241,49 @@
         "comparison_count": 16,
         "probability_mae_mean": 0.0004900914989411831,
         "dominant_expert_agreement_mean": 0.9740625,
-        "dominant_switch_fraction_mean": 0.025937500000000002
+        "dominant_switch_fraction_mean": 0.025937500000000002,
+        "probability_mae_std": 0.00016137089867291086,
+        "dominant_expert_agreement_std": 0.01573047731846262
       },
       "brightness_110": {
         "comparison_count": 16,
         "probability_mae_mean": 0.0006674430410688122,
         "dominant_expert_agreement_mean": 0.9633984375,
-        "dominant_switch_fraction_mean": 0.036601562500000004
+        "dominant_switch_fraction_mean": 0.036601562500000004,
+        "probability_mae_std": 0.00028411455019447903,
+        "dominant_expert_agreement_std": 0.02586721778099003
       },
       "contrast_090": {
         "comparison_count": 16,
         "probability_mae_mean": 0.0005248110066168011,
         "dominant_expert_agreement_mean": 0.9740625,
-        "dominant_switch_fraction_mean": 0.0259375
+        "dominant_switch_fraction_mean": 0.0259375,
+        "probability_mae_std": 0.00021326496830598174,
+        "dominant_expert_agreement_std": 0.01718011204852869
       },
       "contrast_110": {
         "comparison_count": 16,
         "probability_mae_mean": 0.0005386813353591908,
         "dominant_expert_agreement_mean": 0.9723828125,
-        "dominant_switch_fraction_mean": 0.027617187500000005
+        "dominant_switch_fraction_mean": 0.027617187500000005,
+        "probability_mae_std": 0.00022361361476037157,
+        "dominant_expert_agreement_std": 0.02709956444722252
       },
       "gaussian_blur_075": {
         "comparison_count": 16,
         "probability_mae_mean": 0.0006574439719164123,
         "dominant_expert_agreement_mean": 0.964296875,
-        "dominant_switch_fraction_mean": 0.035703125
+        "dominant_switch_fraction_mean": 0.035703125,
+        "probability_mae_std": 0.00025879112024711773,
+        "dominant_expert_agreement_std": 0.025098633553442714
       }
     }
   },
   "figures": {
+    "inputs": "appearance-inputs.png",
     "appearance": "appearance-sensitivity.png",
     "attribution": "router-attribution.png",
+    "absolute": "router-absolute-sensitivity.png",
     "scatter": "sensitivity-scatter.png",
     "usage": "expert-usage-bars.png"
   }

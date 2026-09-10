@@ -85,7 +85,9 @@ MOT 的前三层在随机初始化下通常为 `[0.5,0.5,0]`，末层可出现 o
 
 概率 MAE 远低于百万分之一，同时 top-1 margin 也在百万分之一量级。因此离散一致率必须和连续概率误差一起汇报。MOT 冷启动图完全相等，但其空间常量输入令 Pearson 相关系数无定义；这不是学得的鲁棒性。128px 已消除 64px 下全部 5 个 `INSUFFICIENT_TOKENS`，是区域分析更合适的最低档。
 
-## 8. 训练 MOT checkpoint 补充审计
+## 8. 历史训练 MOT checkpoint 补充审计（已被第 10 节替代）
+
+本节保留早期 checkpoint 的机制证据用于追溯，不参与当前 README、演示或最终结论。当前正式结果以第 10 节的 P1 10-epoch checkpoint、`trained-routing-analysis-20260909` 和三种子 Final 消融为准。
 
 本机 checkpoint SHA-256 为 `8658764afae0a471e524f7b85f8066c36210c29118c45dac56fe00b8b6591d59`。对 4 张 COCO8、160px 输入完成 16 次 capture，权重文件不上传。
 
@@ -132,3 +134,5 @@ P1 新训练的 MOT/MOA checkpoint 使用相同 `yolo26n.pt` 起点、COCO8、64
 层归因按同一扰动下四个模块的平均 probability MAE 归一化。MOT 的 `model.22` 始终贡献最大（41.4%～48.4%）；MOA 的 `model.16` 最大（31.3%～33.2%）。该统计描述路由概率变化落在哪一层，不证明该层造成检测结果变化。
 
 散点图同时展示连续概率 MAE 与离散 expert switch。MOT 的概率移动更大；MOA 大量点靠近 MAE=0，但仍存在换色，符合“近并列 argmax 对微小变化敏感”的机制。所有数字来自 [`trained-routing-analysis-20260909`](../artifacts/p2/trained-routing-analysis-20260909/summary.json)，当前只有一个 checkpoint seed，正式稳健性/专门化结论需在后续消融补齐至少 3 seed。
+
+外观敏感性图同时报告 16 个 image×layer 比较单元的描述性标准差；它不是独立样本置信区间。`appearance-inputs.png` 固定几何展示六种实际输入，`router-absolute-sensitivity.png` 在共享 log10 色阶上展示每层绝对 probability MAE，用于约束相对 attribution 百分比的解读。
