@@ -14,6 +14,10 @@
 
 这次 MOT 不再是 `active experts=1`：前三层的平均概率质量分别约为 `[27.3%,22.7%,50.0%]`、`[49.9%,27.5%,22.6%]`、`[48.4%,20.8%,30.8%]`，图上也能看到三种真实 argmax 颜色；末层仍有一个专家未被 Top-K 选中。MOA 四层的平均概率仍接近三等分，但其空间 argmax 已形成不同区域。颜色只代表每个 token 概率最大的专家编号，并不是聚类类别或物体语义。
 
+![MOT 逐层活跃专家](artifacts/p2/trained-routing-analysis-20260909/trained-mot-layer-focus.png)
+
+逐层查看可以避免误读：同一个已训练 checkpoint、同一张图中，MOT 的 `model.13/16/19/22` 分别激活 `2/2/3/2` 个主导专家。只有 `model.19` 在这张图上三色齐全；其他层出现一大片单色或只有两色仍是当前真实结果，并非旧图或绘图错误。验收应结合图下注明的 token counts、概率、margin 和多图汇总，不能以“每层必须三色”作为判据。
+
 ![外观敏感性](artifacts/p2/trained-routing-analysis-20260909/appearance-sensitivity.png)
 
 | 族 | 最低主导专家一致率 | 最大概率 MAE | 观察 |
