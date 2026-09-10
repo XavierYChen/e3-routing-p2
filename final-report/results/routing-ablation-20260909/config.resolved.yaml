@@ -1,0 +1,67 @@
+run_id: routing-ablation-20260909
+families:
+  mot:
+    model_yaml: D:/AI/YOLO-Master/ultralytics/cfg/models/26/yolo26-master-mot-n.yaml
+    router_class: _MoTRouter
+  moa:
+    model_yaml: D:/AI/YOLO-Master/ultralytics/cfg/models/26/yolo26-master-moa-n.yaml
+    router_class: _MoARouter
+conditions:
+  random_init:
+    label: Random initialization (0 epoch)
+  pretrained_init:
+    label: Tencent yolo26n.pt transfer (0 epoch)
+    weights: D:/AI/YOLO-Master/yolo26n.pt
+  trained_10ep:
+    label: Tencent transfer + 10 epochs
+    checkpoints:
+      mot:
+        0: D:/AI/tmp/e3-specialization-final/mot-pretrained-10e-640/weights/best.pt
+        1: D:/AI/tmp/e3-ablation-checkpoints/mot-pretrained-10e-seed1/weights/best.pt
+        2: D:/AI/tmp/e3-ablation-checkpoints/mot-pretrained-10e-seed2/weights/best.pt
+      moa:
+        0: D:/AI/tmp/e3-specialization-final/moa-pretrained-10e-640/weights/best.pt
+        1: D:/AI/tmp/e3-ablation-checkpoints/moa-pretrained-10e-seed1/weights/best.pt
+        2: D:/AI/tmp/e3-ablation-checkpoints/moa-pretrained-10e-seed2/weights/best.pt
+seeds:
+- 0
+- 1
+- 2
+dataset_yaml: D:/AI/E3-Routing-P2/configs/coco8-local.yaml
+image_dir: D:/AI/datasets/coco8/images/val
+sample_indices:
+- 0
+- 1
+- 2
+- 3
+route_resolution: 320
+validation_resolution: 640
+device: '0'
+transformations:
+- name: identity
+  kind: identity
+- name: brightness_090
+  kind: brightness
+  factor: 0.9
+- name: brightness_110
+  kind: brightness
+  factor: 1.1
+- name: contrast_090
+  kind: contrast
+  factor: 0.9
+- name: contrast_110
+  kind: contrast
+  factor: 1.1
+- name: gaussian_blur_075
+  kind: gaussian_blur
+  radius: 0.75
+decision_rule:
+  description: Training supports clearer specialization when at least two of three
+    routing criteria improve, while appearance agreement drops by no more than 5 percentage
+    points.
+  criteria:
+    top1_margin_relative_gain: 0.25
+    spatial_variation_relative_gain: 0.25
+    all_experts_active_absolute_gain: 0.1
+  minimum_criteria_met: 2
+  maximum_appearance_agreement_drop: 0.05

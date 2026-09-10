@@ -1,0 +1,19 @@
+{
+  "ablation-dashboard.png": "fdbf692bdd0db4917f605f5faa1bba681bf8fee5404a382bf734b2f642c0dfcc",
+  "ablation-routing-overlays.jpg": "b42761789400762c6db0280504d69862c1a40aee9c5c8a6f099c428f7a5339d0",
+  "ablation-routing-overlays.png": "7b028a3286b98a85686df7138c2ac91a87b01e6de516fcbd83565b52684d7600",
+  "appearance-guardrail.png": "4caad72ad4a56823a1e6b6cbc4b4b190d539d72e94a48643fe3697f72479eeb9",
+  "captures.json": "0e1db330ef87c52c277748a534525715eee9b0cca0bc84716b41af0107a7b055",
+  "captures.json.gz": "ba8cf358d81173b2a817d83b52a859e64b23a199aa3c6e4cd721bc2172a4ce5f",
+  "comparisons.json": "b1286be021ea9275b579489287177bea31e978fd970089bda38c852c41b1277a",
+  "comparisons.json.gz": "ea1f88544d4847f71f32e679edce8ccd016845258070905a0af51b9e4e24ed42",
+  "confidence-stability-scatter.png": "140858d075704624878cc545ee09c7f87272a2b27610e7679c088e85052b8f2f",
+  "config.resolved.yaml": "45e99e24974af2dbf34381e0a03b0e9458e6af83caae80896cf393f2befea80c",
+  "overlay-moa-pretrained_init.png": "3f9f92b5e6d9c62e810458289e0c08500f4fb058ed076805c92eee57c3972fcf",
+  "overlay-moa-random_init.png": "ef90810370ae24cf8aa4878e5c09d2637e29adcd49e7a5190a8c02754949dc5d",
+  "overlay-moa-trained_10ep.png": "93e8793ccfbd9d6b1671ce63334a153cf78380aade0171e2a1768fb7511e914c",
+  "overlay-mot-pretrained_init.png": "dcbc9d1bc1e45fd0ca85fac48dd412e53de038e62efdd6e1827a7e72271b4ce2",
+  "overlay-mot-random_init.png": "dcbc9d1bc1e45fd0ca85fac48dd412e53de038e62efdd6e1827a7e72271b4ce2",
+  "overlay-mot-trained_10ep.png": "4166f649b288cb2b2ee9e9ab169422f1b5e7e4c180974b199029aee12e1e3621",
+  "summary.json": "02008395caad1d3be4a9dcce37a168a1f50a1c729974f0faf6593e3443fbd76b"
+}

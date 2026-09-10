@@ -1,0 +1,724 @@
+{
+  "created_utc": "2026-09-09T10:47:31.977629+00:00",
+  "status": "PASS",
+  "run_id": "routing-ablation-20260909",
+  "protocol": {
+    "families": [
+      "mot",
+      "moa"
+    ],
+    "conditions": {
+      "random_init": {
+        "label": "Random initialization (0 epoch)"
+      },
+      "pretrained_init": {
+        "label": "Tencent yolo26n.pt transfer (0 epoch)",
+        "weights": "D:/AI/YOLO-Master/yolo26n.pt"
+      },
+      "trained_10ep": {
+        "label": "Tencent transfer + 10 epochs",
+        "checkpoints": {
+          "mot": {
+            "0": "D:/AI/tmp/e3-specialization-final/mot-pretrained-10e-640/weights/best.pt",
+            "1": "D:/AI/tmp/e3-ablation-checkpoints/mot-pretrained-10e-seed1/weights/best.pt",
+            "2": "D:/AI/tmp/e3-ablation-checkpoints/mot-pretrained-10e-seed2/weights/best.pt"
+          },
+          "moa": {
+            "0": "D:/AI/tmp/e3-specialization-final/moa-pretrained-10e-640/weights/best.pt",
+            "1": "D:/AI/tmp/e3-ablation-checkpoints/moa-pretrained-10e-seed1/weights/best.pt",
+            "2": "D:/AI/tmp/e3-ablation-checkpoints/moa-pretrained-10e-seed2/weights/best.pt"
+          }
+        }
+      }
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "images": [
+      "000000000036.jpg",
+      "000000000042.jpg",
+      "000000000049.jpg",
+      "000000000061.jpg"
+    ],
+    "route_resolution": 320,
+    "validation_resolution": 640,
+    "transformations": [
+      {
+        "name": "identity",
+        "kind": "identity"
+      },
+      {
+        "name": "brightness_090",
+        "kind": "brightness",
+        "factor": 0.9
+      },
+      {
+        "name": "brightness_110",
+        "kind": "brightness",
+        "factor": 1.1
+      },
+      {
+        "name": "contrast_090",
+        "kind": "contrast",
+        "factor": 0.9
+      },
+      {
+        "name": "contrast_110",
+        "kind": "contrast",
+        "factor": 1.1
+      },
+      {
+        "name": "gaussian_blur_075",
+        "kind": "gaussian_blur",
+        "radius": 0.75
+      }
+    ]
+  },
+  "conditions": {
+    "random_init": {
+      "label": "Random initialization (0 epoch)"
+    },
+    "pretrained_init": {
+      "label": "Tencent yolo26n.pt transfer (0 epoch)",
+      "weights": "D:/AI/YOLO-Master/yolo26n.pt"
+    },
+    "trained_10ep": {
+      "label": "Tencent transfer + 10 epochs",
+      "checkpoints": {
+        "mot": {
+          "0": "D:/AI/tmp/e3-specialization-final/mot-pretrained-10e-640/weights/best.pt",
+          "1": "D:/AI/tmp/e3-ablation-checkpoints/mot-pretrained-10e-seed1/weights/best.pt",
+          "2": "D:/AI/tmp/e3-ablation-checkpoints/mot-pretrained-10e-seed2/weights/best.pt"
+        },
+        "moa": {
+          "0": "D:/AI/tmp/e3-specialization-final/moa-pretrained-10e-640/weights/best.pt",
+          "1": "D:/AI/tmp/e3-ablation-checkpoints/moa-pretrained-10e-seed1/weights/best.pt",
+          "2": "D:/AI/tmp/e3-ablation-checkpoints/moa-pretrained-10e-seed2/weights/best.pt"
+        }
+      }
+    }
+  },
+  "seed_results": [
+    {
+      "family": "mot",
+      "condition": "random_init",
+      "seed": 0,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "active_experts": 1.0,
+      "all_experts_active_rate": 0.0,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25,
+      "spatial_variation": 0.0,
+      "appearance_agreement": 1.0,
+      "appearance_probability_mae": 0.0
+    },
+    {
+      "family": "mot",
+      "condition": "random_init",
+      "seed": 1,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "active_experts": 1.0,
+      "all_experts_active_rate": 0.0,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25,
+      "spatial_variation": 0.0,
+      "appearance_agreement": 1.0,
+      "appearance_probability_mae": 0.0
+    },
+    {
+      "family": "mot",
+      "condition": "random_init",
+      "seed": 2,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "active_experts": 1.0,
+      "all_experts_active_rate": 0.0,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25,
+      "spatial_variation": 0.0,
+      "appearance_agreement": 1.0,
+      "appearance_probability_mae": 0.0
+    },
+    {
+      "family": "mot",
+      "condition": "pretrained_init",
+      "seed": 0,
+      "mAP50": 0.07472257202001033,
+      "mAP50_95": 0.014360026019205335,
+      "active_experts": 1.0,
+      "all_experts_active_rate": 0.0,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25,
+      "spatial_variation": 0.0,
+      "appearance_agreement": 1.0,
+      "appearance_probability_mae": 0.0
+    },
+    {
+      "family": "mot",
+      "condition": "pretrained_init",
+      "seed": 1,
+      "mAP50": 0.001828639682856712,
+      "mAP50_95": 0.0005067960398083043,
+      "active_experts": 1.0,
+      "all_experts_active_rate": 0.0,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25,
+      "spatial_variation": 0.0,
+      "appearance_agreement": 1.0,
+      "appearance_probability_mae": 0.0
+    },
+    {
+      "family": "mot",
+      "condition": "pretrained_init",
+      "seed": 2,
+      "mAP50": 0.026020408163265302,
+      "mAP50_95": 0.002846629560915275,
+      "active_experts": 1.0,
+      "all_experts_active_rate": 0.0,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25,
+      "spatial_variation": 0.0,
+      "appearance_agreement": 1.0,
+      "appearance_probability_mae": 0.0
+    },
+    {
+      "family": "mot",
+      "condition": "trained_10ep",
+      "seed": 0,
+      "mAP50": 0.10194989106753811,
+      "mAP50_95": 0.03432015250544662,
+      "active_experts": 2.4375,
+      "all_experts_active_rate": 0.4375,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.2500061435590837,
+      "spatial_variation": 0.12523111887276173,
+      "appearance_agreement": 0.9642109375000001,
+      "appearance_probability_mae": 0.01652105667589543
+    },
+    {
+      "family": "mot",
+      "condition": "trained_10ep",
+      "seed": 1,
+      "mAP50": 0.08317708333333333,
+      "mAP50_95": 0.016567708333333334,
+      "active_experts": 2.3125,
+      "all_experts_active_rate": 0.5625,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.2500006070174292,
+      "spatial_variation": 0.05022538683260791,
+      "appearance_agreement": 0.976390625,
+      "appearance_probability_mae": 0.007536474789337566
+    },
+    {
+      "family": "mot",
+      "condition": "trained_10ep",
+      "seed": 2,
+      "mAP50": 0.0825,
+      "mAP50_95": 0.0165,
+      "active_experts": 2.625,
+      "all_experts_active_rate": 0.625,
+      "normalized_entropy": 0.4731973260641098,
+      "top1_margin": 0.25000215748094234,
+      "spatial_variation": 0.08917955844663084,
+      "appearance_agreement": 0.9643750000000001,
+      "appearance_probability_mae": 0.012937569948378951
+    },
+    {
+      "family": "moa",
+      "condition": "random_init",
+      "seed": 0,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "active_experts": 2.4375,
+      "all_experts_active_rate": 0.6875,
+      "normalized_entropy": 1.0,
+      "top1_margin": 1.2125400941087605e-06,
+      "spatial_variation": 5.55720543360394e-07,
+      "appearance_agreement": 0.9876796875,
+      "appearance_probability_mae": 9.151455014944077e-08
+    },
+    {
+      "family": "moa",
+      "condition": "random_init",
+      "seed": 1,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "active_experts": 2.0625,
+      "all_experts_active_rate": 0.3125,
+      "normalized_entropy": 1.0,
+      "top1_margin": 9.444670103775366e-07,
+      "spatial_variation": 2.3487558009627207e-07,
+      "appearance_agreement": 0.9812109374999999,
+      "appearance_probability_mae": 4.5084316904346145e-08
+    },
+    {
+      "family": "moa",
+      "condition": "random_init",
+      "seed": 2,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "active_experts": 2.25,
+      "all_experts_active_rate": 0.5,
+      "normalized_entropy": 1.0,
+      "top1_margin": 3.872124949566569e-07,
+      "spatial_variation": 1.5435064182334202e-07,
+      "appearance_agreement": 0.984390625,
+      "appearance_probability_mae": 2.654548734426498e-08
+    },
+    {
+      "family": "moa",
+      "condition": "pretrained_init",
+      "seed": 0,
+      "mAP50": 0.1078426555807508,
+      "mAP50_95": 0.03676719356261023,
+      "active_experts": 2.8125,
+      "all_experts_active_rate": 0.8125,
+      "normalized_entropy": 0.9993123114109039,
+      "top1_margin": 0.009301714424509555,
+      "spatial_variation": 0.0043112273124279454,
+      "appearance_agreement": 0.9774375000000001,
+      "appearance_probability_mae": 0.000389454164619868
+    },
+    {
+      "family": "moa",
+      "condition": "pretrained_init",
+      "seed": 1,
+      "mAP50": 0.10749433106575962,
+      "mAP50_95": 0.03673236111111111,
+      "active_experts": 2.8125,
+      "all_experts_active_rate": 0.8125,
+      "normalized_entropy": 0.9994477219879627,
+      "top1_margin": 0.014259254530770704,
+      "spatial_variation": 0.005099720467114821,
+      "appearance_agreement": 0.9814375,
+      "appearance_probability_mae": 0.0004963266126190623
+    },
+    {
+      "family": "moa",
+      "condition": "pretrained_init",
+      "seed": 2,
+      "mAP50": 0.10862290249433104,
+      "mAP50_95": 0.036810346241060526,
+      "active_experts": 2.625,
+      "all_experts_active_rate": 0.6875,
+      "normalized_entropy": 0.9991953186690807,
+      "top1_margin": 0.01848447124939412,
+      "spatial_variation": 0.004740812044474296,
+      "appearance_agreement": 0.9855078125000001,
+      "appearance_probability_mae": 0.0004483991832627605
+    },
+    {
+      "family": "moa",
+      "condition": "trained_10ep",
+      "seed": 0,
+      "mAP50": 0.10248737373737372,
+      "mAP50_95": 0.037499990761271244,
+      "active_experts": 2.9375,
+      "all_experts_active_rate": 0.9375,
+      "normalized_entropy": 0.9995900578796864,
+      "top1_margin": 0.010035540763055906,
+      "spatial_variation": 0.004859483960899524,
+      "appearance_agreement": 0.9697734375,
+      "appearance_probability_mae": 0.0005758172088923553
+    },
+    {
+      "family": "moa",
+      "condition": "trained_10ep",
+      "seed": 1,
+      "mAP50": 0.10267777777777777,
+      "mAP50_95": 0.031522812500000004,
+      "active_experts": 3.0,
+      "all_experts_active_rate": 1.0,
+      "normalized_entropy": 0.9996623508632183,
+      "top1_margin": 0.00800541958597023,
+      "spatial_variation": 0.0046232102904468775,
+      "appearance_agreement": 0.9620156249999999,
+      "appearance_probability_mae": 0.0005400201646455874
+    },
+    {
+      "family": "moa",
+      "condition": "trained_10ep",
+      "seed": 2,
+      "mAP50": 0.10524891774891772,
+      "mAP50_95": 0.03873257202567547,
+      "active_experts": 2.8125,
+      "all_experts_active_rate": 0.8125,
+      "normalized_entropy": 0.9992336183786392,
+      "top1_margin": 0.014001509349327534,
+      "spatial_variation": 0.005399476969614625,
+      "appearance_agreement": 0.967578125,
+      "appearance_probability_mae": 0.0007414685037607948
+    }
+  ],
+  "aggregate": {
+    "mot": {
+      "random_init": {
+        "mAP50": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "mAP50_95": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "active_experts": {
+          "mean": 1.0,
+          "sd": 0.0
+        },
+        "all_experts_active_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "normalized_entropy": {
+          "mean": 0.4731973260641098,
+          "sd": 0.0
+        },
+        "top1_margin": {
+          "mean": 0.25,
+          "sd": 0.0
+        },
+        "spatial_variation": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "appearance_agreement": {
+          "mean": 1.0,
+          "sd": 0.0
+        },
+        "appearance_probability_mae": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "pretrained_init": {
+        "mAP50": {
+          "mean": 0.03419053995537744,
+          "sd": 0.03712741080413154
+        },
+        "mAP50_95": {
+          "mean": 0.0059044838733096384,
+          "sd": 0.007415581566026212
+        },
+        "active_experts": {
+          "mean": 1.0,
+          "sd": 0.0
+        },
+        "all_experts_active_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "normalized_entropy": {
+          "mean": 0.4731973260641098,
+          "sd": 0.0
+        },
+        "top1_margin": {
+          "mean": 0.25,
+          "sd": 0.0
+        },
+        "spatial_variation": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "appearance_agreement": {
+          "mean": 1.0,
+          "sd": 0.0
+        },
+        "appearance_probability_mae": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "trained_10ep": {
+        "mAP50": {
+          "mean": 0.08920899146695715,
+          "sd": 0.01103913504012577
+        },
+        "mAP50_95": {
+          "mean": 0.02246262027959332,
+          "sd": 0.010268979938142
+        },
+        "active_experts": {
+          "mean": 2.4583333333333335,
+          "sd": 0.15728821740147395
+        },
+        "all_experts_active_rate": {
+          "mean": 0.5416666666666666,
+          "sd": 0.09547032697824667
+        },
+        "normalized_entropy": {
+          "mean": 0.4731973260641098,
+          "sd": 0.0
+        },
+        "top1_margin": {
+          "mean": 0.25000296935248506,
+          "sd": 2.856164372782501e-06
+        },
+        "spatial_variation": {
+          "mean": 0.08821202138400015,
+          "sd": 0.03751222541646273
+        },
+        "appearance_agreement": {
+          "mean": 0.9683255208333333,
+          "sd": 0.0069850667885399285
+        },
+        "appearance_probability_mae": {
+          "mean": 0.012331700471203981,
+          "sd": 0.004522829455837918
+        }
+      }
+    },
+    "moa": {
+      "random_init": {
+        "mAP50": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "mAP50_95": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "active_experts": {
+          "mean": 2.25,
+          "sd": 0.1875
+        },
+        "all_experts_active_rate": {
+          "mean": 0.5,
+          "sd": 0.1875
+        },
+        "normalized_entropy": {
+          "mean": 1.0,
+          "sd": 0.0
+        },
+        "top1_margin": {
+          "mean": 8.48073199814318e-07,
+          "sd": 4.210228455995198e-07
+        },
+        "spatial_variation": {
+          "mean": 3.1498225509333605e-07,
+          "sd": 2.1233760618241795e-07
+        },
+        "appearance_agreement": {
+          "mean": 0.9844270833333333,
+          "sd": 0.0032345291076410977
+        },
+        "appearance_probability_mae": {
+          "mean": 5.4381451466017295e-08,
+          "sd": 3.346748143704698e-08
+        }
+      },
+      "pretrained_init": {
+        "mAP50": {
+          "mean": 0.10798662971361382,
+          "sd": 0.0005778968597831097
+        },
+        "mAP50_95": {
+          "mean": 0.03676996697159396,
+          "sd": 3.9066468631679986e-05
+        },
+        "active_experts": {
+          "mean": 2.75,
+          "sd": 0.10825317547305482
+        },
+        "all_experts_active_rate": {
+          "mean": 0.7708333333333334,
+          "sd": 0.07216878364870323
+        },
+        "normalized_entropy": {
+          "mean": 0.9993184506893158,
+          "sd": 0.0001263136053646815
+        },
+        "top1_margin": {
+          "mean": 0.01401514673489146,
+          "sd": 0.004596242725123182
+        },
+        "spatial_variation": {
+          "mean": 0.0047172532746723546,
+          "sd": 0.00039477414488913907
+        },
+        "appearance_agreement": {
+          "mean": 0.9814609375,
+          "sd": 0.004035207299410873
+        },
+        "appearance_probability_mae": {
+          "mean": 0.0004447266535005636,
+          "sd": 5.3530791526707226e-05
+        }
+      },
+      "trained_10ep": {
+        "mAP50": {
+          "mean": 0.10347135642135641,
+          "sd": 0.001542354249056195
+        },
+        "mAP50_95": {
+          "mean": 0.03591845842898224,
+          "sd": 0.003856305420097538
+        },
+        "active_experts": {
+          "mean": 2.9166666666666665,
+          "sd": 0.09547032697824666
+        },
+        "all_experts_active_rate": {
+          "mean": 0.9166666666666666,
+          "sd": 0.09547032697824667
+        },
+        "normalized_entropy": {
+          "mean": 0.999495342373848,
+          "sd": 0.00022952375937581337
+        },
+        "top1_margin": {
+          "mean": 0.010680823232784556,
+          "sd": 0.0030496828051231645
+        },
+        "spatial_variation": {
+          "mean": 0.004960723740320343,
+          "sd": 0.00039791281582705093
+        },
+        "appearance_agreement": {
+          "mean": 0.9664557291666668,
+          "sd": 0.003998842707747124
+        },
+        "appearance_probability_mae": {
+          "mean": 0.0006191019590995792,
+          "sd": 0.00010747341779921781
+        }
+      }
+    }
+  },
+  "decision_rule": {
+    "description": "Training supports clearer specialization when at least two of three routing criteria improve, while appearance agreement drops by no more than 5 percentage points.",
+    "criteria": {
+      "top1_margin_relative_gain": 0.25,
+      "spatial_variation_relative_gain": 0.25,
+      "all_experts_active_absolute_gain": 0.1
+    },
+    "minimum_criteria_met": 2,
+    "maximum_appearance_agreement_drop": 0.05
+  },
+  "decision": {
+    "mot": {
+      "gains": {
+        "top1_margin_relative_gain": 1.187740994024189e-05,
+        "spatial_variation_relative_gain": null,
+        "all_experts_active_absolute_gain": 0.5416666666666666
+      },
+      "null_gain_note": "A null relative gain means the baseline was exactly zero; the criterion then uses a strict positive-change check.",
+      "criteria_met": {
+        "top1_margin_relative_gain": false,
+        "spatial_variation_relative_gain": true,
+        "all_experts_active_absolute_gain": true
+      },
+      "criteria_met_count": 2,
+      "appearance_agreement_drop": 0.03167447916666666,
+      "appearance_guardrail_met": true,
+      "supports_clearer_specialization": true
+    },
+    "moa": {
+      "gains": {
+        "top1_margin_relative_gain": -0.23790856886328032,
+        "spatial_variation_relative_gain": 0.051612760958843935,
+        "all_experts_active_absolute_gain": 0.14583333333333326
+      },
+      "null_gain_note": "A null relative gain means the baseline was exactly zero; the criterion then uses a strict positive-change check.",
+      "criteria_met": {
+        "top1_margin_relative_gain": false,
+        "spatial_variation_relative_gain": false,
+        "all_experts_active_absolute_gain": true
+      },
+      "criteria_met_count": 1,
+      "appearance_agreement_drop": 0.015005208333333186,
+      "appearance_guardrail_met": true,
+      "supports_clearer_specialization": false
+    }
+  },
+  "counts": {
+    "captures": 1728,
+    "appearance_comparisons": 1440
+  },
+  "checkpoint_fingerprints": {
+    "mot/random_init/0": {
+      "source": "D:\\AI\\YOLO-Master\\ultralytics\\cfg\\models\\26\\yolo26-master-mot-n.yaml",
+      "sha256": "f327bb95d9cdf2dc1d81da060ad663a4e9bc38ff1d3ae13db58d36d761452614"
+    },
+    "mot/random_init/1": {
+      "source": "D:\\AI\\YOLO-Master\\ultralytics\\cfg\\models\\26\\yolo26-master-mot-n.yaml",
+      "sha256": "f327bb95d9cdf2dc1d81da060ad663a4e9bc38ff1d3ae13db58d36d761452614"
+    },
+    "mot/random_init/2": {
+      "source": "D:\\AI\\YOLO-Master\\ultralytics\\cfg\\models\\26\\yolo26-master-mot-n.yaml",
+      "sha256": "f327bb95d9cdf2dc1d81da060ad663a4e9bc38ff1d3ae13db58d36d761452614"
+    },
+    "mot/pretrained_init/0": {
+      "source": "D:\\AI\\YOLO-Master\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "mot/pretrained_init/1": {
+      "source": "D:\\AI\\YOLO-Master\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "mot/pretrained_init/2": {
+      "source": "D:\\AI\\YOLO-Master\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "mot/trained_10ep/0": {
+      "source": "D:\\AI\\tmp\\e3-specialization-final\\mot-pretrained-10e-640\\weights\\best.pt",
+      "sha256": "223a90067d2fc830eeb03e73bf359e4a9881029e5a8ffd487b60e39ec4e7c375"
+    },
+    "mot/trained_10ep/1": {
+      "source": "D:\\AI\\tmp\\e3-ablation-checkpoints\\mot-pretrained-10e-seed1\\weights\\best.pt",
+      "sha256": "67de4604b56a41a79766a4a726ac9241e6ff9835882c2ba7ebeceefffab9954b"
+    },
+    "mot/trained_10ep/2": {
+      "source": "D:\\AI\\tmp\\e3-ablation-checkpoints\\mot-pretrained-10e-seed2\\weights\\best.pt",
+      "sha256": "4a1b01a0587dad34f8cb9355752375ed012bf26f154914dd9330391238613221"
+    },
+    "moa/random_init/0": {
+      "source": "D:\\AI\\YOLO-Master\\ultralytics\\cfg\\models\\26\\yolo26-master-moa-n.yaml",
+      "sha256": "a7643be80f70d5968a9cbe12595544186b42acaf54d3b5e24fed908bf81ba1e3"
+    },
+    "moa/random_init/1": {
+      "source": "D:\\AI\\YOLO-Master\\ultralytics\\cfg\\models\\26\\yolo26-master-moa-n.yaml",
+      "sha256": "a7643be80f70d5968a9cbe12595544186b42acaf54d3b5e24fed908bf81ba1e3"
+    },
+    "moa/random_init/2": {
+      "source": "D:\\AI\\YOLO-Master\\ultralytics\\cfg\\models\\26\\yolo26-master-moa-n.yaml",
+      "sha256": "a7643be80f70d5968a9cbe12595544186b42acaf54d3b5e24fed908bf81ba1e3"
+    },
+    "moa/pretrained_init/0": {
+      "source": "D:\\AI\\YOLO-Master\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "moa/pretrained_init/1": {
+      "source": "D:\\AI\\YOLO-Master\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "moa/pretrained_init/2": {
+      "source": "D:\\AI\\YOLO-Master\\yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    "moa/trained_10ep/0": {
+      "source": "D:\\AI\\tmp\\e3-specialization-final\\moa-pretrained-10e-640\\weights\\best.pt",
+      "sha256": "4624536b0d1f217ecfc46091385cedc738efd35a787e3f972562d0dc91c7d081"
+    },
+    "moa/trained_10ep/1": {
+      "source": "D:\\AI\\tmp\\e3-ablation-checkpoints\\moa-pretrained-10e-seed1\\weights\\best.pt",
+      "sha256": "915c7a793a01b756cfb880b33a29e6c1316f1d26e4b2d1a20b9f123dadb3b183"
+    },
+    "moa/trained_10ep/2": {
+      "source": "D:\\AI\\tmp\\e3-ablation-checkpoints\\moa-pretrained-10e-seed2\\weights\\best.pt",
+      "sha256": "6d88e2d1825728ebdd4538f1eb9cb372b4e0702589e14865218f3cc0a05fef5e"
+    }
+  },
+  "representative_overlays": [
+    "overlay-mot-random_init.png",
+    "overlay-mot-pretrained_init.png",
+    "overlay-mot-trained_10ep.png",
+    "overlay-moa-random_init.png",
+    "overlay-moa-pretrained_init.png",
+    "overlay-moa-trained_10ep.png"
+  ],
+  "interpretation_boundary": "Expert IDs are permutation-symmetric across independently initialized seeds; cross-seed expert-ID agreement is not reported. COCO8 detection scores are pipeline checks, not generalization claims."
+}

@@ -1,0 +1,18 @@
+base_weights: D:/AI/YOLO-Master/yolo26n.pt
+data: D:/AI/E3-Routing-P2/configs/coco8-local.yaml
+families: [mot, moa]
+seeds: [0, 1, 2]
+epochs: 10
+batch: 1
+imgsz: 640
+device: "0"
+workers: 0
+amp: true
+deterministic: true
+scale: 0.5
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.1
+close_mosaic: 3
+checkpoint_policy: Ultralytics best.pt selected by framework fitness; final table revalidates the saved checkpoint.
+
