@@ -81,17 +81,19 @@ MOT 的 Top-K=2 会把三个专家中未选中的一个概率精确置零，所�
 
 详细表格见 [实验报告](docs/EXPERIMENT_REPORT.md)，五族判定依据见 [可行性审计](docs/FEASIBILITY_AUDIT.md)，字段定义见 [Schema](docs/SCHEMA.md)。
 
-## 打开交互 UI
+## 打开交互 UI 与两分钟视频
 
-双击 `run_demo.cmd`，浏览器会打开 `http://127.0.0.1:8766/demo.html`。可以切换 **MOT/MOA、4 张图片、4 个路由层、6 类视图**，也可显示 COCO 标注框并导出当前图。
+双击 `run_trained_demo.cmd`，浏览器会打开训练后证据页。页面可切换 **MOT/MOA、4 个路由层、外观敏感性、路由归因、散点分析和专家使用率**。旧的 `run_demo.cmd` 保留为随机初始化五族能力审计页，不能用来代替训练后结论。
 
-两分钟现场演示按 [演示与录屏脚本](docs/DEMO.md) 操作。这里采用真实交互页面，而不是把静态图拼成假视频。
+已生成的 [两分钟 MP4](artifacts/p2/e3-p2-trained-two-minute-demo.mp4) 恰好为 120.0 秒、1600×900、10 fps；其 SHA-256、大小和来源页记录在 [视频清单](artifacts/p2/e3-p2-trained-two-minute-demo.json)。需要重建时双击 `record_demo_video.cmd`。详细讲解顺序见 [演示与录屏脚本](docs/DEMO.md)。
+
+![两分钟训练后演示抽帧](artifacts/p2/e3-p2-trained-two-minute-demo-contact-sheet.jpg)
 
 ## 从零复现
 
 1. 保持 `D:\AI\YOLO-Master`、`D:\AI\datasets\coco8` 与 `D:\AI\envs\yolo_master` 可用。
 2. 双击 `run_p2_v2.cmd`。
-3. 运行结束后双击 `run_demo.cmd`。
+3. 运行结束后双击 `run_trained_demo.cmd`。
 4. 双击 `run_robustness.cmd` 复现 3-seed 稳定性图；已有本地训练权重时，双击 `run_trained_analysis.cmd` 重建训练后外观敏感性、归因、散点图、柱图和路由叠加。
 
 等价命令：

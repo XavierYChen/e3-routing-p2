@@ -19,6 +19,7 @@ from .geometry import letterbox
 from .io_utils import sha256_file, write_json, write_manifest
 from .plotting import save_dominant_overlay
 from .supplemental import _save_sheet
+from .trained_demo import build_trained_demo
 
 ROOT = Path(__file__).resolve().parents[2]
 YOLO_ROOT = (ROOT.parent / "YOLO-Master").resolve()
@@ -253,6 +254,7 @@ def run(config_path: Path) -> Path:
         output / "trained-mot-layer-focus.png",
         columns=4,
     )
+    build_trained_demo(output)
     (output / "config.resolved.yaml").write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
     write_manifest(output)
     print(json.dumps(summary, indent=2))
