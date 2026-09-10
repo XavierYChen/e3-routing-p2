@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256",
-  "file_count": 17,
+  "file_count": 18,
   "files": [
     {
       "path": "appearance-sensitivity.png",
@@ -81,6 +81,11 @@
       "path": "summary.json",
       "bytes": 7342,
       "sha256": "9dd9221673cd16818ae1768253170440c3b5fe6b3c57c7eba9fb84b3bc6dc6f0"
+    },
+    {
+      "path": "trained-mot-layer-focus.png",
+      "bytes": 239082,
+      "sha256": "226945037abd1f65f2d6d86c1e21bd925a8d3d9bfc971bccf958f838ab281bb8"
     },
     {
       "path": "trained-routing-overlays.png",
