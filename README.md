@@ -124,4 +124,3 @@ D:\AI\envs\yolo_master\python.exe -m e3_p2 run --config configs\p2_v2.yaml --run
 - COCO8 图像遵循其原许可；腾讯源码不在本仓库重新分发。
 - 参考项目只用于核对验收口径和交互设计，来源见 [NOTICE](NOTICE.md)。
 
-
