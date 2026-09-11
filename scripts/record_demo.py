@@ -78,10 +78,6 @@ def decorate(frame: np.ndarray, title: str, subtitle: str, progress: float, phas
     cv2.putText(frame, title, (42, 40), cv2.FONT_HERSHEY_DUPLEX, 0.90, (255, 229, 0), 2, cv2.LINE_AA)
     cv2.putText(frame, subtitle, (42, 72), cv2.FONT_HERSHEY_SIMPLEX, 0.58, (220, 235, 248), 1, cv2.LINE_AA)
     cv2.rectangle(frame, (0, height - 10), (int(width * progress), height), (217, 200, 0), -1)
-    cursor_x = int(width * (0.18 + 0.64 * phase))
-    cursor_y = int(height * (0.20 + 0.04 * np.sin(phase * 2 * np.pi)))
-    cv2.circle(frame, (cursor_x, cursor_y), 11, (255, 255, 255), 2, cv2.LINE_AA)
-    cv2.circle(frame, (cursor_x, cursor_y), 4, (80, 210, 255), -1, cv2.LINE_AA)
     return frame
 
 

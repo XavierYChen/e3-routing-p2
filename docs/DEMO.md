@@ -24,4 +24,6 @@
 
 `scripts/narrated_demo_manifest.json` 给出与 13 个场景严格对应的中文讲解词、起始时间和持续时间。仓库保留无声视频作为可复现 clean master，并提供独立的 [中文女声字幕版](../artifacts/p2/e3-p2-narrated-subtitled-demo.mp4)。字幕时间来自对最终女声音轨的 Whisper 分段识别，字幕文字来自审定原稿，避免 MOE、MOT、MOA、LATENT、MOLoRA、Top-K 和 argmax 被误写。
 
-当前成片验证结果：总时长 `120.000 s`；视频为 H.264、音频为 AAC；共 46 条字幕；最后一句在 `116.000 s` 结束；开头、中段和结尾抽帧见 [字幕抽查图](../artifacts/p2/e3-p2-caption-proof.png)。配音版没有覆盖 clean master。
+当前成片验证结果：总时长 `120.000 s`；视频为 H.264、音频为 AAC；共 51 条字幕；最后一句在 `116.000 s` 结束。字幕时间来自本机 Whisper，审定文字按字符对齐，相似度为 `0.853`；Noto Sans SC 提供完整中文字形。录屏脚本已移除模拟光标。开头、中段和结尾抽帧见 [字幕抽查图](../artifacts/p2/e3-p2-caption-proof.png)，完整时间轴见 [中文字幕边车](../artifacts/p2/e3-p2-captions.zh-CN.srt)。配音版没有覆盖 clean master。
+
+Benji 男声的同文案成本预检为 `3.7 credits`，制作时可用余额为 `1 credit`，因此最终版保留已经审定的 Faye 女声，没有提交失败的音频生成任务。

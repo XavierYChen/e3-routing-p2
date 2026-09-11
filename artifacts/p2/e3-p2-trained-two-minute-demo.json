@@ -1,7 +1,7 @@
 {
   "file": "e3-p2-trained-two-minute-demo.mp4",
-  "bytes": 35633324,
-  "sha256": "2fe635d3b4ed58846022f40c65b7ff0d4d1965aa3734789ec2fc404e0e46d040",
+  "bytes": 35102037,
+  "sha256": "48512729a868aca912b36e7465ae8406789c243319e1720c4ce6b4206229507a",
   "fps": 10.0,
   "frames": 1200,
   "duration_seconds": 120.0,
@@ -9,5 +9,6 @@
     1600,
     900
   ],
-  "source": "trained-routing-analysis-20260909/trained-demo.html"
+  "source": "trained-routing-analysis-20260909/trained-demo.html",
+  "synthetic_cursor": false
 }
