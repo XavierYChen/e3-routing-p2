@@ -89,7 +89,9 @@ MOT 的 Top-K=2 会把三个专家中未选中的一个概率精确置零，所�
 
 双击 `run_trained_demo.cmd`，浏览器会打开训练后证据页。页面可切换 **MOT/MOA、4 个路由层、外观敏感性、路由归因、散点分析和专家使用率**。旧的 `run_demo.cmd` 保留为随机初始化五族能力审计页，不能用来代替训练后结论。
 
-已生成的 [两分钟 MP4](artifacts/p2/e3-p2-trained-two-minute-demo.mp4) 恰好为 120.0 秒、1600×900、10 fps；其 SHA-256、大小和来源页记录在 [视频清单](artifacts/p2/e3-p2-trained-two-minute-demo.json)。需要重建时双击 `record_demo_video.cmd`。详细讲解顺序见 [演示与录屏脚本](docs/DEMO.md)。
+推荐观看 [中文女声字幕版](artifacts/p2/e3-p2-narrated-subtitled-demo.mp4)：120.0 秒、1600×900，包含真实 UI 状态切换、中文讲解和 46 条烧录字幕；其编码、大小和 SHA-256 记录在 [配音版清单](artifacts/p2/e3-p2-narrated-subtitled-demo.json)。原始 [无声母版](artifacts/p2/e3-p2-trained-two-minute-demo.mp4) 保留用于复现，其 SHA-256、大小和来源页记录在 [无声版清单](artifacts/p2/e3-p2-trained-two-minute-demo.json)。需要重建画面时双击 `record_demo_video.cmd`，详细讲解和字幕验证见 [演示与录屏脚本](docs/DEMO.md)。
+
+![中文女声字幕版抽查：开头、中段、结尾](artifacts/p2/e3-p2-caption-proof.png)
 
 ![两分钟训练后演示抽帧](artifacts/p2/e3-p2-trained-two-minute-demo-contact-sheet.jpg)
 
@@ -121,4 +123,5 @@ D:\AI\envs\yolo_master\python.exe -m e3_p2 run --config configs\p2_v2.yaml --run
 - 日志不记录凭据，不执行任意 shell，不自动上传数据。
 - COCO8 图像遵循其原许可；腾讯源码不在本仓库重新分发。
 - 参考项目只用于核对验收口径和交互设计，来源见 [NOTICE](NOTICE.md)。
+
 
