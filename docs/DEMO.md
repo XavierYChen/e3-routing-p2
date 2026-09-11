@@ -19,3 +19,10 @@
 | 113–120s | Expert usage | 逐层专家使用率与专门化证据边界 |
 
 视频由浏览器真实操作页面逐场景录制，并带进度条和讲解标题。提交前可对照 `e3-p2-trained-two-minute-demo.json` 校验时长、分辨率和 SHA-256。
+
+## 配音与字幕版本
+
+`scripts/narrated_demo_manifest.json` 给出与 13 个场景严格对应的中文讲解词、起始时间和持续时间。发布流程保留当前无声视频作为可复现 clean master，再生成独立的 narrated edition：加入中文讲解音轨，通过 Whisper 从最终音频取得逐词时间，最后烧录短句字幕。字幕文字使用 manifest 中的原稿，Whisper 只负责计时，避免 MOE、MOT、MOA、LATENT、MOLoRA、Top-K 和 argmax 被误写。
+
+成片必须验证视频与音频时长、开头/中段/结尾字幕、字幕词数覆盖和至少两张字幕抽帧。配音版不覆盖 clean master。
+
