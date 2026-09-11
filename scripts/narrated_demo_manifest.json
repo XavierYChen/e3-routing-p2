@@ -1,0 +1,23 @@
+{
+  "language": "zh",
+  "duration_seconds": 120,
+  "source_video": "artifacts/p2/e3-p2-trained-two-minute-demo.mp4",
+  "caption_style": "bold-tiktok-outline",
+  "scenes": [
+    {"start": 0, "duration": 12, "title": "项目总览", "vo_line": "这是 E3 五族混合系统的路由透视镜。所有结果来自真实路由张量，采集过程不修改模型核心前向。"},
+    {"start": 12, "duration": 9, "title": "MOT 第13层", "vo_line": "先看 MOT 第十三层。当前图像有两个专家真正成为空间主导，颜色来自逐位置最大概率。"},
+    {"start": 21, "duration": 9, "title": "MOT 第16层", "vo_line": "切换到第十六层后，主导区域发生变化，说明不同深度可以形成不同的路由分工。"},
+    {"start": 30, "duration": 11, "title": "MOT 第19层", "vo_line": "第十九层三个专家全部活跃。这里的三种颜色来自实际 argmax 结果，没有为了视觉效果补色。"},
+    {"start": 41, "duration": 9, "title": "MOT 第22层", "vo_line": "第二十二层回到两个活跃专家，这是有效的 Top-K 行为，并不要求每一层都同时出现三种颜色。"},
+    {"start": 50, "duration": 11, "title": "MOA 第16层", "vo_line": "现在切换到 MOA。第十六层呈现三个空间区域，同时保留概率、熵和主导间隔用于判断可信度。"},
+    {"start": 61, "duration": 9, "title": "MOA 第19层", "vo_line": "MOA 第十九层的颜色更碎，但颜色本身不是聚类结论，仍要结合 margin 判断近似平票。"},
+    {"start": 70, "duration": 8, "title": "输入审计", "vo_line": "输入审计保存亮度、对比度和模糊后的真实图像，并保证比较使用相同的空间几何。"},
+    {"start": 78, "duration": 10, "title": "外观敏感性", "vo_line": "外观敏感性汇总四张图和四个路由层。误差条是描述性标准差，不被解释为独立样本置信区间。"},
+    {"start": 88, "duration": 10, "title": "层级归因", "vo_line": "层级归因展示各层占总体概率变化的份额，它用于定位敏感层，但不等同于因果归因。"},
+    {"start": 98, "duration": 8, "title": "绝对变化", "vo_line": "绝对概率误差采用统一对数色阶，避免把小变化中的高占比误读成强响应。"},
+    {"start": 106, "duration": 7, "title": "散点分析", "vo_line": "散点图把概率变化和专家切换率并列，帮助识别由微小 margin 引起的表面不稳定。"},
+    {"start": 113, "duration": 7, "title": "专家使用率", "vo_line": "最后查看逐层专家使用率。训练改善了 MOT 的空间参与，MOA 的分工结论则保留为有限证据。"}
+  ]
+}
+
+
