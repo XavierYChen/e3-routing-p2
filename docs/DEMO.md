@@ -9,8 +9,8 @@
 | 时间 | 页面操作 | 讲解重点 |
 |---:|---|---|
 | 0–12s | 展示训练后总览 | 192 次 capture、160 组比较、4+4 个空间层、0 次 forward 修改 |
-| 12–54s | 依次切 MOT 13/16/19/22 层 | 活跃专家为 2/2/3/2；只有 19 层三色齐全，未人为补色 |
-| 54–76s | 切 MOA 16/19 层 | 三专家均活跃；同时读取概率、熵和 margin，避免只看颜色 |
+| 12–50s | 依次切 MOT 13/16/19/22 层 | 活跃专家为 2/2/3/2；只有 19 层三色齐全，未人为补色 |
+| 50–70s | 切 MOA 16/19 层 | 三专家均活跃；同时读取概率、熵和 margin，避免只看颜色 |
 | 70–78s | Appearance inputs | 展示实际亮度、对比度和模糊输入，空间几何保持不变 |
 | 78–88s | Appearance metrics | 单 checkpoint 下 16 个 image×layer 单元的均值与描述性 SD |
 | 88–98s | Relative attribution | 分层变化贡献是描述统计，不声称因果 |
@@ -22,7 +22,7 @@
 
 ## 配音与字幕版本
 
-`scripts/narrated_demo_manifest.json` 给出与 13 个场景严格对应的中文讲解词、起始时间和持续时间。发布流程保留当前无声视频作为可复现 clean master，再生成独立的 narrated edition：加入中文讲解音轨，通过 Whisper 从最终音频取得逐词时间，最后烧录短句字幕。字幕文字使用 manifest 中的原稿，Whisper 只负责计时，避免 MOE、MOT、MOA、LATENT、MOLoRA、Top-K 和 argmax 被误写。
+`scripts/narrated_demo_manifest.json` 给出与 13 个场景严格对应的中文讲解词、起始时间和持续时间。仓库保留无声视频作为可复现 clean master，并提供独立的 [中文女声字幕版](../artifacts/p2/e3-p2-narrated-subtitled-demo.mp4)。字幕时间来自对最终女声音轨的 Whisper 分段识别，字幕文字来自审定原稿，避免 MOE、MOT、MOA、LATENT、MOLoRA、Top-K 和 argmax 被误写。
 
-成片必须验证视频与音频时长、开头/中段/结尾字幕、字幕词数覆盖和至少两张字幕抽帧。配音版不覆盖 clean master。
+当前成片验证结果：总时长 `120.000 s`；视频为 H.264、音频为 AAC；共 46 条字幕；最后一句在 `116.000 s` 结束；开头、中段和结尾抽帧见 [字幕抽查图](../artifacts/p2/e3-p2-caption-proof.png)。配音版没有覆盖 clean master。
 
