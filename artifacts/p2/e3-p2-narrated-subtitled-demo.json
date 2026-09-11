@@ -1,0 +1,23 @@
+{
+  "schema": "e3.demo-video/v1",
+  "file": "e3-p2-narrated-subtitled-demo.mp4",
+  "source_video": "e3-p2-trained-two-minute-demo.mp4",
+  "duration_seconds": 120.0,
+  "width": 1600,
+  "height": 900,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "narration_language": "zh-CN",
+  "narration_voice": "Faye",
+  "narration_voice_type": "preset",
+  "caption_count": 46,
+  "last_caption_end_seconds": 116.0,
+  "caption_timing": "faster-whisper/per-block",
+  "caption_text_source": "scripts/narrated_demo_manifest.json",
+  "file_size_bytes": 21624858,
+  "sha256": "8bf0d7f25d468603bb5974f5308716904979c1bba6a229826d202042d97ec149",
+  "proof_image": "e3-p2-caption-proof.png",
+  "proof_image_size_bytes": 351305,
+  "proof_image_sha256": "e3b5ffe6a83ea7bf0a2f14c7068b54fb930bad3ece6f7f022b91541d4ab40dc3"
+}
+
